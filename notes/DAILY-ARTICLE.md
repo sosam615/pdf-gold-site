@@ -12,3 +12,6 @@ Site repo: `C:\Users\DANNA\tdp\goldpdf-site`. Queue: `src/articles/_queue.txt` (
 4. `node scripts/build-site.js` then `node scripts/check-site.js` — fix any errors.
 5. `git add -A && git commit -m "Add article: <title>"`; `git push` if a remote exists.
 6. Report the title, word count and check results in one or two lines.
+
+## Indexing (every run, after git push)
+Wait ~90 s for GitHub Pages, then run: node scripts/indexnow.js --new   (submits today's new/changed URLs to Bing/Yandex via IndexNow). Google picks the sitemap up via Search Console (manual one-time submit of https://pdf.gold/sitemap.xml).
