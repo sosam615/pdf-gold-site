@@ -31,6 +31,7 @@ const write = (rel, data) => { const f = path.join(DIST, rel); fs.mkdirSync(path
 const homeUrl = l => SITE + (l === 'en' ? '/' : '/' + l + '/');
 const hl = l => HREF[l] || l;
 const dl = CFG.downloadUrl;
+const lite = CFG.liteUrl;
 
 /* ---------- tiny markdown ---------- */
 const inline = s => esc(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/`(.+?)`/g, '<code>$1</code>').replace(/\[([^\]]+)\]\(([^)]+)\)/g, (m, t, u) => `<a href="${u}">${t}</a>`);
@@ -132,7 +133,7 @@ function localHome(l, D, all) {
     `<main><section class="hero hero-a"><video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="/assets/hero-a.jpg"><source src="/assets/hero-a.mp4" type="video/mp4"></video><div class="hero-shade"></div><div class="hero-inner"><p class="kicker"><span class="gem"></span>${esc(D.k)}</p><h1>${esc(D.h1a)}<br><em>${esc(D.h1b)}</em></h1><p class="lede">${esc(D.lede)}</p><div class="cta"><a class="btn btn-gold btn-lg" href="${dl}">${esc(D.c1)}</a><a class="btn btn-ghost btn-lg" href="#features">${esc(D.c2)}</a></div><ul class="badges">${D.b.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div></section>` +
     `<section class="section features" id="features"><div class="wrap"><header class="head"><h2>${esc(D.fh)}</h2></header><div class="grid">${D.f.map(([t, d], i) => `<article class="card${i === 0 ? ' big' : ''}"><h3>${esc(t)}</h3><p>${esc(d)}</p></article>`).join('')}</div><p class="shotwrap"><img class="shotimg" src="/assets/app-edit.png" alt="Gold PDF" width="1440" height="900" loading="lazy"></p></div></section>` +
     `<section class="section faq" id="faq"><div class="wrap narrow"><header class="head center"><h2>${esc(D.faqh)}</h2></header><div class="faq-list">${D.q.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join('')}</div></div></section>` +
-    `<section class="section download"><div class="wrap"><div class="dl"><img class="dl-logo" src="/assets/logo.svg" alt="" width="96" height="96"><h2>${esc(D.dlh)}</h2><a class="btn btn-gold btn-xl" href="${dl}">${esc(D.c1)}</a><p class="muted">Windows 10 / 11 · 118 MB · $0</p></div></div></section></main>` + footer(l) + '<script src="/js/main.js" defer></script></body></html>';
+    `<section class="section download"><div class="wrap"><div class="dl"><img class="dl-logo" src="/assets/logo.svg" alt="" width="96" height="96"><h2>${esc(D.dlh)}</h2><a class="btn btn-gold btn-xl" href="${dl}">${esc(D.c1)}</a><p class="muted">Windows 10 / 11 · 119 MB · $0 · <a href="${lite}" download>Lite · 93 MB</a></p></div></div></section></main>` + footer(l) + '<script src="/js/main.js" defer></script></body></html>';
 }
 
 /* ---------- build ---------- */
@@ -164,7 +165,8 @@ function build() {
     .replace('<a href="#faq">FAQ</a>', '<a href="/articles/">Guides</a><a href="#faq">FAQ</a>')
     .replace('</head>', alternates() + '<link rel="stylesheet" href="css/articles.css"></head>')
     .replace('<p class="copy">', `<div class="wrap langlist">${LANGS.map(x => `<a href="${homeUrl(x).replace(SITE, '')}" hreflang="${hl(x)}" lang="${hl(x)}">${esc(NAMES[x])}</a>`).join(' · ')}</div><p class="copy">`)
-    .replace(/href="downloads\/GoldPDF-Setup-1\.0\.0\.exe"/g, `href="${dl}"`);
+    .replace(/href="downloads\/GoldPDF-Setup-1\.0\.0\.exe"/g, `href="${dl}"`)
+    .replace('<dd id="dlSize">118 MB</dd>', `<dd id="dlSize">119 MB &middot; <a href="${lite}" download>Lite version, 93 MB (OCR downloads on first use)</a></dd>`);
   write('index.html', home);
 
   LANGS.slice(1).forEach(l => write(`${l}/index.html`, localHome(l, data[l], all)));
