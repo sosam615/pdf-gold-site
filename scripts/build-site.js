@@ -223,6 +223,8 @@ function build() {
   write('feed.xml', `<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>Gold PDF guides</title><link>${SITE}/articles/</link><description>PDF how-tos and comparisons</description>${all.slice(0, 30).map(a => `<item><title>${esc(a.title)}</title><link>${SITE}/articles/${a.slug}/</link><guid>${SITE}/articles/${a.slug}/</guid><pubDate>${new Date(a.date).toUTCString()}</pubDate><description>${esc(a.description)}</description></item>`).join('')}</channel></rss>`);
   write('_headers', '/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: SAMEORIGIN\n/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n/css/*\n  Cache-Control: public, max-age=86400\n/js/*\n  Cache-Control: public, max-age=86400\n');
   write('CNAME', 'pdf.gold\n');
+  const ik = path.join(ROOT, 'indexnow.key');
+  if (fs.existsSync(ik)) { const k = fs.readFileSync(ik, 'utf8').trim(); write(k + '.txt', k); }
   write('.nojekyll', '');
   console.log(`built: ${LANGS.length} home pages, ${all.length} articles, ${LANDINGS.length} landing pages`);
 }
