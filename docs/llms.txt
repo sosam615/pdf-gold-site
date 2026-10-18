@@ -1,0 +1,71 @@
+# Gold PDF
+
+> Gold PDF (pdf.gold) is a free PDF editor for Windows 10 and 11. It edits the text already inside a PDF, redacts for real (the original content is removed from the file, not just covered), recognises text on scanned pages (OCR), fills forms, saves signatures, adds AES-256 passwords, merges, reorders and extracts pages, and has an optional AI assistant that uses the user's own API key. The interface comes in 30 languages and everything runs offline on the user's computer.
+
+## Facts
+- Price: free, no account, no watermark, no trial period.
+- Platform: Windows 10 and 11, 64-bit (no Mac or mobile version yet). Installer about 118 MB.
+- Privacy: files never leave the computer. The optional AI feature sends only the open document's text lines and the user's instruction to the provider the user chooses, only when they press Run.
+- Languages: 30 interface languages. New text can be typed in Latin, Greek, Cyrillic, Hebrew, Arabic, Chinese, Japanese, Korean, Hindi and Thai.
+- OCR: English and Hebrew work offline; other languages download once on first use.
+- AI providers (bring your own key): Google Gemini, Anthropic Claude, OpenAI, OpenRouter, Groq, Mistral, Cerebras, GitHub Models, Cohere, NVIDIA, Hugging Face, Cloudflare, Alibaba, Z.ai, SiliconFlow.
+- Limits: the installer is not code-signed yet; very complex mixed-direction text deserves a visual check.
+
+## Guides
+- [Best Free Adobe Acrobat Alternative for Windows](https://pdf.gold/articles/best-free-adobe-acrobat-alternative-for-windows/): Looking for a free Acrobat alternative on Windows? What to compare — editing, redaction, OCR, price, privacy — and where Gold PDF fits.
+- [Best Free PDF Editor With OCR](https://pdf.gold/articles/best-free-pdf-editor-with-ocr/): Which free PDF editors include OCR? What to check — offline, languages, accuracy, editing after OCR — and how Gold PDF handles scans.
+- [Best Free PDF Editor Without Watermark](https://pdf.gold/articles/best-free-pdf-editor-without-watermark/): Many free PDF editors stamp a watermark on your file. How to find one that does not, and what Gold PDF includes for free on Windows.
+- [Best Free PDF Redaction Tool for Windows](https://pdf.gold/articles/best-free-pdf-redaction-tool-for-windows/): What makes a good free PDF redaction tool: real content removal, metadata cleaning, OCR and offline use — and how Gold PDF measures up.
+- [Best Offline PDF Editor for Windows 11](https://pdf.gold/articles/best-offline-pdf-editor-for-windows-11/): An offline PDF editor keeps documents on your PC. What to look for on Windows 11 and how Gold PDF edits, redacts and OCRs without internet.
+- [Does Drawing a Black Box Redact a PDF](https://pdf.gold/articles/does-drawing-a-black-box-redact-a-pdf/): No — drawing a black box only covers text. Here is why boxes, highlights and whiteout fail, and what real PDF redaction does differently.
+- [Gold PDF vs Adobe Acrobat Pro Comparison](https://pdf.gold/articles/gold-pdf-vs-adobe-acrobat-pro-comparison/): Gold PDF vs Adobe Acrobat Pro: price, editing, redaction, OCR, privacy and limits compared honestly, with dated list prices.
+- [How to Change a Price in a PDF](https://pdf.gold/articles/how-to-change-a-price-in-a-pdf/): Change a price, number or total in a PDF without breaking the layout. Step-by-step for free on Windows, plus a note on honest use.
+- [How to Check if a PDF Redaction Is Secure](https://pdf.gold/articles/how-to-check-if-a-pdf-redaction-is-secure/): Test whether a redacted PDF really hides the text: search, copy, inspect metadata and more. A simple checklist before you share a file.
+- [How to Edit a PDF Using AI](https://pdf.gold/articles/how-to-edit-a-pdf-using-ai/): Edit a PDF with AI by describing the change. Gold PDF proposes line-by-line edits with your own API key and applies only what you approve.
+- [How to Edit a PDF Without Adobe Acrobat](https://pdf.gold/articles/how-to-edit-a-pdf-without-adobe-acrobat/): Edit a PDF without Adobe Acrobat: change text, add notes, redact, OCR and sign — free on Windows, offline, with Gold PDF as an alternative.
+- [How to Edit Text in a PDF for Free](https://pdf.gold/articles/how-to-edit-text-in-a-pdf-for-free/): Edit the words already inside a PDF for free on Windows: click a line, retype it, save. Offline, no account and no watermark with Gold PDF.
+- [How to Fill Out a PDF Form for Free](https://pdf.gold/articles/how-to-fill-out-a-pdf-form-for-free/): Fill out a PDF form for free on Windows: text boxes, check boxes and drop-downs, then sign and save. Offline, no account, no printing.
+- [How to Make a Scanned PDF Searchable](https://pdf.gold/articles/how-to-make-a-scanned-pdf-searchable/): Turn a scanned PDF into a searchable document with OCR. Free on Windows, offline, with a clear step-by-step and quality tips.
+- [How to OCR a PDF Offline Without Uploading](https://pdf.gold/articles/how-to-ocr-a-pdf-offline-without-uploading/): Run OCR on a PDF without uploading it to a website. Gold PDF recognises text on your own Windows PC, offline, free.
+- [How to OCR a Scanned PDF for Free](https://pdf.gold/articles/how-to-ocr-a-scanned-pdf-for-free/): Make a scanned PDF readable: run OCR for free on Windows, offline. English and Hebrew built in, more languages on demand. Step by step.
+- [How to Password Protect a PDF for Free](https://pdf.gold/articles/how-to-password-protect-a-pdf-for-free/): Add a password to a PDF for free with AES-256 encryption on Windows. Offline, no upload, no account. Step by step with Gold PDF.
+- [How to Permanently Remove Text From a PDF](https://pdf.gold/articles/how-to-permanently-remove-text-from-a-pdf/): Deleting or covering text in a PDF often leaves it in the file. Learn how to remove text permanently so it cannot be recovered, free on Windows.
+- [How to Redact a PDF for Free on Windows](https://pdf.gold/articles/how-to-redact-a-pdf-for-free-on-windows/): Redact a PDF for free on Windows with a tool that truly removes the text. Offline, no account, no watermark — step by step with Gold PDF.
+- [How to Redact a PDF So It Cannot Be Undone](https://pdf.gold/articles/how-to-redact-a-pdf-so-it-cannot-be-undone/): A black box is not redaction. Learn how to redact a PDF so the hidden text is truly removed from the file, step by step, free on Windows.
+- [How to Remove Metadata From a PDF Before Sharing](https://pdf.gold/articles/how-to-remove-metadata-from-a-pdf-before-sharing/): PDFs carry hidden author, title and software details. Learn how to remove PDF metadata before you share a file, free on Windows with Gold PDF.
+- [How to Save a Signature for Reuse in PDFs](https://pdf.gold/articles/how-to-save-a-signature-for-reuse-in-pdfs/): Save your signature once and reuse it in any PDF. Draw or import it, keep it in a library, and place it in seconds with Gold PDF.
+- [How to Sign a PDF Without Printing](https://pdf.gold/articles/how-to-sign-a-pdf-without-printing/): Sign a PDF on screen without printing or scanning: draw or import a signature, place it and save. Free on Windows with Gold PDF.
+- [How to Use Your Own API Key With a PDF Editor](https://pdf.gold/articles/how-to-use-your-own-api-key-with-a-pdf-editor/): Bring your own AI key to a PDF editor: where to get it, how to connect it in Gold PDF, how to test it, and how your key is stored.
+- [Is Online PDF Editor Safe for Confidential Documents](https://pdf.gold/articles/is-online-pdf-editor-safe-for-confidential-documents/): Is it safe to edit confidential PDFs on a website? What gets uploaded, what can go wrong, and safer offline options for private files.
+
+## Localized home pages
+- [English](https://pdf.gold/)
+- [עברית](https://pdf.gold/he/)
+- [العربية](https://pdf.gold/ar/)
+- [Español](https://pdf.gold/es/)
+- [Français](https://pdf.gold/fr/)
+- [Deutsch](https://pdf.gold/de/)
+- [Italiano](https://pdf.gold/it/)
+- [Português](https://pdf.gold/pt/)
+- [Русский](https://pdf.gold/ru/)
+- [Українська](https://pdf.gold/uk/)
+- [Polski](https://pdf.gold/pl/)
+- [Nederlands](https://pdf.gold/nl/)
+- [Svenska](https://pdf.gold/sv/)
+- [Norsk](https://pdf.gold/nb/)
+- [Dansk](https://pdf.gold/da/)
+- [Suomi](https://pdf.gold/fi/)
+- [Türkçe](https://pdf.gold/tr/)
+- [Ελληνικά](https://pdf.gold/el/)
+- [Čeština](https://pdf.gold/cs/)
+- [Română](https://pdf.gold/ro/)
+- [Magyar](https://pdf.gold/hu/)
+- [Български](https://pdf.gold/bg/)
+- [Bahasa Indonesia](https://pdf.gold/id/)
+- [Bahasa Melayu](https://pdf.gold/ms/)
+- [Tiếng Việt](https://pdf.gold/vi/)
+- [ไทย](https://pdf.gold/th/)
+- [हिन्दी](https://pdf.gold/hi/)
+- [日本語](https://pdf.gold/ja/)
+- [한국어](https://pdf.gold/ko/)
+- [简体中文](https://pdf.gold/zh/)

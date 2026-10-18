@@ -1,7 +1,7 @@
 // Validates dist/: internal links, titles/descriptions, JSON-LD, hreflang, article length.  node scripts/check-site.js
 const fs = require('fs');
 const path = require('path');
-const DIST = path.join(__dirname, '..', 'dist');
+const DIST = path.join(__dirname, '..', 'docs');
 const files = [];
 (function walk(d) { for (const f of fs.readdirSync(d)) { const p = path.join(d, f); fs.statSync(p).isDirectory() ? walk(p) : p.endsWith('.html') && files.push(p); } })(DIST);
 

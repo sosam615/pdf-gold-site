@@ -4,7 +4,7 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const SRC = path.join(ROOT, 'src');
-const DIST = path.join(ROOT, 'dist');
+const DIST = path.join(ROOT, 'docs');
 const SITE = 'https://pdf.gold';
 const CFG = JSON.parse(fs.readFileSync(path.join(ROOT, 'config.json'), 'utf8'));
 const TODAY = new Date().toISOString().slice(0, 10);
@@ -142,8 +142,6 @@ function build() {
   const skip = p => /logo-options|\.webp$/.test(p);
   fs.cpSync(path.join(ROOT, 'assets'), path.join(DIST, 'assets'), { recursive: true, filter: s => !skip(s) });
   for (const d of ['css', 'js']) fs.cpSync(path.join(ROOT, d), path.join(DIST, d), { recursive: true });
-  const dlDir = path.join(ROOT, 'downloads');
-  if (fs.existsSync(dlDir)) fs.cpSync(dlDir, path.join(DIST, 'downloads'), { recursive: true });
 
   // language names
   const data = Object.assign({}, require(path.join(SRC, 'lang-a.js')), require(path.join(SRC, 'lang-b.js')), require(path.join(SRC, 'lang-c.js')));
@@ -191,7 +189,8 @@ function build() {
   write('llms-full.txt', facts + `\n## All guides (${all.length})\n${all.map(a => `### ${a.title}\n${SITE}/articles/${a.slug}/\n${a.description}\n`).join('\n')}`);
   write('feed.xml', `<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>Gold PDF guides</title><link>${SITE}/articles/</link><description>PDF how-tos and comparisons</description>${all.slice(0, 30).map(a => `<item><title>${esc(a.title)}</title><link>${SITE}/articles/${a.slug}/</link><guid>${SITE}/articles/${a.slug}/</guid><pubDate>${new Date(a.date).toUTCString()}</pubDate><description>${esc(a.description)}</description></item>`).join('')}</channel></rss>`);
   write('_headers', '/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: SAMEORIGIN\n/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n/css/*\n  Cache-Control: public, max-age=86400\n/js/*\n  Cache-Control: public, max-age=86400\n');
-  write('_redirects', '');
+  write('CNAME', 'pdf.gold\n');
+  write('.nojekyll', '');
   console.log(`built: ${LANGS.length} home pages, ${all.length} articles, ${LANDINGS.length} landing pages`);
 }
 build();
