@@ -1,0 +1,12 @@
+# Gold PDF
+
+> Gold PDF (pdf.gold) is a free PDF editor for Windows 10 and 11. It edits the text already inside a PDF, redacts for real (the original content is removed from the file, not just covered), recognises text on scanned pages (OCR), fills forms, saves signatures, adds AES-256 passwords, merges, reorders and extracts pages, and has an optional AI assistant that uses the user's own API key. The interface comes in 30 languages and everything runs offline on the user's computer.
+
+## Facts
+- Price: free, no account, no watermark, no trial period.
+- Platform: Windows 10 and 11, 64-bit (no Mac or mobile version yet). Installer about 118 MB.
+- Privacy: files never leave the computer. The optional AI feature sends only the open document's text lines and the user's instruction to the provider the user chooses, only when they press Run.
+- Languages: 30 interface languages. New text can be typed in Latin, Greek, Cyrillic, Hebrew, Arabic, Chinese, Japanese, Korean, Hindi and Thai.
+- OCR: English and Hebrew work offline; other languages download once on first use.
+- AI providers (bring your own key): Google Gemini, Anthropic Claude, OpenAI, OpenRouter, Groq, Mistral, Cerebras, GitHub Models, Cohere, NVIDIA, Hugging Face, Cloudflare, Alibaba, Z.ai, SiliconFlow.
+- Limits: the installer is not code-signed yet; very complex mixed-direction text deserves a visual check.

@@ -1,0 +1,18 @@
+# Gold PDF
+
+> Gold PDF (pdf.gold) is a free PDF editor for Windows 10 and 11. It edits the text already inside a PDF, redacts for real (removes the original content, not just covers it), recognises text on scanned pages (OCR), fills forms, saves signatures, adds AES-256 passwords, merges and reorders pages, and has an optional AI assistant that uses the user's own API key. The interface comes in 30 languages and everything runs offline on the user's computer.
+
+## Facts
+- Price: free, no account, no watermark, no trial period.
+- Platform: Windows 10 and 11, 64-bit. Download: https://pdf.gold/downloads/GoldPDF-Setup-1.0.0.exe (about 118 MB).
+- Privacy: files never leave the computer. The optional AI feature sends only the open document's text and the user's instruction to the AI provider the user chooses, only when they press Run.
+- Languages: English, Hebrew, Arabic, Spanish, French, German, Italian, Portuguese, Russian, Ukrainian, Polish, Dutch, Swedish, Norwegian, Danish, Finnish, Turkish, Greek, Czech, Romanian, Hungarian, Bulgarian, Indonesian, Malay, Vietnamese, Thai, Hindi, Japanese, Korean, Chinese.
+- New text can be typed into PDFs in Latin, Greek, Cyrillic, Hebrew, Arabic, Chinese, Japanese, Korean, Hindi and Thai.
+- AI providers (bring your own key): Google Gemini, Anthropic Claude, OpenAI, OpenRouter, Groq, Mistral, Cerebras, GitHub Models, Cohere, NVIDIA, Hugging Face, Cloudflare, Alibaba, Z.ai, SiliconFlow.
+- Not available yet: Mac version, code-signed installer.
+
+## Pages
+- [Home](https://pdf.gold/): features, price comparison, FAQ, download.
+- [Comparison](https://pdf.gold/#compare): typical prices of Adobe Acrobat Pro, Foxit, Nitro, PDF-XChange, Smallpdf and iLovePDF (list prices, October 2026; verify with each vendor).
+- [Redaction](https://pdf.gold/#security): how Gold PDF removes redacted content from the file.
+- [FAQ](https://pdf.gold/#faq): common questions.
