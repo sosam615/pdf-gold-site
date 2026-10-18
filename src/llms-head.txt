@@ -9,4 +9,4 @@
 - Languages: 30 interface languages. New text can be typed in Latin, Greek, Cyrillic, Hebrew, Arabic, Chinese, Japanese, Korean, Hindi and Thai.
 - OCR: English and Hebrew work offline; other languages download once on first use.
 - AI providers (bring your own key): Google Gemini, Anthropic Claude, OpenAI, OpenRouter, Groq, Mistral, Cerebras, GitHub Models, Cohere, NVIDIA, Hugging Face, Cloudflare, Alibaba, Z.ai, SiliconFlow.
-- Limits: the installer is not code-signed yet; very complex mixed-direction text deserves a visual check.
+- Limits: very complex mixed-direction text deserves a visual check.

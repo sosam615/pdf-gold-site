@@ -116,7 +116,7 @@ topic: redaction
 date: 2026-10-18
 faq: Is there a free PDF redaction tool for Windows? || Yes. Gold PDF is free, works offline and removes redacted content from the file when you save.
 faq: Do I need an account? || No account, no upload and no watermark.
-faq: Can I redact without Adobe Acrobat? || Yes. Gold PDF covers the common redaction workflow without Acrobat.
+faq: Can I redact without A? || Yes. Gold PDF covers the common redaction workflow without A.
 ---
 You can redact a PDF for free on Windows with Gold PDF: install it, open the file, mark the sensitive parts with the Redact tool and save. It works offline, adds no watermark and removes the redacted content from the saved file.
 

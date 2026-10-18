@@ -15,3 +15,6 @@ Site repo: `C:\Users\DANNA\tdp\goldpdf-site`. Queue: `src/articles/_queue.txt` (
 
 ## Indexing (every run, after git push)
 Wait ~90 s for GitHub Pages, then run: node scripts/indexnow.js --new   (submits today's new/changed URLs to Bing/Yandex via IndexNow). Google picks the sitemap up via Search Console (manual one-time submit of https://pdf.gold/sitemap.xml).
+
+## Competitor names (hard rule)
+Never write a competitor's real name or URL anywhere (text, titles, slugs, links). Use only the first letter: A, N, F, S, I, P. No claims about them that could be wrong; keep comparisons general. Never mention SmartScreen or code-signing.

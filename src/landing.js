@@ -57,15 +57,15 @@ module.exports = [
     related: ['/redact-pdf/', '/fill-pdf-form/', '/articles/how-to-password-protect-a-pdf-for-free/']
   },
   {
-    slug: 'adobe-acrobat-alternative', nav: 'Acrobat alternative',
-    title: 'Free Adobe Acrobat Alternative for Windows — Gold PDF',
-    desc: 'A free Acrobat alternative with text editing, true redaction, OCR, forms, signatures and passwords. Offline, no account, no watermark.',
-    h1: 'A free Adobe Acrobat alternative for Windows',
-    answer: '**Gold PDF** covers what most people use Acrobat Pro for — editing text, redaction, OCR, forms, signatures, passwords and page tools — and it is free, offline and needs no account. Acrobat Pro costs about $19.99 a month on an annual plan (list price, October 2026; check Adobe).',
+    slug: 'a-alternative', nav: 'A alternative',
+    title: 'Free A Alternative for Windows — Gold PDF',
+    desc: 'A free A alternative with text editing, true redaction, OCR, forms, signatures and passwords. Offline, no account, no watermark.',
+    h1: 'A free A alternative for Windows',
+    answer: '**Gold PDF** covers what most people use A Pro for — editing text, redaction, OCR, forms, signatures, passwords and page tools — and it is free, offline and needs no account. A Pro costs about $19.99 a month on an annual plan (list price, October 2026; check A).',
     steps: [['Install.', 'Run the installer — no admin rights needed.'], ['Open your PDFs.', 'Double-click any PDF.'], ['Work.', 'Use the same tasks: edit, redact, OCR, sign, protect.']],
     why: ['**$0** instead of a yearly subscription.', '**Private** — files stay on your PC.', '**30 interface languages**, right-to-left layouts included.', '**Honest limits** — Windows only, no Mac yet, installer unsigned.'],
     faq: [['What does Gold PDF not do?', 'It is not a prepress or accessibility-tagging suite, has no Mac version and no cloud signing service.'], ['Where do the prices come from?', 'Published list prices; they vary by country and plan, so verify on each vendor site.']],
-    related: ['/free-pdf-editor-windows/', '/edit-pdf-text/', '/articles/best-free-adobe-acrobat-alternative-for-windows/']
+    related: ['/free-pdf-editor-windows/', '/edit-pdf-text/', '/articles/best-free-a-alternative-for-windows/']
   },
   {
     slug: 'free-pdf-editor-windows', nav: 'Free PDF editor for Windows',
@@ -76,6 +76,6 @@ module.exports = [
     steps: [['Download.', 'Get the installer (about 118 MB).'], ['Install.', 'Per-user install; double-click a PDF to open it.'], ['Edit.', 'Use the ribbon or press Ctrl+K to search any command.']],
     why: ['**No watermark, ever.**', '**Tabs, thumbnails, search, undo/redo.**', '**Optional AI** with your own key.', '**30 languages.**'],
     faq: [['Does it work offline?', 'Yes, everything except the optional AI feature.'], ['Is there a catch?', 'No account, no trial, no watermark. The installer is not code-signed yet, so Windows may warn once.']],
-    related: ['/adobe-acrobat-alternative/', '/redact-pdf/', '/articles/best-free-pdf-editor-without-watermark/']
+    related: ['/a-alternative/', '/redact-pdf/', '/articles/best-free-pdf-editor-without-watermark/']
   }
 ];

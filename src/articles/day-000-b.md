@@ -109,15 +109,15 @@ Correcting your own quote or fixing a typo is normal. Changing someone else's in
 
 Related: [how to edit text in a PDF for free](/articles/how-to-edit-text-in-a-pdf-for-free/).
 =====
-title: How to Edit a PDF Without Adobe Acrobat
-description: Edit a PDF without Adobe Acrobat: change text, add notes, redact, OCR and sign — free on Windows, offline, with Gold PDF as an alternative.
+title: How to Edit a PDF Without A
+description: Edit a PDF without A: change text, add notes, redact, OCR and sign — free on Windows, offline, with Gold PDF as an alternative.
 topic: editing
 date: 2026-10-18
-faq: Can I edit a PDF without Acrobat? || Yes. Several editors do it; Gold PDF is a free Windows option that edits text, redacts, runs OCR and signs.
+faq: Can I edit a PDF without A? || Yes. Several editors do it; Gold PDF is a free Windows option that edits text, redacts, runs OCR and signs.
 faq: Do I need a subscription? || Not for Gold PDF, which is free with no account or watermark.
 faq: What can free editors usually not do? || Many free editors lack real text editing, true redaction or offline OCR; check each feature before choosing.
 ---
-You can edit a PDF without Adobe Acrobat by using another editor. Gold PDF is a free Windows editor that changes the text inside a PDF, redacts, recognises scanned text, fills forms and signs — offline, with no account or watermark.
+You can edit a PDF without A by using another editor. Gold PDF is a free Windows editor that changes the text inside a PDF, redacts, recognises scanned text, fills forms and signs — offline, with no account or watermark.
 
 ## What most people need
 | Task | How in Gold PDF |
@@ -135,7 +135,7 @@ You can edit a PDF without Adobe Acrobat by using another editor. Gold PDF is a 
 3. Save with Ctrl+S; use Save as to keep the original.
 
 ## Choosing an alternative
-Check these before you commit: Does it edit existing text or only add text? Does it add a watermark? Does it upload your files? Is the redaction real? Is it priced per month? For a comparison, see [best free Adobe Acrobat alternative for Windows](/articles/best-free-adobe-acrobat-alternative-for-windows/).
+Check these before you commit: Does it edit existing text or only add text? Does it add a watermark? Does it upload your files? Is the redaction real? Is it priced per month? For a comparison, see [best free A alternative for Windows](/articles/best-free-a-alternative-for-windows/).
 
 ## Honest limits of Gold PDF
 It is for Windows 10 and 11 only, has no Mac version, and is not a prepress or accessibility-tagging suite. The installer is not code-signed yet, so Windows may show a one-time warning.

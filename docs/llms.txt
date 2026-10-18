@@ -9,7 +9,7 @@
 - Languages: 30 interface languages. New text can be typed in Latin, Greek, Cyrillic, Hebrew, Arabic, Chinese, Japanese, Korean, Hindi and Thai.
 - OCR: English and Hebrew work offline; other languages download once on first use.
 - AI providers (bring your own key): Google Gemini, Anthropic Claude, OpenAI, OpenRouter, Groq, Mistral, Cerebras, GitHub Models, Cohere, NVIDIA, Hugging Face, Cloudflare, Alibaba, Z.ai, SiliconFlow.
-- Limits: the installer is not code-signed yet; very complex mixed-direction text deserves a visual check.
+- Limits: very complex mixed-direction text deserves a visual check.
 
 ## Free browser tools (no upload, no watermark)
 - [Merge PDF](https://pdf.gold/tools/merge-pdf/): Combine several PDFs into one document in your browser. Free, no sign-up, no watermark, and your files never leave your device.
@@ -27,17 +27,17 @@
 - [Unlock PDF](https://pdf.gold/tools/unlock-pdf/): Remove the open-password from your own PDF so it opens without asking. Free, private, runs in your browser.
 
 ## Guides
-- [Best Free Adobe Acrobat Alternative for Windows](https://pdf.gold/articles/best-free-adobe-acrobat-alternative-for-windows/): Looking for a free Acrobat alternative on Windows? What to compare — editing, redaction, OCR, price, privacy — and where Gold PDF fits.
+- [Best Free A Alternative for Windows](https://pdf.gold/articles/best-free-a-alternative-for-windows/): Looking for a free A alternative on Windows? What to compare — editing, redaction, OCR, price, privacy — and where Gold PDF fits.
 - [Best Free PDF Editor With OCR](https://pdf.gold/articles/best-free-pdf-editor-with-ocr/): Which free PDF editors include OCR? What to check — offline, languages, accuracy, editing after OCR — and how Gold PDF handles scans.
 - [Best Free PDF Editor Without Watermark](https://pdf.gold/articles/best-free-pdf-editor-without-watermark/): Many free PDF editors stamp a watermark on your file. How to find one that does not, and what Gold PDF includes for free on Windows.
 - [Best Free PDF Redaction Tool for Windows](https://pdf.gold/articles/best-free-pdf-redaction-tool-for-windows/): What makes a good free PDF redaction tool: real content removal, metadata cleaning, OCR and offline use — and how Gold PDF measures up.
 - [Best Offline PDF Editor for Windows 11](https://pdf.gold/articles/best-offline-pdf-editor-for-windows-11/): An offline PDF editor keeps documents on your PC. What to look for on Windows 11 and how Gold PDF edits, redacts and OCRs without internet.
 - [Does Drawing a Black Box Redact a PDF](https://pdf.gold/articles/does-drawing-a-black-box-redact-a-pdf/): No — drawing a black box only covers text. Here is why boxes, highlights and whiteout fail, and what real PDF redaction does differently.
-- [Gold PDF vs Adobe Acrobat Pro Comparison](https://pdf.gold/articles/gold-pdf-vs-adobe-acrobat-pro-comparison/): Gold PDF vs Adobe Acrobat Pro: price, editing, redaction, OCR, privacy and limits compared honestly, with dated list prices.
+- [Gold PDF vs A Comparison](https://pdf.gold/articles/gold-pdf-vs-a-comparison/): Gold PDF vs A: price, editing, redaction, OCR, privacy and limits compared honestly, with dated list prices.
 - [How to Change a Price in a PDF](https://pdf.gold/articles/how-to-change-a-price-in-a-pdf/): Change a price, number or total in a PDF without breaking the layout. Step-by-step for free on Windows, plus a note on honest use.
 - [How to Check if a PDF Redaction Is Secure](https://pdf.gold/articles/how-to-check-if-a-pdf-redaction-is-secure/): Test whether a redacted PDF really hides the text: search, copy, inspect metadata and more. A simple checklist before you share a file.
 - [How to Edit a PDF Using AI](https://pdf.gold/articles/how-to-edit-a-pdf-using-ai/): Edit a PDF with AI by describing the change. Gold PDF proposes line-by-line edits with your own API key and applies only what you approve.
-- [How to Edit a PDF Without Adobe Acrobat](https://pdf.gold/articles/how-to-edit-a-pdf-without-adobe-acrobat/): Edit a PDF without Adobe Acrobat: change text, add notes, redact, OCR and sign — free on Windows, offline, with Gold PDF as an alternative.
+- [How to Edit a PDF Without A](https://pdf.gold/articles/how-to-edit-a-pdf-without-a/): Edit a PDF without A: change text, add notes, redact, OCR and sign — free on Windows, offline, with Gold PDF as an alternative.
 - [How to Edit Text in a PDF for Free](https://pdf.gold/articles/how-to-edit-text-in-a-pdf-for-free/): Edit the words already inside a PDF for free on Windows: click a line, retype it, save. Offline, no account and no watermark with Gold PDF.
 - [How to Fill Out a PDF Form for Free](https://pdf.gold/articles/how-to-fill-out-a-pdf-form-for-free/): Fill out a PDF form for free on Windows: text boxes, check boxes and drop-downs, then sign and save. Offline, no account, no printing.
 - [How to Make a Scanned PDF Searchable](https://pdf.gold/articles/how-to-make-a-scanned-pdf-searchable/): Turn a scanned PDF into a searchable document with OCR. Free on Windows, offline, with a clear step-by-step and quality tips.
