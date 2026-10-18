@@ -11,6 +11,21 @@
 - AI providers (bring your own key): Google Gemini, Anthropic Claude, OpenAI, OpenRouter, Groq, Mistral, Cerebras, GitHub Models, Cohere, NVIDIA, Hugging Face, Cloudflare, Alibaba, Z.ai, SiliconFlow.
 - Limits: the installer is not code-signed yet; very complex mixed-direction text deserves a visual check.
 
+## Free browser tools (no upload, no watermark)
+- [Merge PDF](https://pdf.gold/tools/merge-pdf/): Combine several PDFs into one document in your browser. Free, no sign-up, no watermark, and your files never leave your device.
+- [Split PDF](https://pdf.gold/tools/split-pdf/): Split a PDF by page ranges or into single pages, right in your browser. No upload, no watermark, no account.
+- [Extract pages](https://pdf.gold/tools/extract-pdf-pages/): Pull selected pages out of a PDF into a new, smaller file. Free, private and instant — runs in your browser.
+- [Delete pages](https://pdf.gold/tools/delete-pdf-pages/): Remove blank, duplicate or unwanted pages from a PDF in seconds. Free, no watermark, and the file stays on your device.
+- [Rotate PDF](https://pdf.gold/tools/rotate-pdf/): Rotate all or selected pages of a PDF by 90, 180 or 270 degrees and save the fixed file. No upload, no watermark.
+- [Compress PDF](https://pdf.gold/tools/compress-pdf/): Make a large PDF smaller for email and forms. Free, runs in your browser, your document is never uploaded.
+- [PDF to JPG](https://pdf.gold/tools/pdf-to-jpg/): Turn every page of a PDF into a high-quality JPG or PNG. Free, no upload, no watermark.
+- [JPG to PDF](https://pdf.gold/tools/jpg-to-pdf/): Turn photos and screenshots into one PDF, in your order. Free, private, no watermark.
+- [Page numbers](https://pdf.gold/tools/add-page-numbers-to-pdf/): Number the pages of any PDF: choose position, starting number and format. No upload, no watermark.
+- [Watermark PDF](https://pdf.gold/tools/watermark-pdf/): Stamp DRAFT, CONFIDENTIAL or your own text across every page of a PDF. No upload, no sign-up.
+- [PDF to text](https://pdf.gold/tools/pdf-to-text/): Pull all selectable text out of a PDF and copy or download it as a .txt file. Free, private, runs in your browser.
+- [Protect PDF](https://pdf.gold/tools/protect-pdf-with-password/): Add a password to a PDF so only people with the password can open it. Strong encryption, no upload, free.
+- [Unlock PDF](https://pdf.gold/tools/unlock-pdf/): Remove the open-password from your own PDF so it opens without asking. Free, private, runs in your browser.
+
 ## Guides
 - [Best Free Adobe Acrobat Alternative for Windows](https://pdf.gold/articles/best-free-adobe-acrobat-alternative-for-windows/): Looking for a free Acrobat alternative on Windows? What to compare — editing, redaction, OCR, price, privacy — and where Gold PDF fits.
 - [Best Free PDF Editor With OCR](https://pdf.gold/articles/best-free-pdf-editor-with-ocr/): Which free PDF editors include OCR? What to check — offline, languages, accuracy, editing after OCR — and how Gold PDF handles scans.

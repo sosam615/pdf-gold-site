@@ -1,0 +1,176 @@
+// Free in-browser PDF tools: copy + options for each page. Logic lives in js/tools.js (keyed by slug).
+const PDF = '.pdf,application/pdf';
+const IMG = 'image/jpeg,image/png,image/webp,.jpg,.jpeg,.png,.webp';
+const pages = (label, ph, req) => `<label>${label}<input name="pages" type="text" placeholder="${ph}"${req ? ' required' : ''}></label>`;
+
+module.exports = [
+  {
+    slug: 'merge-pdf', nav: 'Merge PDF', accept: PDF, multiple: true, cta: 'Merge PDFs',
+    title: 'Merge PDF Files Online Free — No Upload, No Watermark | Gold PDF',
+    h1: 'Merge PDF files online — free, private, no upload',
+    desc: 'Combine several PDFs into one document in your browser. Free, no sign-up, no watermark, and your files never leave your device.',
+    answer: 'To merge PDFs, drop two or more files here, put them in the order you want with the arrow buttons, and press **Merge PDFs**. The combined file is built inside your browser, so nothing is uploaded and there is no watermark or page limit.',
+    options: '',
+    steps: [['Add your PDFs.', 'Drag them in or click the box. Add as many files as you need.'], ['Set the order.', 'Use the ↑ and ↓ buttons, remove any file with ✕.'], ['Merge and download.', 'Press Merge PDFs and save the combined document.']],
+    about: ['Merging is the most common PDF task: contracts and their appendices, invoices for one month, scanned pages from different sessions, or application forms with supporting documents. This tool copies every page of every file, in your order, into one new PDF and keeps the original page size, text and images untouched.', 'Because the work happens locally in your browser, confidential documents never reach a server — important for legal, medical and financial files. For heavier work such as reordering individual pages with thumbnails, editing text or redacting, use the free Gold PDF desktop editor for Windows.'],
+    why: ['Files are processed on your device — **nothing is uploaded**.', 'No watermark, no page limit, no account.', 'Original quality is kept: pages are copied, not re-compressed.', 'Works on Windows, Mac, Linux, Android and iPhone browsers.'],
+    faq: [['Is it safe to merge confidential PDFs here?', 'Yes. The merge runs entirely inside your browser tab. Your files are not sent to any server, so nobody else can see them.'], ['Is there a file size or page limit?', 'There is no fixed limit. The practical limit is your device memory; most computers handle hundreds of pages easily.'], ['Will merging reduce quality?', 'No. Pages are copied as they are, so text stays selectable and images keep their original quality.'], ['Can I merge password-protected PDFs?', 'Remove the password first with the Unlock PDF tool, then merge.']],
+    related: ['split-pdf', 'delete-pdf-pages', 'compress-pdf']
+  },
+  {
+    slug: 'split-pdf', nav: 'Split PDF', accept: PDF, multiple: false, cta: 'Split PDF',
+    title: 'Split PDF Online Free — By Page Range or Every Page | Gold PDF',
+    h1: 'Split a PDF into separate files — free and private',
+    desc: 'Split a PDF by page ranges or into single pages, right in your browser. No upload, no watermark, no account.',
+    answer: 'To split a PDF, drop it here, type the page ranges you want (for example `1-3, 4-6, 7-`) or choose one file per page, then press **Split PDF**. Each range becomes its own PDF, created inside your browser without uploading anything.',
+    options: `<label>Split mode<select name="mode"><option value="ranges">By page ranges</option><option value="each">Every page as its own file</option></select></label>${pages('Page ranges', 'e.g. 1-3, 4-6, 7-', false)}`,
+    steps: [['Add the PDF.', 'Drag it in or click the box.'], ['Choose how to split.', 'Type ranges such as 1-3, 4-6, 7- or pick one file per page.'], ['Download the parts.', 'Save each file, or use Download all.']],
+    about: ['Splitting is useful when a long scan contains several documents, when you need to send only a few pages, or when a form must be uploaded one page at a time. Ranges are separated by commas; an open range like 7- means "page 7 to the end".', 'Every part keeps its original quality. If you only want to keep certain pages in a single file, use Extract Pages instead; to remove pages, use Delete PDF Pages.'],
+    why: ['Private: the file never leaves your device.', 'Flexible ranges, or every page separately.', 'No watermark and no sign-up.', 'Original text and images are preserved.'],
+    faq: [['How do I split a PDF into single pages?', 'Choose "Every page as its own file" and press Split PDF. You get one PDF per page.'], ['What does a range like 5- mean?', 'It means page 5 through the last page of the document.'], ['Can I split a scanned PDF?', 'Yes. Scanned pages are images and are split exactly like any other page.'], ['Is my document uploaded?', 'No. Everything is processed in your browser.']],
+    related: ['extract-pdf-pages', 'merge-pdf', 'delete-pdf-pages']
+  },
+  {
+    slug: 'extract-pdf-pages', nav: 'Extract pages', accept: PDF, multiple: false, cta: 'Extract pages',
+    title: 'Extract Pages From a PDF Online Free — Keep Only What You Need | Gold PDF',
+    h1: 'Extract pages from a PDF — keep only the ones you need',
+    desc: 'Pull selected pages out of a PDF into a new, smaller file. Free, private and instant — runs in your browser.',
+    answer: 'To extract pages from a PDF, drop the file here, enter the pages to keep (for example `2, 5-7, 12`) and press **Extract pages**. You get one new PDF containing only those pages, made locally in your browser.',
+    options: pages('Pages to keep', 'e.g. 2, 5-7, 12', true),
+    steps: [['Add the PDF.', 'Drag it in or click the box.'], ['Type the pages to keep.', 'Use commas and dashes: 2, 5-7, 12.'], ['Download the new PDF.', 'It contains only the pages you chose, in order.']],
+    about: ['Extracting is the fastest way to send a single signature page, one invoice from a statement bundle or a chapter from a long report. The original file is not modified.', 'Need several separate files instead? Use Split PDF. Want to remove pages instead of keeping them? Use Delete PDF Pages.'],
+    why: ['No upload — fully private.', 'Pages stay in their original order.', 'No watermark, no limits.', 'Original quality is preserved.'],
+    faq: [['What is the difference between extract and split?', 'Extract puts the selected pages into one new file. Split creates several files, one per range.'], ['Can I extract non-consecutive pages?', 'Yes — separate them with commas, e.g. 1, 4, 9-12.'], ['Does extracting change my original?', 'No. Your original file is untouched.'], ['Does it work offline?', 'After the page has loaded, yes: all processing is local.']],
+    related: ['split-pdf', 'delete-pdf-pages', 'merge-pdf']
+  },
+  {
+    slug: 'delete-pdf-pages', nav: 'Delete pages', accept: PDF, multiple: false, cta: 'Delete pages',
+    title: 'Delete Pages From a PDF Online Free — Remove Unwanted Pages | Gold PDF',
+    h1: 'Delete pages from a PDF — free, no upload',
+    desc: 'Remove blank, duplicate or unwanted pages from a PDF in seconds. Free, no watermark, and the file stays on your device.',
+    answer: 'To delete pages from a PDF, drop the file here, enter the page numbers to remove (for example `3, 7-9`) and press **Delete pages**. The cleaned PDF is created in your browser and nothing is uploaded.',
+    options: pages('Pages to delete', 'e.g. 3, 7-9', true),
+    steps: [['Add the PDF.', 'Drag it in or click the box.'], ['List the pages to delete.', 'Numbers and ranges: 3, 7-9.'], ['Download the result.', 'The remaining pages keep their order.']],
+    about: ['Typical reasons: removing a blank page from a scan, deleting a cover sheet, or dropping pages that contain information you should not share. Note that deleting a page here removes it from the new file; if you need to hide parts of a page instead, use real redaction in the free Gold PDF desktop editor.', 'You cannot delete every page — at least one must remain.'],
+    why: ['Fast and private.', 'Remove single pages or whole ranges.', 'No watermark.', 'Works on any device with a modern browser.'],
+    faq: [['How do I remove one page from a PDF?', 'Type its number, for example 4, and press Delete pages.'], ['Can I undo it?', 'Your original file is never changed, so just keep it and make a new version.'], ['Can I delete the last page?', 'Yes — as long as at least one page remains.'], ['Will it reduce file size?', 'Usually yes, because the deleted pages and their images are not copied.']],
+    related: ['extract-pdf-pages', 'split-pdf', 'compress-pdf']
+  },
+  {
+    slug: 'rotate-pdf', nav: 'Rotate PDF', accept: PDF, multiple: false, cta: 'Rotate PDF',
+    title: 'Rotate PDF Pages Online Free — Fix Sideways or Upside-Down Pages | Gold PDF',
+    h1: 'Rotate PDF pages permanently — free and private',
+    desc: 'Rotate all or selected pages of a PDF by 90, 180 or 270 degrees and save the fixed file. No upload, no watermark.',
+    answer: 'To rotate a PDF, drop it here, choose 90°, 180° or 270°, optionally enter which pages to rotate, and press **Rotate PDF**. The rotation is saved permanently in a new file, created inside your browser.',
+    options: `<label>Rotate<select name="angle"><option value="90">90° clockwise</option><option value="180">180°</option><option value="270">90° counter-clockwise</option></select></label>${pages('Pages (leave empty for all)', 'e.g. 2, 4-6', false)}`,
+    steps: [['Add the PDF.', 'Drag it in or click the box.'], ['Pick the angle.', 'Rotate every page, or only the pages you list.'], ['Download.', 'The new file opens the right way up everywhere.']],
+    about: ['Scanners and phone cameras often produce sideways pages. Rotating in a viewer only changes what you see; this tool saves the new orientation in the file so it stays correct for everyone you send it to.'],
+    why: ['Rotation is saved in the file.', 'All pages or selected pages.', 'No upload, no watermark.', 'Text stays selectable.'],
+    faq: [['Is the rotation permanent?', 'Yes. The page rotation is written into the new PDF.'], ['Can I rotate only some pages?', 'Yes. Enter page numbers like 2, 4-6; leave the box empty to rotate all.'], ['Does rotating lower quality?', 'No. Pages are not re-rendered.'], ['Is my file uploaded?', 'No. Everything runs in your browser.']],
+    related: ['split-pdf', 'merge-pdf', 'jpg-to-pdf']
+  },
+  {
+    slug: 'compress-pdf', nav: 'Compress PDF', accept: PDF, multiple: false, cta: 'Compress PDF',
+    title: 'Compress PDF Online Free — Reduce PDF File Size Privately | Gold PDF',
+    h1: 'Compress a PDF to a smaller size — no upload',
+    desc: 'Make a large PDF smaller for email and forms. Free, runs in your browser, your document is never uploaded.',
+    answer: 'To compress a PDF, drop it here, choose a quality level and press **Compress PDF**. Pages are re-rendered as optimized images in your browser, which shrinks scans and photo-heavy files a lot — but the text becomes part of the image, so it is no longer selectable.',
+    options: '<label>Quality<select name="quality"><option value="0.5">Smallest file</option><option value="0.7" selected>Balanced</option><option value="0.85">High quality</option></select></label>',
+    steps: [['Add the PDF.', 'Drag it in or click the box.'], ['Choose the quality.', 'Smallest file, Balanced or High quality.'], ['Download the smaller PDF.', 'Compare sizes before you send it.']],
+    about: ['This tool is best for scanned documents and photo-heavy PDFs that are too large to email or upload to a portal. It works by turning each page into a compressed image, so it is not recommended for documents where selectable text matters.', 'If your PDF is mostly text, it is already small. For a text-preserving workflow with OCR, use the free Gold PDF desktop app: its scan feature produces a searchable PDF.'],
+    why: ['Private: processed on your device.', 'Three simple quality levels.', 'No watermark.', 'Great for scans and photos.'],
+    faq: [['Will text still be selectable after compressing?', 'No. This method converts pages to images. For selectable text, run OCR in the Gold PDF desktop app.'], ['How much smaller will it get?', 'Scans and photo PDFs often shrink by 50–90%; text-only PDFs may not shrink at all.'], ['Is compression reversible?', 'No — keep your original file.'], ['Is the file uploaded?', 'No. It never leaves your browser.']],
+    related: ['delete-pdf-pages', 'pdf-to-jpg', 'merge-pdf']
+  },
+  {
+    slug: 'pdf-to-jpg', nav: 'PDF to JPG', accept: PDF, multiple: false, cta: 'Convert to images',
+    title: 'PDF to JPG / PNG Converter Online Free — Every Page as an Image | Gold PDF',
+    h1: 'Convert PDF pages to JPG or PNG images — free',
+    desc: 'Turn every page of a PDF into a high-quality JPG or PNG. Free, no upload, no watermark.',
+    answer: 'To convert a PDF to JPG, drop the file here, choose JPG or PNG and the resolution, and press **Convert to images**. Each page is rendered in your browser and offered as its own image download.',
+    options: '<label>Format<select name="format"><option value="jpg">JPG (smaller)</option><option value="png">PNG (lossless)</option></select></label><label>Resolution<select name="scale"><option value="1.5">Standard (screen)</option><option value="2" selected>High</option><option value="3">Very high (print)</option></select></label>',
+    steps: [['Add the PDF.', 'Drag it in or click the box.'], ['Choose format and resolution.', 'JPG is smaller; PNG is lossless.'], ['Download the images.', 'One file per page, named in order.']],
+    about: ['Converting pages to images is handy for slides, social posts, ID or receipt screenshots and for sites that only accept pictures. Pages are drawn on a white background at the resolution you choose.'],
+    why: ['No upload — private.', 'JPG or PNG, three resolutions.', 'Pages named in order.', 'No watermark.'],
+    faq: [['Which format should I choose?', 'JPG for small files and photos; PNG for sharp text and graphics.'], ['What resolution should I use for printing?', 'Choose Very high.'], ['Can I convert only one page?', 'Use Extract pages first, then convert that single-page PDF.'], ['Is my PDF uploaded?', 'No. Rendering happens in your browser.']],
+    related: ['jpg-to-pdf', 'extract-pdf-pages', 'compress-pdf']
+  },
+  {
+    slug: 'jpg-to-pdf', nav: 'JPG to PDF', accept: IMG, multiple: true, cta: 'Create PDF',
+    title: 'JPG to PDF Converter Online Free — Combine Images Into One PDF | Gold PDF',
+    h1: 'Convert JPG and PNG images to a PDF — free, no upload',
+    desc: 'Turn photos and screenshots into one PDF, in your order. Free, private, no watermark.',
+    answer: 'To convert images to PDF, drop your JPG, PNG or WebP files here, arrange the order with the arrow buttons, choose page size, and press **Create PDF**. Every image becomes a page in one document, created in your browser.',
+    options: '<label>Page size<select name="size"><option value="a4">A4 page, image centered</option><option value="fit">Same size as each image</option></select></label>',
+    steps: [['Add your images.', 'JPG, PNG or WebP, as many as you like.'], ['Order them.', 'Use ↑ ↓ and ✕.'], ['Create and download.', 'One PDF, one image per page.']],
+    about: ['Great for turning phone photos of documents, receipts and homework into a single PDF that is easy to email or upload. Choose A4 for a printable layout, or "same size" to keep each image exactly as is.', 'Want the text inside those photos to be searchable and editable? Open the PDF in the free Gold PDF desktop editor and run OCR.'],
+    why: ['Private: images stay on your device.', 'Reorder before you convert.', 'No watermark, no limits.', 'JPG, PNG and WebP.'],
+    faq: [['Can I combine several photos into one PDF?', 'Yes. Add them all and set the order before creating the PDF.'], ['Which image types work?', 'JPG, PNG and WebP.'], ['Will quality drop?', 'JPG images are embedded as they are, without re-compression.'], ['Does it upload my photos?', 'No. Everything is done locally.']],
+    related: ['pdf-to-jpg', 'merge-pdf', 'compress-pdf']
+  },
+  {
+    slug: 'add-page-numbers-to-pdf', nav: 'Page numbers', accept: PDF, multiple: false, cta: 'Add page numbers',
+    title: 'Add Page Numbers to a PDF Online Free | Gold PDF',
+    h1: 'Add page numbers to a PDF — free, private',
+    desc: 'Number the pages of any PDF: choose position, starting number and format. No upload, no watermark.',
+    answer: 'To add page numbers to a PDF, drop the file here, choose the position and starting number, and press **Add page numbers**. The numbers are written onto every page in your browser — nothing is uploaded.',
+    options: '<label>Position<select name="pos"><option value="bottom-center">Bottom center</option><option value="bottom-right">Bottom right</option><option value="bottom-left">Bottom left</option><option value="top-center">Top center</option><option value="top-right">Top right</option><option value="top-left">Top left</option></select></label><label>Format<select name="format"><option value="n">1, 2, 3…</option><option value="of">1 / 10, 2 / 10…</option></select></label><label>Start at<input name="start" type="number" value="1" min="0" max="9999"></label>',
+    steps: [['Add the PDF.', 'Drag it in or click the box.'], ['Choose position and format.', 'Set the starting number if needed.'], ['Download.', 'Every page now carries its number.']],
+    about: ['Page numbers make long contracts, theses and merged bundles easier to reference. Start at any number when a document continues from another file.'],
+    why: ['Six positions and two formats.', 'Private — no upload.', 'No watermark.', 'Page content is not altered.'],
+    faq: [['Can I start numbering from a different number?', 'Yes, set "Start at".'], ['Can I skip the cover page?', 'Split the cover off first, number the rest, then merge them again.'], ['Which font is used?', 'Helvetica, 11 pt, dark gray.'], ['Is my file uploaded?', 'No.']],
+    related: ['merge-pdf', 'watermark-pdf', 'split-pdf']
+  },
+  {
+    slug: 'watermark-pdf', nav: 'Watermark PDF', accept: PDF, multiple: false, cta: 'Add watermark',
+    title: 'Add a Text Watermark to PDF Online Free | Gold PDF',
+    h1: 'Add a text watermark to a PDF — free and private',
+    desc: 'Stamp DRAFT, CONFIDENTIAL or your own text across every page of a PDF. No upload, no sign-up.',
+    answer: 'To watermark a PDF, drop it here, type the text (for example CONFIDENTIAL), choose diagonal or horizontal and the opacity, then press **Add watermark**. It is applied to every page in your browser.',
+    options: '<label>Text<input name="text" type="text" value="CONFIDENTIAL" maxlength="40"></label><label>Direction<select name="angle"><option value="diag">Diagonal</option><option value="flat">Horizontal</option></select></label><label>Opacity<select name="opacity"><option value="0.15">Light</option><option value="0.3" selected>Medium</option><option value="0.5">Strong</option></select></label>',
+    steps: [['Add the PDF.', 'Drag it in or click the box.'], ['Type your watermark.', 'DRAFT, CONFIDENTIAL, a name or a date.'], ['Download.', 'The text is placed on every page.']],
+    about: ['Watermarks mark drafts, protect against casual reuse and label who a copy was prepared for. This web tool supports Latin characters; the free Gold PDF desktop app supports every script, including Hebrew, Arabic and CJK.'],
+    why: ['Private — nothing is uploaded.', 'Adjustable opacity.', 'Diagonal or horizontal.', 'No Gold PDF logo is added.'],
+    faq: [['Can people remove the watermark?', 'A determined person with an editor can. For sensitive data use real redaction and password protection.'], ['Can I watermark with Hebrew or Arabic?', 'Not in this web tool; use the Gold PDF desktop app.'], ['Does it work on every page?', 'Yes, all pages.'], ['Is the original changed?', 'No. You download a new file.']],
+    related: ['protect-pdf-with-password', 'add-page-numbers-to-pdf', 'merge-pdf']
+  },
+  {
+    slug: 'pdf-to-text', nav: 'PDF to text', accept: PDF, multiple: false, cta: 'Extract text',
+    title: 'Extract Text From PDF Online Free — PDF to TXT Converter | Gold PDF',
+    h1: 'Extract text from a PDF — copy it or save as TXT',
+    desc: 'Pull all selectable text out of a PDF and copy or download it as a .txt file. Free, private, runs in your browser.',
+    answer: 'To extract text from a PDF, drop the file here and press **Extract text**. The words appear below so you can copy them or download a .txt file. It works on PDFs with real text; scanned PDFs need OCR.',
+    options: '',
+    steps: [['Add the PDF.', 'Drag it in or click the box.'], ['Press Extract text.', 'The text is read page by page.'], ['Copy or download.', 'Select all in the box, or save the TXT file.']],
+    about: ['Useful for quoting, translating, summarizing with an AI chat, or moving content into Word. If the result is empty, the PDF is probably a scan: open it in the free Gold PDF desktop app and run offline OCR, which supports 100+ languages including Hebrew and Arabic.'],
+    why: ['Private — text never leaves your device.', 'Page markers for long files.', 'Copy or download.', 'No account.'],
+    faq: [['Why is the extracted text empty?', 'The PDF is probably a scan (an image). Use OCR in the Gold PDF desktop app.'], ['Does it keep the layout?', 'It keeps reading order and line breaks, not columns or tables.'], ['Can I extract text from a protected PDF?', 'Unlock it first with the Unlock PDF tool.'], ['Is the PDF uploaded?', 'No.']],
+    related: ['pdf-to-jpg', 'unlock-pdf', 'compress-pdf']
+  },
+  {
+    slug: 'protect-pdf-with-password', nav: 'Protect PDF', accept: PDF, multiple: false, cta: 'Protect PDF',
+    title: 'Password Protect a PDF Online Free — No Upload | Gold PDF',
+    h1: 'Password-protect a PDF — encrypted in your browser',
+    desc: 'Add a password to a PDF so only people with the password can open it. Strong encryption, no upload, free.',
+    answer: 'To password-protect a PDF, drop it here, type a password and press **Protect PDF**. The file is encrypted inside your browser, so neither the document nor your password is ever sent to a server.',
+    options: '<label>Password<input name="password" type="password" autocomplete="new-password" minlength="4"></label>',
+    steps: [['Add the PDF.', 'Drag it in or click the box.'], ['Choose a strong password.', 'Use a long phrase you can remember.'], ['Download the protected PDF.', 'It asks for the password every time it is opened.']],
+    about: ['A password stops anyone without it from opening the document. Keep the password safe: it cannot be recovered. For documents with sensitive passages, combine this with real redaction in the free Gold PDF desktop editor, which also supports AES-256 passwords.'],
+    why: ['Encryption happens locally — password never leaves your device.', 'Works with any PDF viewer.', 'No watermark.', 'Free.'],
+    faq: [['How strong is the encryption?', 'It uses standard PDF encryption. For AES-256 and extra options, use the Gold PDF desktop app.'], ['Can I recover a forgotten password?', 'No. Keep it somewhere safe.'], ['Is my password uploaded?', 'No. Nothing is sent anywhere.'], ['Can I remove the password later?', 'Yes, with the Unlock PDF tool and the password.']],
+    related: ['unlock-pdf', 'watermark-pdf', 'merge-pdf']
+  },
+  {
+    slug: 'unlock-pdf', nav: 'Unlock PDF', accept: PDF, multiple: false, cta: 'Unlock PDF',
+    title: 'Unlock PDF — Remove a Password You Know, Online Free | Gold PDF',
+    h1: 'Remove the password from a PDF (you must know it)',
+    desc: 'Remove the open-password from your own PDF so it opens without asking. Free, private, runs in your browser.',
+    answer: 'To unlock a PDF, drop the file here, enter its current password and press **Unlock PDF**. You get a copy that opens without a password. This tool needs the correct password — it cannot crack or bypass one.',
+    options: '<label>Current password<input name="password" type="password" autocomplete="off"></label>',
+    steps: [['Add the protected PDF.', 'Drag it in or click the box.'], ['Enter the password.', 'It is used only inside your browser.'], ['Download the unlocked copy.', 'No password is asked afterwards.']],
+    about: ['Use this to simplify files you own and are allowed to share, for example before merging or printing. It does not guess or break passwords.'],
+    why: ['Private — nothing is uploaded.', 'Fast.', 'No watermark.', 'Needs only the file and its password.'],
+    faq: [['Can you unlock a PDF without the password?', 'No. This tool does not crack passwords.'], ['Is it legal?', 'Only unlock documents you own or have permission to change.'], ['Is the password uploaded?', 'No.'], ['Will the layout change?', 'No. Only the encryption is removed.']],
+    related: ['protect-pdf-with-password', 'merge-pdf', 'pdf-to-text']
+  }
+];
