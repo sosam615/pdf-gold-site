@@ -3,6 +3,7 @@ title: How to Redact a PDF So It Cannot Be Undone
 description: A black box is not redaction. Learn how to redact a PDF so the hidden text is truly removed from the file, step by step, free on Windows.
 topic: redaction
 date: 2026-10-18
+modified: 2026-10-19
 faq: Is a black rectangle enough to redact a PDF? || No. A rectangle only sits on top of the text; anyone can select, copy or delete it. True redaction removes the text and image data underneath.
 faq: How can I check my redaction worked? || Open the saved file, press Ctrl+F and search for the redacted word, then try selecting the area and pasting into a text editor. Nothing should appear.
 faq: Does redaction change the rest of my PDF? || Only the pages with redactions are rebuilt. Other pages stay exactly as they were.
@@ -27,6 +28,42 @@ A PDF stores text, images and drawings as separate layers. When you draw a recta
 
 ## Redacting a scanned PDF
 A scan has no text layer, so first press **Recognize text** (Ctrl+Shift+O). Then redact. Because the page is rebuilt on save, the redacted pixels are gone as well.
+
+## Redaction vs covering: what stays in the file
+The difference between real redaction and a tool that only hides content is easiest to see side by side:
+
+| Method | Looks hidden on screen | Text still copyable | Text still searchable | Can be undone by the recipient |
+|---|---|---|---|---|
+| Black rectangle or shape | Yes | Yes | Yes | Yes, delete the shape |
+| Black highlighter | Yes | Yes | Yes | Yes, remove the highlight |
+| Whiteout | Yes | Yes | Yes | Yes, delete the cover |
+| Printing, scanning and re-saving | Yes | No | No, unless OCR is run | No, but quality drops and the whole file becomes an image |
+| Redact tool with page rebuild on save | Yes | No | No (only for the redacted words) | No |
+
+Printing and rescanning does remove the text, but it turns every page into a lower-quality picture, breaks form fields and makes the file larger. Rebuilding only the redacted pages keeps the rest of the document sharp and editable.
+
+## A worked example: an employment letter
+Say you need to send an employment letter to a landlord, but you want to hide your salary and your employee ID. The letter is three pages: a cover page, the letter itself, and a signed HR form.
+
+1. Open the file and use **Save as** to create "letter-redacted.pdf". Your original stays untouched.
+2. Press Ctrl+F and search for the salary figure. It appears twice on page 2 and once on page 3, in a table you might have missed.
+3. Search for the employee ID. It also appears in the page footer on all three pages, in small print.
+4. Press **R** and drag over each of the six occurrences. Zoom in so each box covers the whole number and nothing else.
+5. Press Ctrl+S. Gold PDF rebuilds all three pages, because each has at least one redaction, and clears the document title and author.
+6. Reopen the saved file. Search for the salary and the ID again: no results. Drag across a black bar and paste into Notepad: nothing comes back.
+
+The footer copy is the one people usually forget. Searching, rather than relying on your eyes, is what catches it.
+
+## Planning a redaction before you start
+A few minutes of planning saves a second round of fixes:
+
+- **List what must go.** Names, account numbers, addresses, signatures, photos, and anything a law, court or contract tells you to remove.
+- **List the formats.** A phone number can be written with spaces, dashes or brackets; a date can be written several ways. Search each one.
+- **Decide on partial redaction.** Some recipients accept the last four digits of an account number. Decide before you draw boxes so you do it consistently.
+- **Think about context.** Removing a name does not help if a job title, address or email on the same page still points to the person.
+- **Keep a log for legal work.** If you must explain later what you removed and why, write down the page and reason for each redaction as you go.
+
+If you redact personal numbers often, see [how to black out a Social Security number in a PDF](/articles/how-to-black-out-a-social-security-number-in-a-pdf/) for a focused walkthrough.
 
 > **Common mistakes**
 > - Using a shape, highlighter or Whiteout tool instead of Redact. Whiteout only covers.
