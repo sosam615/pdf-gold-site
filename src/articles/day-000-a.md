@@ -79,6 +79,7 @@ title: Does Drawing a Black Box Redact a PDF
 description: No — drawing a black box only covers text. Here is why boxes, highlights and whiteout fail, and what real PDF redaction does differently.
 topic: redaction
 date: 2026-10-18
+modified: 2026-10-22
 faq: Can you copy text from under a black box in a PDF? || Yes, if the box is just a drawing. The text beneath is still in the file, so it can be selected, copied or exposed by deleting the shape.
 faq: Is highlighting text in black the same as redacting? || No. A black highlight is still a visual layer on top of the text.
 faq: What does a real redaction tool do? || It deletes the covered text and image data from the file and clears related metadata, then saves.
@@ -104,6 +105,37 @@ The full walkthrough is in [how to redact a PDF so it cannot be undone](/article
 
 ## Whiteout still has a place
 Use Whiteout and Edit text for corrections — like fixing a date — when the old value is not a secret. When it is a secret, use Redact. The difference matters: see [how to permanently remove text from a PDF](/articles/how-to-permanently-remove-text-from-a-pdf/).
+
+## Four ways the text under a box comes back
+It helps to know exactly how a "blacked out" PDF gives up its secrets, because each one is easy to try and none needs special skill:
+
+1. **Select and copy.** Press Ctrl+A on the page, copy, and paste into Notepad. The text layer is pasted in full, including the words under the box, because the box is not part of the text.
+2. **Search.** Press Ctrl+F and type a name you suspect is hidden. If the PDF viewer jumps to the black area, the word is still there.
+3. **Delete the shape.** In almost any PDF editor, a drawn rectangle or annotation can be clicked and deleted, or hidden by turning off comments and markups when printing.
+4. **Pull out the images.** On a scanned page, the original picture of the paper sits under the box untouched. Image extraction tools save it as a separate file, with no box at all.
+
+None of these leaves a trace for the sender to notice. You find out only when someone tells you, which is why testing the saved file before you send it matters more than how careful the black bar looks.
+
+## What about scanned pages?
+Many people assume a scan is safe because "there is no text to copy." That is only half right. A scan is an image, so it often has no selectable words, but the image itself still holds the information. A black rectangle drawn on top changes nothing about that image. Worse, some scanners and earlier OCR runs add an invisible text layer to the page, so the words may be searchable after all, without any visible sign.
+
+Real redaction on a scan has to rewrite the pixels. Gold PDF does this on save by rebuilding each redacted page as an image with the bars burned in, then adding the remaining words back as an invisible text layer that leaves out what you removed. The full process, including running OCR first so you can search the scan, is in [how to redact a scanned PDF document](/articles/how-to-redact-a-scanned-pdf-document/).
+
+## A quick test you can run on any "redacted" PDF
+If someone sends you a file and says it has been redacted, or you are about to send one yourself, these checks take under a minute:
+
+| Test | How | A safe result |
+|---|---|---|
+| Copy test | Drag across the black bar, copy, paste into Notepad | Nothing from under the bar appears |
+| Search test | Ctrl+F for a word you know was hidden | No match in the black area |
+| Shape test | Click the black bar and press Delete | It cannot be selected as a separate object |
+| Zoom test | Zoom to 400% on the edges of each bar | No partial letters visible around the edges |
+| Properties test | Check the title, author and subject fields | No names or case details |
+
+If any test fails, do not send the file. Go back to the original, redact with a real redaction tool, and test again. A longer version of this checklist is in [how to check if a PDF redaction is secure](/articles/how-to-check-if-a-pdf-redaction-is-secure/).
+
+## When a black box is still fine
+A drawn box is not useless. It is a reasonable choice when nothing under it is secret: hiding a distracting background on a slide you are about to present, masking a layout guide, or covering a printing mark on a page you will print and shred. The rule is simple. If it matters whether someone can read what is underneath, the box is not enough.
 
 > **Common mistakes**
 > - Trusting how the page looks on screen instead of testing the saved file.

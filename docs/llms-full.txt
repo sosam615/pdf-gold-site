@@ -11,7 +11,11 @@
 - AI providers (bring your own key): Google Gemini, Anthropic Claude, OpenAI, OpenRouter, Groq, Mistral, Cerebras, GitHub Models, Cohere, NVIDIA, Hugging Face, Cloudflare, Alibaba, Z.ai, SiliconFlow.
 - Limits: very complex mixed-direction text deserves a visual check.
 
-## All guides (26)
+## All guides (27)
+### How to Redact a Scanned PDF Document
+https://pdf.gold/articles/how-to-redact-a-scanned-pdf-document/
+Redact a scanned PDF so the hidden words are gone from the image, not just covered. Run OCR, find every copy, redact, and test the saved file.
+
 ### How to Black Out a Social Security Number in a PDF
 https://pdf.gold/articles/how-to-black-out-a-social-security-number-in-a-pdf/
 Hide a Social Security number in a PDF so it is truly gone, not just covered. Find every copy, redact it, and verify the saved file, free on Windows.

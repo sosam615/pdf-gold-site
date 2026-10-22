@@ -27,6 +27,7 @@
 - [Unlock PDF](https://pdf.gold/tools/unlock-pdf/): Remove the open-password from your own PDF so it opens without asking. Free, private, runs in your browser.
 
 ## Guides
+- [How to Redact a Scanned PDF Document](https://pdf.gold/articles/how-to-redact-a-scanned-pdf-document/): Redact a scanned PDF so the hidden words are gone from the image, not just covered. Run OCR, find every copy, redact, and test the saved file.
 - [How to Black Out a Social Security Number in a PDF](https://pdf.gold/articles/how-to-black-out-a-social-security-number-in-a-pdf/): Hide a Social Security number in a PDF so it is truly gone, not just covered. Find every copy, redact it, and verify the saved file, free on Windows.
 - [Best Free A Alternative for Windows](https://pdf.gold/articles/best-free-a-alternative-for-windows/): Looking for a free A alternative on Windows? What to compare — editing, redaction, OCR, price, privacy — and where Gold PDF fits.
 - [Best Free PDF Editor With OCR](https://pdf.gold/articles/best-free-pdf-editor-with-ocr/): Which free PDF editors include OCR? What to check — offline, languages, accuracy, editing after OCR — and how Gold PDF handles scans.
