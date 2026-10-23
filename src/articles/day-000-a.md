@@ -146,6 +146,7 @@ title: How to Permanently Remove Text From a PDF
 description: Deleting or covering text in a PDF often leaves it in the file. Learn how to remove text permanently so it cannot be recovered, free on Windows.
 topic: redaction
 date: 2026-10-18
+modified: 2026-10-23
 faq: Does deleting text in a PDF remove it for good? || Not always. Some editors only hide it, and an older copy of the text can remain in the file structure. Use a redaction or secure-save workflow and verify.
 faq: How do I remove text from a scanned PDF? || Recognize the text first, then redact the lines you want removed; the page is rebuilt on save.
 faq: Will other text on the page stay searchable? || Yes. Gold PDF restores the remaining words as an invisible text layer.
@@ -172,10 +173,48 @@ Gold PDF turns each affected page into a high-resolution image with your changes
 - Complex pages with many form fields keep their live fields, but redacted fields are dropped.
 - If you only need a cosmetic fix and nothing is secret, you can turn secure saving off in Settings.
 
+## Which removal method fits the job
+Not every change to a PDF needs the same tool. The right choice depends on whether the text is secret and whether you want something to appear in its place.
+
+| What you want | Tool in Gold PDF | Is the old text gone after saving? |
+|---|---|---|
+| Hide a name, number or address for good | Redact (**R**) | Yes, the page is rebuilt with a solid bar |
+| Replace wording, such as a date or a typo | Edit text (**E**) | Yes, the page is rebuilt with the new wording |
+| Hide something only on screen, nothing secret | Whiteout | No, Whiteout only covers the text |
+| Remove text from a scanned page | OCR (**Ctrl+Shift+O**) then Redact (**R**) | Yes, the image is rebuilt with the bar burned in |
+
+The simple rule: if it would matter that someone could read the old text, use Redact or Edit text, never Whiteout or a shape. Whiteout is fine for tidying a layout when nothing underneath is private.
+
+## A worked example: removing a home address from a letter
+Say you have a two-page PDF letter with your home address in the letterhead and again in the signature block on page two, and you want to send it to someone who should not have your address.
+
+1. Open the letter in Gold PDF and use **Save as** to create a copy named something like "letter-shared.pdf". The original stays untouched.
+2. Press **Ctrl+F** and search for the street name, the house number and the postal code separately. You find the address on page one and page two, plus the postal code alone in a footer you had not noticed.
+3. Press **R** and drag a box over each of the three places, a little larger than the text.
+4. Press **Ctrl+S**. Gold PDF rebuilds both pages.
+5. Close the file and reopen it. Search again for the street name, the number and the postal code. There are no results.
+6. Drag across each black bar and paste into Notepad. Nothing comes back.
+7. Open the document properties and check that the title and subject do not contain the address.
+
+If you only wanted to change the address to a new one, you would use **E** instead: click the line, retype it, and save. The page is rebuilt the same way, so the old address does not survive under the new one.
+
+## Places text survives outside the page
+Removing text from the visible page is only part of the job. The same words can appear in other parts of the file:
+
+- **Bookmarks.** A bookmark titled with a person's name or a project code.
+- **Document properties.** The title, subject, author and keywords fields.
+- **Comments and annotations.** Sticky notes and markup that quote the text you removed.
+- **Attachments.** Files embedded inside the PDF, such as the original spreadsheet.
+- **The file name.** A name like "Smith-salary-2026.pdf" says it all.
+
+Check each of these before you share. The steps for properties and other hidden information are in [how to remove metadata from a PDF before sharing](/articles/how-to-remove-metadata-from-a-pdf-before-sharing/), and a full test routine is in [how to check if a PDF redaction is secure](/articles/how-to-check-if-a-pdf-redaction-is-secure/).
+
 > **Common mistakes**
 > - Using Whiteout for confidential data.
 > - Forgetting to search the saved file.
 > - Sharing the original instead of the redacted copy.
+> - Searching only for the full phrase and missing parts of it, such as a postal code on its own.
+> - Leaving the removed text in a bookmark, comment or the file name.
 
 Related: [Does drawing a black box redact a PDF](/articles/does-drawing-a-black-box-redact-a-pdf/) and [how to remove metadata from a PDF](/articles/how-to-remove-metadata-from-a-pdf-before-sharing/).
 =====

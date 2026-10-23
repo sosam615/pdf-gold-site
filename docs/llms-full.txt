@@ -11,7 +11,11 @@
 - AI providers (bring your own key): Google Gemini, Anthropic Claude, OpenAI, OpenRouter, Groq, Mistral, Cerebras, GitHub Models, Cohere, NVIDIA, Hugging Face, Cloudflare, Alibaba, Z.ai, SiliconFlow.
 - Limits: very complex mixed-direction text deserves a visual check.
 
-## All guides (27)
+## All guides (28)
+### How to Redact Names From a Court Document PDF
+https://pdf.gold/articles/how-to-redact-names-from-a-court-document-pdf/
+Remove names from a court filing PDF so they cannot be copied or searched. Find every mention, redact, check the saved file, and follow court rules.
+
 ### How to Redact a Scanned PDF Document
 https://pdf.gold/articles/how-to-redact-a-scanned-pdf-document/
 Redact a scanned PDF so the hidden words are gone from the image, not just covered. Run OCR, find every copy, redact, and test the saved file.
