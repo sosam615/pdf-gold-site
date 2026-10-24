@@ -11,7 +11,11 @@
 - AI providers (bring your own key): Google Gemini, Anthropic Claude, OpenAI, OpenRouter, Groq, Mistral, Cerebras, GitHub Models, Cohere, NVIDIA, Hugging Face, Cloudflare, Alibaba, Z.ai, SiliconFlow.
 - Limits: very complex mixed-direction text deserves a visual check.
 
-## All guides (28)
+## All guides (29)
+### How to Redact Bank Account Numbers in a PDF
+https://pdf.gold/articles/how-to-redact-bank-account-numbers-in-a-pdf/
+Remove bank account, routing, IBAN and card numbers from a PDF so they cannot be copied or searched. Find every number, redact, save and test.
+
 ### How to Redact Names From a Court Document PDF
 https://pdf.gold/articles/how-to-redact-names-from-a-court-document-pdf/
 Remove names from a court filing PDF so they cannot be copied or searched. Find every mention, redact, check the saved file, and follow court rules.

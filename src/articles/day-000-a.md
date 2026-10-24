@@ -222,6 +222,7 @@ title: How to Redact a PDF for Free on Windows
 description: Redact a PDF for free on Windows with a tool that truly removes the text. Offline, no account, no watermark — step by step with Gold PDF.
 topic: redaction
 date: 2026-10-18
+modified: 2026-10-24
 faq: Is there a free PDF redaction tool for Windows? || Yes. Gold PDF is free, works offline and removes redacted content from the file when you save.
 faq: Do I need an account? || No account, no upload and no watermark.
 faq: Can I redact without A? || Yes. Gold PDF covers the common redaction workflow without A.
@@ -247,10 +248,41 @@ Some tools are free but add a watermark, limit pages, or require you to upload t
 ## What stays and what goes
 Redacted words, their pixels and the document metadata are removed on save. The rest of the page stays searchable through an invisible text layer. Open the saved file's properties and search again to confirm.
 
+## Free ways to hide text on Windows, compared
+Windows users usually reach for whatever is already installed. Not all of those options remove the text, and the difference only shows up after the file has been sent.
+
+| Method | Cost | Is the text removed? | File leaves your PC? |
+|---|---|---|---|
+| Black rectangle or highlight in a PDF viewer | Free | No, the text is still underneath | No |
+| Print to PDF after covering the text | Free | Usually, but the whole document becomes flat images and loses searchable text | No |
+| Online redaction website | Often free with limits | Depends on the site | Yes, the file is uploaded |
+| Paid desktop editor with a redaction feature | Subscription or licence | Yes, when the redaction is applied | No |
+| Gold PDF Redact tool (**R**) | Free | Yes, redacted pages are rebuilt on save | No |
+
+Covering text and then printing to PDF can work as a last resort, but it turns every page into a picture, so nobody can search or copy the parts that were never secret, and it is easy to forget that a layer or comment survived. A shape or highlight on its own never removes anything; the reasons are in [does drawing a black box redact a PDF](/articles/does-drawing-a-black-box-redact-a-pdf/).
+
+## A worked example: a payslip for a rental application
+Say a letting agent asks for your latest payslip, and you want them to see your salary but not your tax reference, your home address or your bank account number.
+
+1. Open the payslip in Gold PDF and press **Ctrl+Shift+S** to save a copy named "payslip-for-agent.pdf". The original stays private.
+2. If the payslip came as a scan or a phone photo, press **Ctrl+Shift+O** to run OCR so its text can be searched.
+3. Press **Ctrl+F** and search for the last four digits of the account number, the tax reference and your street name. Note each page with a hit.
+4. Press **R** and drag a box over each item, slightly larger than the text. Leave the salary, the employer and the pay date visible.
+5. Press **Ctrl+S**. Only the page you redacted is rebuilt.
+6. Close and reopen the copy, then search again for each item. There should be no results.
+7. Rename the file if its name contains your name or an employee number you do not want to share.
+
+The same routine works for bank statements; the details for account numbers are in [how to redact bank account numbers in a PDF](/articles/how-to-redact-bank-account-numbers-in-a-pdf/).
+
+## How long does free redaction take?
+For a short document, most of the time goes into finding things, not marking them. Pressing **R** and dragging takes seconds per item. Searching for every form of a name, reading headers and footers, and testing the saved copy is what makes a redaction reliable, so budget time for that part, especially on long or scanned files. The test steps are in [how to check if a PDF redaction is secure](/articles/how-to-check-if-a-pdf-redaction-is-secure/).
+
 > **Common mistakes**
 > - Redacting on the first page only.
 > - Leaving the author name in the metadata.
 > - Saving over the original.
+> - Using a highlight or shape and assuming the text is gone.
+> - Uploading a confidential file to a website just to redact it.
 
 See also [how to redact a PDF so it cannot be undone](/articles/how-to-redact-a-pdf-so-it-cannot-be-undone/) and the overview page [Redact a PDF](/redact-pdf/).
 =====
