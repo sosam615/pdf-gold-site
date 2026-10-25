@@ -11,7 +11,11 @@
 - AI providers (bring your own key): Google Gemini, Anthropic Claude, OpenAI, OpenRouter, Groq, Mistral, Cerebras, GitHub Models, Cohere, NVIDIA, Hugging Face, Cloudflare, Alibaba, Z.ai, SiliconFlow.
 - Limits: very complex mixed-direction text deserves a visual check.
 
-## All guides (29)
+## All guides (30)
+### What Is the Difference Between Redacting and Whiteout
+https://pdf.gold/articles/what-is-the-difference-between-redacting-and-whiteout/
+Whiteout covers PDF text with a white box; redaction removes it from the file. Learn which to use, how to test the result and the mistakes to avoid.
+
 ### How to Redact Bank Account Numbers in a PDF
 https://pdf.gold/articles/how-to-redact-bank-account-numbers-in-a-pdf/
 Remove bank account, routing, IBAN and card numbers from a PDF so they cannot be copied or searched. Find every number, redact, save and test.

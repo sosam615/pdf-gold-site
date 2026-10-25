@@ -290,6 +290,7 @@ title: How to Check if a PDF Redaction Is Secure
 description: Test whether a redacted PDF really hides the text: search, copy, inspect metadata and more. A simple checklist before you share a file.
 topic: redaction
 date: 2026-10-18
+modified: 2026-10-25
 faq: What is the fastest test for a redacted PDF? || Open the saved file, press Ctrl+F and search for a redacted word; then select the area, copy and paste it into a text editor.
 faq: Can metadata reveal redacted names? || Yes. Title, author and comments can contain names, so clear them as part of redaction.
 faq: Should I test the original or the saved copy? || Always test the saved copy you intend to share.
@@ -315,5 +316,40 @@ Gold PDF rebuilds redacted pages, restores only non-redacted words as invisible 
 > - Testing the file before saving.
 > - Checking only the first page.
 > - Ignoring images that contain text — recognise and redact those as well.
+
+## Test results and what to do next
+Each test answers a different question, so a pass on one does not prove the others. Use this table to read the results and decide on the fix.
+
+| Test | What a pass looks like | What a fail means | Fix |
+|---|---|---|---|
+| Search (Ctrl+F) | No results for any redacted word | The text is still in the file | Redact it with R and save again |
+| Copy and paste | Pasted text skips the redacted parts | A cover was used instead of a redaction | Remove the cover, redact the area, save |
+| Select the bars | Nothing highlights under the bar | Text sits beneath a shape | Same as above |
+| Zoom to 400% | No edge of a letter shows around the bar | The box was too small | Draw a slightly larger box over the same spot |
+| Properties | Title, author, subject show nothing private | A name or number is in the metadata | Clear the fields and save a new copy |
+| Second viewer | Same result as in your editor | The first program hid something the file still holds | Treat it as a failed redaction and redo it |
+
+If any test fails, do not try to patch the file you were about to send. Go back to your original, redact again and save a fresh copy, then run every test on the new file from the beginning.
+
+## A worked example
+Imagine a four-page letter that names a customer, Jane Doe, and her account reference, 55-0193. You redact both on page one and save.
+
+1. Reopen the saved file and search for **Doe**. One result appears, on page three, in a sentence you missed. The redaction on page one worked, but the document is not safe yet.
+2. Search for **0193**, the last part of the reference. No results. Search for **55**, and step through the hits: they are amounts and dates, not the reference.
+3. Press Ctrl+A, copy and paste into Notepad. Read the pasted text for **Jane** on its own, since a search for the surname would not catch a line that uses only her first name. It turns up in a greeting on page four.
+4. Open the document properties. The title still reads "Letter to Jane Doe" because it was set when the letter was written.
+
+After fixing all three problems, save a new copy and run the full checklist again. This is the usual pattern: the first pass removes the obvious items, and the tests find the rest.
+
+## Words that are easy to miss
+Search finds only the exact text you type, so build a short list of variants before you start testing:
+
+- **Name forms:** first name alone, surname alone, initials, and possessives such as "Doe's".
+- **Number formats:** with and without spaces or dashes, and the last four digits on their own.
+- **Headers and footers:** a case number or name repeated on every page.
+- **Scanned pages and images:** search sees nothing in a picture until you run OCR (Ctrl+Shift+O in Gold PDF), so test those pages after recognition, and read them by eye as well.
+- **Comments and form fields:** a note or a filled field can hold the same name as the page text.
+
+The [black box test](/articles/does-drawing-a-black-box-redact-a-pdf/) explains why covers fail these checks, and [how to redact a scanned PDF document](/articles/how-to-redact-a-scanned-pdf-document/) covers the extra steps for scans.
 
 Also read [does drawing a black box redact a PDF](/articles/does-drawing-a-black-box-redact-a-pdf/).
