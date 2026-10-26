@@ -11,7 +11,11 @@
 - AI providers (bring your own key): Google Gemini, Anthropic Claude, OpenAI, OpenRouter, Groq, Mistral, Cerebras, GitHub Models, Cohere, NVIDIA, Hugging Face, Cloudflare, Alibaba, Z.ai, SiliconFlow.
 - Limits: very complex mixed-direction text deserves a visual check.
 
-## All guides (30)
+## All guides (31)
+### How to Redact Multiple Pages in a PDF at Once
+https://pdf.gold/articles/how-to-redact-multiple-pages-in-a-pdf-at-once/
+Redact the same name or number across many PDF pages without missing one. Search first, mark every hit, save once and test the result on Windows.
+
 ### What Is the Difference Between Redacting and Whiteout
 https://pdf.gold/articles/what-is-the-difference-between-redacting-and-whiteout/
 Whiteout covers PDF text with a white box; redaction removes it from the file. Learn which to use, how to test the result and the mistakes to avoid.

@@ -3,6 +3,7 @@ title: How to Remove Metadata From a PDF Before Sharing
 description: PDFs carry hidden author, title and software details. Learn how to remove PDF metadata before you share a file, free on Windows with Gold PDF.
 topic: redaction
 date: 2026-10-18
+modified: 2026-10-26
 faq: What metadata does a PDF contain? || Common fields are title, author, subject, keywords, creator application, producer and creation or modification dates, plus optional XMP data.
 faq: Does removing metadata change how the PDF looks? || No. It only clears the hidden information fields.
 faq: Is metadata removed when I redact? || In Gold PDF, saving a document with redactions also clears metadata automatically.
@@ -28,6 +29,41 @@ A PDF often remembers who wrote it, what software made it, and when. A contract 
 
 ## What it does not change
 Metadata removal does not edit visible text. If a name appears on the page, redact it. See [how to redact a PDF so it cannot be undone](/articles/how-to-redact-a-pdf-so-it-cannot-be-undone/).
+
+## Where else a PDF hides information
+The fields in the table above are only the start. A PDF can carry more than one copy of the same details, and clearing one place does not clear the others.
+
+| Place | Example of what it holds | How to check |
+|---|---|---|
+| Document properties | Title, author, subject, keywords | Open the file's properties and read each field |
+| XMP metadata | A second, extended copy of title, author and software | Cleared together with the fields above by **Remove metadata** |
+| Comments and sticky notes | Reviewer names and internal remarks | Scroll the pages with comments visible |
+| Bookmarks | Section titles with project or client names | Open the bookmarks panel |
+| Form fields | Pre-filled names, addresses, dates | Click through the fields on each page |
+| File name | "Acme-salary-review-final.pdf" | Look at it before you attach it |
+
+Metadata is invisible when you read the page, which is exactly why people forget it. Someone who receives your file can open its properties in any viewer and see the author's name and the program that produced the document.
+
+## A worked example: sending a quote to a new client
+Imagine you wrote a quote in a word processor at work, saved it as a PDF and now want to send it to a client who is comparing suppliers. The file's title is still "Quote draft v3 - lowest we can go", and the author field holds your colleague's full name.
+
+1. Open the PDF in Gold PDF and press **Ctrl+Shift+S** to save a copy named "Quote-2026-114.pdf". Your working file stays untouched.
+2. Open the **Protect** tab and click **Remove metadata**.
+3. Scroll through the pages and look for comments or sticky notes. Delete any that are internal, such as "check margin with Dan".
+4. Save the copy with Ctrl+S.
+5. Close the file and reopen it. Open the document properties. The title and author should be empty.
+6. Check the file name once more. The new name carries only the quote number.
+
+The page looks identical before and after. The difference is what a curious recipient finds when they look behind it.
+
+## Metadata is not the same as redaction
+Clearing metadata and redacting are two separate jobs, and a safe share often needs both.
+
+- **Remove metadata** clears the hidden information fields. It does not touch what is written on the pages.
+- **Redact** (**R**) removes text and images you mark on the page, and Gold PDF also clears metadata when it saves a file with redactions.
+- **Edit text** (**E**) changes visible wording, such as replacing a name, but it does not clear metadata by itself.
+
+If your file has visible secrets as well as hidden ones, redact first and read [how to check if a PDF redaction is secure](/articles/how-to-check-if-a-pdf-redaction-is-secure/) before you send it.
 
 ## Good sharing habits
 - Remove metadata, then send the saved copy — never the original.

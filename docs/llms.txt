@@ -27,6 +27,7 @@
 - [Unlock PDF](https://pdf.gold/tools/unlock-pdf/): Remove the open-password from your own PDF so it opens without asking. Free, private, runs in your browser.
 
 ## Guides
+- [How to Redact Multiple Pages in a PDF at Once](https://pdf.gold/articles/how-to-redact-multiple-pages-in-a-pdf-at-once/): Redact the same name or number across many PDF pages without missing one. Search first, mark every hit, save once and test the result on Windows.
 - [What Is the Difference Between Redacting and Whiteout](https://pdf.gold/articles/what-is-the-difference-between-redacting-and-whiteout/): Whiteout covers PDF text with a white box; redaction removes it from the file. Learn which to use, how to test the result and the mistakes to avoid.
 - [How to Redact Bank Account Numbers in a PDF](https://pdf.gold/articles/how-to-redact-bank-account-numbers-in-a-pdf/): Remove bank account, routing, IBAN and card numbers from a PDF so they cannot be copied or searched. Find every number, redact, save and test.
 - [How to Redact Names From a Court Document PDF](https://pdf.gold/articles/how-to-redact-names-from-a-court-document-pdf/): Remove names from a court filing PDF so they cannot be copied or searched. Find every mention, redact, check the saved file, and follow court rules.
