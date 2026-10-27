@@ -79,6 +79,7 @@ title: How to Edit Text in a PDF for Free
 description: Edit the words already inside a PDF for free on Windows: click a line, retype it, save. Offline, no account and no watermark with Gold PDF.
 topic: editing
 date: 2026-10-18
+modified: 2026-10-27
 faq: Can I edit existing text in a PDF for free? || Yes. In Gold PDF choose Edit text, click a line and type the new words; it matches size and colour.
 faq: Will the layout change? || The new text is placed in the same position with the same size and colour. Much longer text may need manual adjustment.
 faq: Can I edit a scanned PDF? || Yes, after running Recognize text (OCR).
@@ -99,6 +100,41 @@ To edit text in a PDF for free, open it in Gold PDF, press E for **Edit text**, 
 
 ## How it works
 Gold PDF reads the text of each page, covers the old line with the page's own background colour, and places your new text at the same position, size and colour. On save, edited pages are rebuilt so the old words cannot be recovered, and the page remains searchable.
+
+## Which tool to use for which change
+Not every change to a PDF is a text edit. Picking the right tool first saves time and keeps the page tidy.
+
+| What you want to do | Tool | Notes |
+|---|---|---|
+| Fix a typo, date, name or number already on the page | Edit text (E) | Retype the whole line |
+| Add a sentence where there was none | Text tool (T) | Place it anywhere, choose size and colour |
+| Remove confidential text for good | Redact (R) | The page is rebuilt without it on save |
+| Hide a stray mark on a printout copy | Whiteout | Only covers; not for anything sensitive |
+| Change a scanned page | OCR (Ctrl+Shift+O), then E | English and Hebrew are bundled |
+| Change wording across many pages | Gold AI | Uses your own API key |
+
+The most common confusion is between editing and removing. If the goal is that nobody can ever read the old words, use Redact, explained in [how to redact a PDF so it cannot be undone](/articles/how-to-redact-a-pdf-so-it-cannot-be-undone/).
+
+## Keeping edits neat
+Edit text works line by line, which suits short corrections best. A few habits keep the result looking as if it was always there:
+
+- **Keep the length similar.** A replacement of roughly the same number of characters fits the gap. If the new wording is much longer, split it: shorten this line and add the rest with the Text tool on an empty line below.
+- **Retype the whole line.** Because the line is replaced as a unit, type every word on it, not only the one that changed. Read it back once before pressing Enter.
+- **Zoom in.** At 150% or more you can see whether the new line sits on the same baseline as its neighbours.
+- **Check paragraphs.** PDFs do not reflow text like a word processor. If you add words to one line, the next line will not move down by itself.
+- **Look at numbers in tables.** A total in a table is often a separate line from its label. Edit it on its own, then check that any other figure that depends on it still adds up.
+
+## A worked example: correcting a CV
+Say you exported your CV to PDF, sent it to a friend for a check, and the original Word file is on another computer. Two things need fixing: a phone number with a wrong digit and a job title that should read "Senior Analyst".
+
+1. Open the PDF in Gold PDF and use Save as (Ctrl+Shift+S) to make "cv-updated.pdf".
+2. Press **E**. Dotted boxes appear around each line.
+3. Click the line with the phone number, retype the full line with the correct digit and press Enter.
+4. Click the job title line, type "Senior Analyst" and the dates exactly as they were, and press Enter.
+5. Zoom in and compare both lines with the surrounding text.
+6. Press Ctrl+S. Reopen the file and press Ctrl+F for the old phone number. There are no results, because the old line is gone from the saved page.
+
+That last check matters if you are sending the file to several employers: you do not want an older number still sitting in the text layer.
 
 ## Other ways to change a PDF
 - Add new text anywhere with the Text tool (T).
