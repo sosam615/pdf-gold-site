@@ -11,7 +11,11 @@
 - AI providers (bring your own key): Google Gemini, Anthropic Claude, OpenAI, OpenRouter, Groq, Mistral, Cerebras, GitHub Models, Cohere, NVIDIA, Hugging Face, Cloudflare, Alibaba, Z.ai, SiliconFlow.
 - Limits: very complex mixed-direction text deserves a visual check.
 
-## All guides (32)
+## All guides (33)
+### How to Redact a Contract Before Sharing It
+https://pdf.gold/articles/how-to-redact-a-contract-before-sharing-it/
+Redact a contract before sharing it: remove names, prices and bank details for real, keep the clauses readable, and check the copy before it leaves.
+
 ### Can Someone Recover Redacted Text From a PDF
 https://pdf.gold/articles/can-someone-recover-redacted-text-from-a-pdf/
 Redacted text can often be recovered from a PDF if it was only covered. Learn how recovery works, how to test a file and how to redact safely.

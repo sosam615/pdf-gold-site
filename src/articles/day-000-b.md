@@ -152,6 +152,7 @@ title: How to Change a Price in a PDF
 description: Change a price, number or total in a PDF without breaking the layout. Step-by-step for free on Windows, plus a note on honest use.
 topic: editing
 date: 2026-10-18
+modified: 2026-10-28
 faq: How do I change a number in a PDF? || Use Edit text: click the line containing the number and retype it.
 faq: Can I change a price in a scanned invoice? || Yes, run Recognize text first and then edit the recognised line.
 faq: Is it okay to edit a PDF invoice? || Only edit documents you own or are authorised to change, and keep the original. Altering documents to deceive is illegal in many places.
@@ -170,6 +171,33 @@ A price usually appears in several places: line items, subtotal, tax and total. 
 
 ## Scanned invoices
 If the invoice is an image, press **Recognize text** (Ctrl+Shift+O) first. Gold PDF reads the lines, and you can edit them like normal text. Check each recognised number — OCR can misread digits on poor scans.
+
+The digits most often confused on a weak scan are easy to predict, so check these first:
+
+| Printed | Sometimes read as | How to spot it |
+|---|---|---|
+| 0 | O or D | A letter inside a number, e.g. "1,2O0" |
+| 1 | l or I | A thin vertical stroke that searches as a letter |
+| 5 | S | "$S00" instead of "$500" |
+| 8 | B or 3 | Totals that no longer add up |
+| , and . | swapped or dropped | "1.200,00" vs "1,200.00", or a missing separator |
+
+A quick way to catch these is to add up the recognised line items on a calculator and compare the result with the recognised total. If they differ, one of the digits was misread.
+
+## Keep the layout intact
+The new price takes the font size and colour of the old one, but its length can still change the line. A few habits keep the page tidy:
+
+- **Keep the format.** If the document writes "1,250.00", write "1,980.00", not "1980". Matching separators and decimals keeps columns aligned.
+- **Watch right-aligned columns.** Prices in a table are often aligned on the right edge. If the new amount has more digits than the old one, check that it does not run into the column border or the next cell.
+- **Retype the whole line.** Clicking a line and retyping all of it, including the label, gives cleaner results than trying to change one digit in the middle.
+- **Zoom in before saving.** At 200% you can see whether a digit sits slightly higher or lower than its neighbours.
+- **Check currency symbols.** Symbols such as €, £ or ₪ should come out the same way they went in; if one looks different, retype it.
+
+## Prices that appear in more than one form
+Some documents carry the same amount in different shapes. A quote might say "$12,000.00" in the table and "twelve thousand dollars" in the terms, or show a monthly figure that is a twelfth of the yearly one. Ctrl+F only finds exact text, so search for each version separately: the number with and without separators, the words, and any derived amounts such as tax, deposit or instalments. Read the page once more from top to bottom before saving; a total that is right in the table but wrong in a sentence is the most common leftover.
+
+## A short example
+A designer sent a client a quote for $4,800 and then agreed to add a second round of revisions for $400. Instead of rebuilding the quote in a word processor, they open the PDF in Gold PDF and save a copy named "Quote v2.pdf". They press **E**, click the "Revisions" line and retype it as "Revisions (2 rounds): $1,200.00". Ctrl+F for "4,800" finds the subtotal and the total in the summary box, and a search for "1,200" finds the 25% deposit line, which needs to become $1,300. The subtotal and total become "$5,200.00". After saving, they reopen the file, add the line items on a calculator, and the numbers match.
 
 ## Use this responsibly
 Correcting your own quote or fixing a typo is normal. Changing someone else's invoice to mislead is fraud in many places. Keep the original file, and use Save as for the edited copy.
