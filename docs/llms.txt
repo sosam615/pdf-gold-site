@@ -27,6 +27,7 @@
 - [Unlock PDF](https://pdf.gold/tools/unlock-pdf/): Remove the open-password from your own PDF so it opens without asking. Free, private, runs in your browser.
 
 ## Guides
+- [How to Redact Personal Information for GDPR Compliance](https://pdf.gold/articles/how-to-redact-personal-information-for-gdpr-compliance/): Redact personal data in a PDF for GDPR work: find identifiers, remove them for real, check the saved copy and clear metadata. Free on Windows.
 - [How to Redact a Contract Before Sharing It](https://pdf.gold/articles/how-to-redact-a-contract-before-sharing-it/): Redact a contract before sharing it: remove names, prices and bank details for real, keep the clauses readable, and check the copy before it leaves.
 - [Can Someone Recover Redacted Text From a PDF](https://pdf.gold/articles/can-someone-recover-redacted-text-from-a-pdf/): Redacted text can often be recovered from a PDF if it was only covered. Learn how recovery works, how to test a file and how to redact safely.
 - [How to Redact Multiple Pages in a PDF at Once](https://pdf.gold/articles/how-to-redact-multiple-pages-in-a-pdf-at-once/): Redact the same name or number across many PDF pages without missing one. Search first, mark every hit, save once and test the result on Windows.

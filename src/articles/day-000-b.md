@@ -213,6 +213,7 @@ title: How to Edit a PDF Without A
 description: Edit a PDF without A: change text, add notes, redact, OCR and sign — free on Windows, offline, with Gold PDF as an alternative.
 topic: editing
 date: 2026-10-18
+modified: 2026-10-29
 faq: Can I edit a PDF without A? || Yes. Several editors do it; Gold PDF is a free Windows option that edits text, redacts, runs OCR and signs.
 faq: Do I need a subscription? || Not for Gold PDF, which is free with no account or watermark.
 faq: What can free editors usually not do? || Many free editors lack real text editing, true redaction or offline OCR; check each feature before choosing.
@@ -238,7 +239,32 @@ You can edit a PDF without A by using another editor. Gold PDF is a free Windows
 Check these before you commit: Does it edit existing text or only add text? Does it add a watermark? Does it upload your files? Is the redaction real? Is it priced per month? For a comparison, see [best free A alternative for Windows](/articles/best-free-a-alternative-for-windows/).
 
 ## Honest limits of Gold PDF
-It is for Windows 10 and 11 only, has no Mac version, and is not a prepress or accessibility-tagging suite. The installer is not code-signed yet, so Windows may show a one-time warning.
+It is for Windows 10 and 11 only, has no Mac version, and is not a prepress or accessibility-tagging suite.
+
+## Three common jobs, step by step
+Most people who go looking for an alternative have one specific job in mind. Here is how the three most common ones work in Gold PDF.
+
+**1. Fix a typo or change a figure.** Open the file and press **E** for Edit text. Click the word or number, type the replacement and click away. Press **Ctrl+S**, or use Save as to keep the original untouched. Edit text works on pages that have a real text layer; if the page is a scan, run Recognize text (**Ctrl+Shift+O**) first. For a worked example with amounts, see [how to change a price in a PDF](/articles/how-to-change-a-price-in-a-pdf/).
+
+**2. Hide something before sending.** Press **R**, drag a box over the name, number or paragraph, and save. The affected pages are rebuilt without the removed content. Then reopen the copy and test it: search for the hidden word with **Ctrl+F** and copy across the bar into Notepad. The reasons are explained in [how to redact a PDF so it cannot be undone](/articles/how-to-redact-a-pdf-so-it-cannot-be-undone/).
+
+**3. Sign and return a form.** Open the form, click each fillable field (they are highlighted in blue), type your answers and place a saved signature from the Signatures button. Save, and password protect the file if it holds personal data.
+
+## Questions to ask about any free editor
+"Free" can mean very different things. Before you rely on a tool for real work, run through this list and test the answers on a sample file rather than trusting the description.
+
+| Question | Why it matters |
+|---|---|
+| Does it change the text already in the file? | Some tools only let you lay new text on top, which looks edited but leaves the old words underneath. |
+| Is the free version limited by pages, files or days? | Trial limits often appear only when you try to save. |
+| Does it stamp a watermark on the saved file? | Check the output, not the preview. |
+| Does it upload your document? | Matters for contracts, IDs and medical papers. |
+| Is the redaction real? | Search and copy across the bar in the saved copy. |
+| Does it need an account? | Some require sign-up even for basic saving. |
+| Which systems does it run on? | Gold PDF is Windows only, so Mac and Linux users need another route. |
+
+## Offline versus online editors
+A browser-based editor is quick for a one-off, but your file travels to a server you do not control. An installed editor such as Gold PDF opens the file from your disk and saves it back there, with no connection needed, which is the safer pattern for anything confidential. The tradeoff is that you must install it, and it is available for Windows only. Whichever route you pick, keep the original, work on a copy and open the saved result once before you send it. More on the privacy side in [is an online PDF editor safe for confidential documents](/articles/is-online-pdf-editor-safe-for-confidential-documents/).
 
 > **Common mistakes**
 > - Picking an online editor for confidential files.
