@@ -3,6 +3,7 @@ title: How to OCR a PDF Offline Without Uploading
 description: Run OCR on a PDF without uploading it to a website. Gold PDF recognises text on your own Windows PC, offline, free.
 topic: ocr
 date: 2026-10-18
+modified: 2026-10-31
 faq: Can OCR work without internet? || Yes. Gold PDF bundles English and Hebrew, and other languages work offline after a one-time model download.
 faq: Why avoid online OCR for private documents? || Uploading sends your file to someone else's server; local OCR keeps it on your computer.
 faq: Is offline OCR slower? || It depends on your computer; a typical page takes several seconds.
@@ -24,6 +25,36 @@ Contracts, medical letters, tax forms and IDs are exactly the files people scan.
 
 ## Speed and quality
 Speed depends on page size and your CPU. For best accuracy, use 300 dpi scans. Review numbers after recognition.
+
+## How to tell whether a tool really works offline
+Some tools say "offline" but still send pages away for the hard work. A simple test is to turn off Wi-Fi or unplug the network cable, open a scan and run recognition. If it finishes and the text is searchable, the work happened on your computer. If it stalls, shows an error or asks you to sign in, something depended on a server. Gold PDF passes this test for English and Hebrew because both models are bundled with the app. Other languages need a one-time model download, and only that download uses the internet; your documents are never part of it.
+
+## Steps for a clean result
+Good recognition starts before you press the shortcut.
+
+1. **Check the scan quality.** Zoom to 100% and read a line of small text. If you can barely read it, the software will struggle too. Rescan at 300 dpi where you can.
+2. **Straighten and crop first.** A page photographed at an angle, with a shadow across it, gives worse results than a flat scan.
+3. **Choose the right language.** Recognising Hebrew text with an English setting produces nonsense. Match the setting to the page, especially for mixed documents.
+4. **Run OCR with Ctrl+Shift+O.** Wait for the progress to finish before you save.
+5. **Test the output.** Press **Ctrl+F**, search for a name or number you can see on the page, and confirm that it is found. Then select a paragraph and paste it into Notepad to read what was recognised.
+6. **Save a new copy.** Keep the original scan in case you need to run it again with other settings.
+
+## What to expect from different documents
+| Document | Typical result | What to check |
+|---|---|---|
+| Clean printed letter | Very good | Numbers and dates |
+| Invoice or receipt | Good, tables may be uneven | Amounts, account and reference numbers |
+| Photo of a page | Variable | Shadows, curved lines at the edge |
+| Handwriting | Poor | Usually needs retyping |
+| Old or faded print | Variable | Rescan at higher contrast |
+
+OCR is a best-effort reading of pixels, not a guarantee. It is most likely to slip on similar-looking characters, such as zero and the letter O, or the digit one and a lowercase L. When a document matters, proofread names, amounts and identifiers against the image.
+
+## Privacy beyond the upload
+Avoiding an upload removes the largest risk, but it is not the only one. Once the text is recognised it can be copied and searched, so a confidential file becomes easier to search by anyone who opens it. If you need to share a document, remove or hide the private parts first with a real redaction tool, not a black box, and consider adding a password. See [how to password protect a PDF for free](/articles/how-to-password-protect-a-pdf-for-free/) for the encryption step. Keep the working copy in a folder only you can open, and delete temporary exports you no longer need.
+
+## What Gold PDF does and does not do here
+Gold PDF is a free Windows editor that works offline, needs no account and does not upload your document during recognition. It bundles English and Hebrew, and it adds an invisible text layer so the page keeps its look while becoming searchable. It does not read handwriting reliably, it cannot fix a badly distorted photo, and it is available for Windows only, so check the result on any page where accuracy matters.
 
 > **Common mistakes**
 > - Using an online tool "just once" for a confidential page.
