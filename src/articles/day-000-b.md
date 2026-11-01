@@ -275,6 +275,7 @@ title: How to OCR a Scanned PDF for Free
 description: Make a scanned PDF readable: run OCR for free on Windows, offline. English and Hebrew built in, more languages on demand. Step by step.
 topic: ocr
 date: 2026-10-18
+modified: 2026-11-01
 faq: What is OCR? || Optical character recognition turns pictures of text into real, searchable text.
 faq: Does Gold PDF OCR work offline? || English and Hebrew work fully offline. Other languages download a small model the first time.
 faq: Why is my OCR inaccurate? || Low resolution, skewed pages and handwriting reduce accuracy; use clear 300 dpi scans.
@@ -298,6 +299,36 @@ English and Hebrew are bundled and work offline. For other languages, Gold PDF d
 
 ## After OCR
 Search inside the scan with Ctrl+F, edit lines, or redact sensitive items. See [how to make a scanned PDF searchable](/articles/how-to-make-a-scanned-pdf-searchable/) and [OCR a PDF](/ocr-pdf/).
+
+## What OCR actually does to your file
+A scanned PDF is a stack of pictures. Each page is an image of paper, so the file contains no letters at all, only pixels. OCR looks at those pixels, decides which shapes are characters, and writes the result as text positioned over the original image. The picture stays exactly as it was, and the recognised text sits invisibly on top. That is why a recognised page looks identical but now responds to search, selection and copying.
+
+Because the picture is untouched, OCR cannot make a page sharper or fix a crooked scan. It can only read what is there. Errors usually come from the scan, not from the software, which is why preparing the page matters more than any setting.
+
+## Before and after: what changes
+| | Before OCR | After OCR |
+|---|---|---|
+| Search with Ctrl+F | Finds nothing | Finds recognised words |
+| Select and copy text | Not possible | Possible, with any errors included |
+| Edit a line | Not available as text | Fix lines with Edit text (E) |
+| Redact by searching | You must find items by eye | You can search for names and numbers first |
+| Appearance | The scanned picture | The same picture |
+| File size | Unchanged | Usually a little larger |
+
+## A worked example
+Imagine a three-page scanned lease. You open it and Gold PDF reports that the pages have no text layer. You press **Ctrl+Shift+O**, wait while each page is processed on your own computer, and save. Now you press **Ctrl+F** and type the tenant's surname: three hits appear, one on each page. On page two the monthly amount was read as "1,2O0" with a letter O instead of a zero, so you check that figure against the picture and correct it with Edit text. The whole job takes a few minutes and nothing left your PC.
+
+## Choosing a language and settings
+Recognition works best when the language matches the page. If a document mixes English and Hebrew, run it with the language that covers most of the text and then proof-read the other parts closely. Leaving the setting on Auto follows your interface language, which is convenient but is not always the language of the paper in front of you, so change it when the results look strange. Other languages need a small one-time download of a language model; after that they are remembered.
+
+## What to check after recognition
+- **Digits and letters that look alike:** zero and the letter O, one and lowercase L, five and S.
+- **Names and addresses:** unusual spellings are read less reliably than common words.
+- **Tables:** columns can be read in the wrong order, so compare totals with the image.
+- **Stamps, signatures and handwriting:** these are often missed or garbled and may need to be typed by hand.
+- **Headers, footers and margins:** small print is easy to skip and easy to misread.
+
+Treat recognised text as a helpful draft that you verify, particularly for numbers, dates and legal wording. OCR does not guarantee accuracy, and Gold PDF does not promise it either; it gives you a text layer that you can correct.
 
 > **Common mistakes**
 > - Expecting perfect results from blurry photos.

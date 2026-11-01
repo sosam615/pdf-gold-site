@@ -11,7 +11,11 @@
 - AI providers (bring your own key): Google Gemini, Anthropic Claude, OpenAI, OpenRouter, Groq, Mistral, Cerebras, GitHub Models, Cohere, NVIDIA, Hugging Face, Cloudflare, Alibaba, Z.ai, SiliconFlow.
 - Limits: very complex mixed-direction text deserves a visual check.
 
-## All guides (35)
+## All guides (36)
+### How to Remove Hidden Data From a PDF
+https://pdf.gold/articles/how-to-remove-hidden-data-from-a-pdf/
+A PDF can carry more than you can see: metadata, comments, hidden text and old content. Learn what hides in it and how to remove it before sharing.
+
 ### How to Redact Medical Records in a PDF
 https://pdf.gold/articles/how-to-redact-medical-records-in-a-pdf/
 Redact medical records in a PDF so patient details are really removed: mark them, save a new copy, test it and clear metadata. Free on Windows.
