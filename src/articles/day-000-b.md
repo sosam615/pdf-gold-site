@@ -339,6 +339,7 @@ title: How to Make a Scanned PDF Searchable
 description: Turn a scanned PDF into a searchable document with OCR. Free on Windows, offline, with a clear step-by-step and quality tips.
 topic: ocr
 date: 2026-10-18
+modified: 2026-11-02
 faq: Why can't I search my scanned PDF? || A scan is a picture without a text layer; searching needs OCR to add one.
 faq: Does making it searchable change the look? || No. The recognised text is invisible and sits under the image.
 faq: How do I know if a PDF is scanned? || Try selecting text or pressing Ctrl+F; if nothing is found, it is probably an image.
@@ -356,6 +357,39 @@ A scanner or phone camera makes a picture. Computers see pixels, not letters. OC
 
 ## Check the result
 Search for several words you can see on the page. If some are missed, the scan may be too small, too dark or tilted. Rescan at 300 dpi or crop and straighten the image first.
+
+## How to tell whether a PDF is already searchable
+Not every PDF that looks like a scan is one. Many files are born digital and already hold real text. Before you run anything, try three quick tests:
+
+1. Press **Ctrl+F** and search for a word you can see on the page.
+2. Try to drag-select a sentence. Real text highlights in lines; a scan highlights nothing or selects the whole page as one block.
+3. Zoom to 400%. Real text stays sharp, while a scan turns into blocks of pixels.
+
+A mixed file is common. A contract may have typed pages followed by a scanned, signed final page, so check the last pages and attachments as well as the first.
+
+## Getting a better result from OCR
+Recognition quality depends mostly on the image, not on the program. These habits make the biggest difference:
+
+| Problem | What it does to the result | What to do |
+|---|---|---|
+| Low resolution (under about 200 dpi) | Letters merge; wrong characters | Rescan at 300 dpi |
+| Tilted page | Lines are read in the wrong order | Straighten the scan first |
+| Shadows from a phone camera | Dark patches hide letters | Rescan in even light, flat on a table |
+| Faint or coloured background | Text and paper blend together | Rescan in black and white or greyscale |
+| Handwriting | Often not recognised reliably | Retype important parts with Edit text |
+| Several languages on one page | Wrong letters for the other language | Check the result and fix by hand |
+
+English and Hebrew work offline in Gold PDF. If your pages are in another language, a small model may need to download the first time, so read the OCR article linked below for the details.
+
+## Worked example: a signed lease
+Imagine a tenant has a 12-page lease that was printed, signed and scanned. They need to find every mention of the deposit. Pressing **Ctrl+F** finds nothing, which confirms the file is only images. They press **Ctrl+Shift+O**, wait while the pages are processed, and save under a new name. Searching for "deposit" now jumps between pages and highlights each hit. The pages look the same as before, because the recognised text is an invisible layer under the picture.
+
+Then they spot-check. On page 7 a number in a table was read as a letter, so one search misses it. They fix it with Edit text, save again, and search for a few more words as a final test. This small check matters because OCR is good but not perfect, and a missed word is invisible until you look for it.
+
+## When searchable is not enough
+A searchable PDF still shows the original image on screen, so the invisible layer can differ slightly from what you see. For reading and searching this rarely matters. For legal or financial work, treat the text layer as a helper and keep the visual page as the record.
+
+If you plan to share the file, remember that the text layer also exposes every word to anyone who opens it. Names and numbers in a scan that nobody could search before can now be found instantly. Redact them first or after, and test the saved copy, as in [how to redact a scanned PDF document](/articles/how-to-redact-a-scanned-pdf-document/).
 
 ## What you can do next
 - Search with highlighted results in the left panel.
