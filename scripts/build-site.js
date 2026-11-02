@@ -32,6 +32,7 @@ const homeUrl = l => SITE + (l === 'en' ? '/' : '/' + l + '/');
 const hl = l => HREF[l] || l;
 const dl = CFG.downloadUrl;
 const lite = CFG.liteUrl;
+const REL = dl.replace(/\/[^/]+$/, '');
 
 /* ---------- tiny markdown ---------- */
 const inline = s => esc(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/`(.+?)`/g, '<code>$1</code>').replace(/\[([^\]]+)\]\(([^)]+)\)/g, (m, t, u) => `<a href="${u}">${t}</a>`);
@@ -195,7 +196,7 @@ function build() {
     .replace('</head>', GA + alternates() +'<link rel="stylesheet" href="css/articles.css"></head>')
     .replace('<p class="copy">', `<div class="wrap langlist">${LANGS.map(x => `<a href="${homeUrl(x).replace(SITE, '')}" hreflang="${hl(x)}" lang="${hl(x)}">${esc(NAMES[x])}</a>`).join(' · ')}</div><p class="copy">`)
     .replace(/href="downloads\/GoldPDF-Setup-1\.0\.0\.exe"/g, `href="${dl}"`)
-    .replace('<dd id="dlSize">118 MB</dd>', `<dd id="dlSize">119 MB &middot; <a href="${lite}" download>Lite version, 93 MB (OCR downloads on first use)</a></dd>`);
+    .replace('<dd id="dlSize">118 MB</dd>', `<dd id="dlSize">119 MB &middot; <a href="${lite}" download>Lite version, 93 MB (OCR downloads on first use)</a><br>Other platforms: <a href="${REL}/GoldPDF-1.0.0-mac-arm64.dmg" download>macOS</a> &middot; <a href="${REL}/GoldPDF-1.0.0-linux-x86_64.AppImage" download>Linux AppImage</a> &middot; <a href="${REL}/GoldPDF-1.0.0-linux-amd64.deb" download>Linux .deb</a> &middot; <a href="${REL}/GoldPDF-android-release.apk" download>Android APK</a></dd>`);
   write('index.html', home);
 
   LANGS.slice(1).forEach(l => write(`${l}/index.html`, localHome(l, data[l], all)));
