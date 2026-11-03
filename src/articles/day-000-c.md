@@ -66,6 +66,7 @@ title: How to Fill Out a PDF Form for Free
 description: Fill out a PDF form for free on Windows: text boxes, check boxes and drop-downs, then sign and save. Offline, no account, no printing.
 topic: forms
 date: 2026-10-18
+modified: 2026-11-03
 faq: How do I know a PDF is fillable? || Gold PDF highlights the fields softly in blue when you open the file.
 faq: What if the form is not fillable? || Use the Text tool (T) to type anywhere on the page.
 faq: Are my entries saved in the file? || Yes. Values are saved as real form data when you save.
@@ -83,6 +84,26 @@ Some PDFs are just pictures of forms. Press **T** for the Text tool and click wh
 
 ## Different languages
 Type in Hebrew, Arabic, Chinese, Japanese, Korean, Hindi, Thai and more — Gold PDF uses Windows fonts for the right script.
+
+## A worked example: a rental application
+Say a landlord sends a three-page rental application as a fillable PDF. Open it and the fields glow softly in blue. Click the first one, type your full name, and press Tab to move to the date of birth, then the address, and so on. Tick the "employed" box and pick your income range from the drop-down. On page two there is a line that is not a field, only a printed rule; press **T**, click above it and type the previous address, then set the size so it matches the other entries.
+
+Before you save, scroll through every page once. Look for required fields you skipped, a box ticked by accident, and text that runs past the edge of a line. Then open the Signatures button, click your saved signature and click the signature line on page three. Finally use Save as, name the copy "application-filled.pdf", and keep the blank original in case you need to start again.
+
+## A checklist before you send a filled form
+| Check | Why it matters |
+|---|---|
+| Every required field has a value | Offices often reject incomplete forms |
+| Names, dates and numbers match your ID | Small typos cause delays |
+| Drop-downs show the right choice | A wrong default is easy to miss |
+| Signature is on every signature line | Forms often have several |
+| File saved under a new name | You keep a clean blank copy |
+| Password added if the form holds sensitive data | Email is not private by default |
+
+## Fillable versus non-fillable: how to tell
+Open the form and look for the soft blue highlight. If clicking a field puts a cursor in it, the form is fillable and your entries are saved as real form data. If nothing is highlighted, the PDF is a flat page. In that case use the Text tool, zoom in so you can place the cursor accurately, and keep a consistent font size. A flat form that came from a scan may also benefit from [recognising the text](/articles/how-to-ocr-a-scanned-pdf-for-free/) so it is searchable afterwards.
+
+If you handle many forms, remember that your answers are personal data. Save them in a folder only you can open, avoid editing on shared computers, and delete temporary copies when you are finished. Gold PDF works offline, so nothing you type is uploaded while you fill the form.
 
 ## Keep your data safe
 Forms contain personal data. Fill them offline, save to a safe place and password protect the file before emailing: [how to password protect a PDF for free](/articles/how-to-password-protect-a-pdf-for-free/).
