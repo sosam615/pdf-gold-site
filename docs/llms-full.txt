@@ -11,7 +11,11 @@
 - AI providers (bring your own key): Google Gemini, Anthropic Claude, OpenAI, OpenRouter, Groq, Mistral, Cerebras, GitHub Models, Cohere, NVIDIA, Hugging Face, Cloudflare, Alibaba, Z.ai, SiliconFlow.
 - Limits: very complex mixed-direction text deserves a visual check.
 
-## All guides (38)
+## All guides (39)
+### How to Redact Email Addresses From a PDF
+https://pdf.gold/articles/how-to-redact-email-addresses-from-a-pdf/
+Redact email addresses from a PDF on Windows so they cannot be recovered. Find every address, cover it, save, and verify. Free, offline, no account.
+
 ### How to Redact a PDF Without A
 https://pdf.gold/articles/how-to-redact-a-pdf-without-a/
 Redact a PDF on Windows without A or any subscription. Mark text and images, save, and the content is removed for good. Free, offline, no account.

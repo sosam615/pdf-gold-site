@@ -119,6 +119,7 @@ title: How to Sign a PDF Without Printing
 description: Sign a PDF on screen without printing or scanning: draw or import a signature, place it and save. Free on Windows with Gold PDF.
 topic: forms
 date: 2026-10-18
+modified: 2026-11-04
 faq: Can I sign a PDF without printing it? || Yes. Draw or import a signature image and place it on the page.
 faq: Is that a legally binding signature? || Rules vary by country and document type; many agreements accept simple electronic signatures, but some need qualified signatures. Check the requirements.
 faq: Can I reuse my signature? || Yes. Gold PDF saves signatures in a library for reuse.
@@ -136,6 +137,30 @@ To sign a PDF without printing, open it in Gold PDF, click **Signatures**, draw 
 - Draw slowly with a mouse, or sign on white paper, photograph it and import the picture.
 - Use a transparent PNG for the neatest result.
 - Keep the signature the same size as typed text beside it.
+
+## A worked example: signing a tenancy agreement
+Say a landlord emails a four-page tenancy agreement as a PDF and asks you to return it signed by tonight. Open the file and use Save as to create "tenancy-signed.pdf", so the original stays clean. Scroll to page four, where there is a line labelled "Tenant". Click **Signatures**, choose your saved signature and click just above the line. Drag the signature until its baseline sits on the line, then drag the corner handle until it is about the same height as the typed name beside it.
+
+Many agreements also ask for initials on each page. Save your initials as a separate small signature, then place them in the bottom corner of pages one to three. Finally add the date: press **T**, click next to the word "Date" and type it. Press Ctrl+S, reopen the saved file, and scroll through it once to confirm every signature line is filled and nothing overlaps printed text.
+
+## Signing on a laptop, a tablet or a phone photo
+You do not need a touch screen. With a mouse, draw slowly and redo it until it looks natural; the pad lets you clear and try again. If you prefer your real handwriting, sign a sheet of white paper with a dark pen, photograph it in good light, crop close to the ink and import the picture. A transparent PNG is neatest, because a photo with a grey or yellow background leaves a visible box on the page. Gold PDF itself runs on Windows, so do the final placing on your Windows computer.
+
+## What to do before and after you sign
+| Step | Why it matters |
+|---|---|
+| Read the whole document first | A signature is hard to take back once the file is sent |
+| Fill in all fields before signing | Nobody can add text above your signature later by accident |
+| Use Save as | You keep the unsigned original |
+| Add a password if the file holds personal data | Email is not private by default |
+| Send the final file, not a screenshot | The recipient needs the real PDF |
+
+To lock the file after signing, see [how to password protect a PDF for free](/articles/how-to-password-protect-a-pdf-for-free/). A password stops strangers from opening the file, but it is not a certified digital signature and does not prove who signed. If your document is a form with fields, fill those first: [how to fill out a PDF form for free](/articles/how-to-fill-out-a-pdf-form-for-free/).
+
+## Common questions about signing on screen
+- **Can the other side tell it is an image?** Yes, a pasted signature is an image of your handwriting. That is normal for simple electronic signatures.
+- **Can someone copy my signature from the file?** Anyone who receives a PDF can in principle extract an image from it. Only send signed files to people you trust, and keep a separate copy without the signature for your own records.
+- **Should I use the same signature everywhere?** Keep one for formal documents and another, simpler one for everyday forms. Reusing them is easy: [how to save a signature for reuse in PDFs](/articles/how-to-save-a-signature-for-reuse-in-pdfs/).
 
 ## About legality
 A pasted signature image is a simple electronic signature. Many contracts accept it; some situations (notarised documents, certain government forms, some financial products) require a qualified or certified signature. Confirm what the recipient needs.
