@@ -27,6 +27,7 @@
 - [Unlock PDF](https://pdf.gold/tools/unlock-pdf/): Remove the open-password from your own PDF so it opens without asking. Free, private, runs in your browser.
 
 ## Guides
+- [How to Redact a PDF for a Freedom of Information Request](https://pdf.gold/articles/how-to-redact-a-pdf-for-a-freedom-of-information-request/): Prepare a PDF for a Freedom of Information release on Windows. Redact exempt details so they cannot be recovered, document your choices, and verify the file.
 - [How to Redact Email Addresses From a PDF](https://pdf.gold/articles/how-to-redact-email-addresses-from-a-pdf/): Redact email addresses from a PDF on Windows so they cannot be recovered. Find every address, cover it, save, and verify. Free, offline, no account.
 - [How to Redact a PDF Without A](https://pdf.gold/articles/how-to-redact-a-pdf-without-a/): Redact a PDF on Windows without A or any subscription. Mark text and images, save, and the content is removed for good. Free, offline, no account.
 - [How to Redact an Image Inside a PDF](https://pdf.gold/articles/how-to-redact-an-image-inside-a-pdf/): Hide a face, signature, ID photo or screenshot inside a PDF for good. Learn how image redaction differs from text redaction and how to verify the result.
