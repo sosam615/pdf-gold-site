@@ -176,6 +176,7 @@ title: How to Save a Signature for Reuse in PDFs
 description: Save your signature once and reuse it in any PDF. Draw or import it, keep it in a library, and place it in seconds with Gold PDF.
 topic: forms
 date: 2026-10-18
+modified: 2026-11-06
 faq: Where is my saved signature stored? || In Gold PDF's local storage on your computer; it is not uploaded.
 faq: Can I keep several signatures? || Yes. The library holds as many as you like, and each can be deleted.
 faq: Can I import a signature from a photo? || Yes, import a PNG or JPG; a transparent PNG looks best.
@@ -199,9 +200,38 @@ Signatures are stored locally in the app and never uploaded. If you share the co
 - Keep initials as a separate entry.
 - Combine with form filling: [how to fill out a PDF form for free](/articles/how-to-fill-out-a-pdf-form-for-free/).
 
+## Drawn, imported or photographed: which signature to save
+The way you create a signature decides how good it looks on the page. Each option has a place:
+
+| Source | Best for | Watch out for |
+|---|---|---|
+| Drawn on the pad with a mouse or touchscreen | A quick signature when you have nothing else | A mouse gives a stiff line; a touchscreen or pen looks more natural |
+| Transparent PNG | The cleanest result on any background | You need to prepare it once in an image editor |
+| Photo of a signature on white paper (JPG) | Matching your real handwriting | A white box around the signature unless the background is removed |
+| Initials as a separate entry | Pages that only need initialling | Easy to forget to create them |
+
+## A worked example: preparing a signature from paper
+Say you sign contracts rarely and want your real handwriting rather than a mouse drawing.
+
+1. Sign a clean white sheet with a dark pen, in a size a little larger than you normally write.
+2. Photograph it in even daylight, straight from above, or scan it at 300 dpi. Shadows and creases will show up as grey marks later.
+3. Crop the picture tightly around the signature and, if you have an image editor, make the white background transparent and save as PNG.
+4. In Gold PDF, click **Signatures**, choose **Import image**, select the file and press **Save signature**.
+5. Open a test PDF, pick the signature from your library, click the page and check the result at 100% zoom. If you see a white rectangle, go back to step 3.
+
+Do this once, and every later document takes seconds. The placement steps for a real document are in [how to sign a PDF without printing](/articles/how-to-sign-a-pdf-without-printing/).
+
+## What a saved signature is, and is not
+An image of your signature placed on a page is a visual mark. It shows who agreed, but it does not by itself prove anything about the document. Whether an image signature is accepted depends on the recipient, the type of document and the rules where you live, and some contracts require a certified digital signature or a witnessed one. When in doubt, ask the person who requested the signature what they accept. Gold PDF places your signature image; it does not issue certificates or act as a trust service.
+
+## Where to place it and when to lock the file
+Put the signature on the line provided and keep it inside the margins so that it is not cropped when the page is printed. When the document is final, save a copy, and consider [password protecting the PDF](/articles/how-to-password-protect-a-pdf-for-free/) before you send it. If the form also has fields to complete, fill them in first: see [how to fill out a PDF form for free](/articles/how-to-fill-out-a-pdf-form-for-free/).
+
 > **Common mistakes**
 > - Saving a signature with a white box around it.
 > - Leaving the library on a shared computer.
+> - Photographing a signature in poor light, so shadows end up on the page.
+> - Signing the working file and overwriting the unsigned original; use Save as.
 =====
 title: How to Password Protect a PDF for Free
 description: Add a password to a PDF for free with AES-256 encryption on Windows. Offline, no upload, no account. Step by step with Gold PDF.
