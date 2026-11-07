@@ -27,6 +27,7 @@
 - [Unlock PDF](https://pdf.gold/tools/unlock-pdf/): Remove the open-password from your own PDF so it opens without asking. Free, private, runs in your browser.
 
 ## Guides
+- [How to Redact a Signature From a PDF](https://pdf.gold/articles/how-to-redact-a-signature-from-a-pdf/): Redact a signature from a PDF so it cannot be copied or recovered: cover it with a true redaction, save to rebuild the page, then test. Free on Windows.
 - [How to Anonymize a PDF Before Publishing It](https://pdf.gold/articles/how-to-anonymize-a-pdf-before-publishing-it/): Anonymize a PDF before you publish it: remove names, identifiers, metadata and hidden data so nobody can trace it back. Free, offline, on Windows.
 - [How to Redact a PDF for a Freedom of Information Request](https://pdf.gold/articles/how-to-redact-a-pdf-for-a-freedom-of-information-request/): Prepare a PDF for a Freedom of Information release on Windows. Redact exempt details so they cannot be recovered, document your choices, and verify the file.
 - [How to Redact Email Addresses From a PDF](https://pdf.gold/articles/how-to-redact-email-addresses-from-a-pdf/): Redact email addresses from a PDF on Windows so they cannot be recovered. Find every address, cover it, save, and verify. Free, offline, no account.
@@ -66,7 +67,6 @@
 - [How to Remove Metadata From a PDF Before Sharing](https://pdf.gold/articles/how-to-remove-metadata-from-a-pdf-before-sharing/): PDFs carry hidden author, title and software details. Learn how to remove PDF metadata before you share a file, free on Windows with Gold PDF.
 - [How to Save a Signature for Reuse in PDFs](https://pdf.gold/articles/how-to-save-a-signature-for-reuse-in-pdfs/): Save your signature once and reuse it in any PDF. Draw or import it, keep it in a library, and place it in seconds with Gold PDF.
 - [How to Sign a PDF Without Printing](https://pdf.gold/articles/how-to-sign-a-pdf-without-printing/): Sign a PDF on screen without printing or scanning: draw or import a signature, place it and save. Free on Windows with Gold PDF.
-- [How to Use Your Own API Key With a PDF Editor](https://pdf.gold/articles/how-to-use-your-own-api-key-with-a-pdf-editor/): Bring your own AI key to a PDF editor: where to get it, how to connect it in Gold PDF, how to test it, and how your key is stored.
 
 ## Localized home pages
 - [English](https://pdf.gold/)

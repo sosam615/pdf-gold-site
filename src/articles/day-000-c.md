@@ -237,6 +237,7 @@ title: How to Password Protect a PDF for Free
 description: Add a password to a PDF for free with AES-256 encryption on Windows. Offline, no upload, no account. Step by step with Gold PDF.
 topic: security
 date: 2026-10-18
+modified: 2026-11-07
 faq: What encryption does Gold PDF use? || AES-256 password encryption when you save a protected PDF.
 faq: Can Gold PDF open a PDF if I forgot the password? || No. It opens protected files only when you enter the correct password.
 faq: How do I remove the password? || Open the file, choose Password, click Remove password and save a new copy.
@@ -255,6 +256,39 @@ Use at least 12 characters, ideally a passphrase of several unrelated words. Do 
 ## What the password does and does not do
 It encrypts the content so the file cannot be opened without the password. It does not hide the existence of the file, and it cannot protect against someone you gave the password to.
 
+## A worked example: sending payslips to an accountant
+Say you need to email three payslips to your accountant. The PDFs contain your salary, your tax number and your bank details, and email is not private by default: messages sit in several mailboxes and backups, and attachments are easy to forward by mistake.
+
+1. Open the first payslip in Gold PDF.
+2. Choose **Protect → Password** and type a passphrase, such as four unrelated words with a number between two of them.
+3. Press Ctrl+Shift+S and save the protected copy as "payslip-august-protected.pdf". Your unprotected file stays in your own folder.
+4. Repeat for the other two payslips with the same passphrase, so your accountant only needs one.
+5. Close the files and open one protected copy again. Gold PDF should ask for the password before it shows anything. Type it to confirm it works.
+6. Email the protected files. Then send the password by text message, or tell it to your accountant by phone.
+
+If the accountant later sends a file back with questions, you will both need the same password to open it, so store it in a password manager rather than on a sticky note.
+
+## What a password protects, and what it does not
+A password is one layer of protection. It is useful, but it solves a specific problem, so it helps to know where it stops.
+
+| Situation | Does a PDF password help? |
+|---|---|
+| The email is sent to the wrong person | Yes, if they do not also get the password |
+| A laptop or USB stick with the file is lost | Yes, the file cannot be opened without the password |
+| The recipient forwards the file and the password | No, anyone with both can open it |
+| You want to hide part of the page from the recipient | No, use redaction instead |
+| You need proof of who signed the document | No, a password is not a digital signature |
+| The password is short or a common word | Only weakly, short passwords can be guessed |
+
+If the recipient should not see certain details at all, a password is the wrong tool. Remove those details with the Redact tool before you protect the file: [how to redact a PDF so it cannot be undone](/articles/how-to-redact-a-pdf-so-it-cannot-be-undone/). Redaction removes content from the file; a password only controls who can open it.
+
+## Opening, changing and removing a password
+Gold PDF opens protected PDFs when you type the correct password, so you can edit, sign or fill a locked file and save it again. It cannot open a file if you do not know the password, and it does not try to guess or crack passwords.
+
+To change a password, open the file with the old one, choose **Protect → Password**, remove the old password, set the new one and save a new copy. To remove protection completely, choose **Remove password** and save. Do this only on your own computer, and delete unprotected copies you no longer need.
+
+All of this happens on your PC. Gold PDF works offline, so neither the file nor the password is sent to a server, which matters when the document is confidential. If you sign a document before sending it, sign first and add the password last: [how to sign a PDF without printing](/articles/how-to-sign-a-pdf-without-printing/).
+
 ## Sharing securely
 Send the file and the password by different channels. For sensitive data also clear metadata first: [how to remove metadata from a PDF](/articles/how-to-remove-metadata-from-a-pdf-before-sharing/).
 
@@ -262,5 +296,9 @@ Send the file and the password by different channels. For sensitive data also cl
 > - Writing the password in the email body.
 > - Losing the only copy of the password.
 > - Forgetting to test the protected file.
+> - Using a password to hide details the recipient should never see, instead of redacting them.
+> - Keeping old unprotected copies in a shared or synced folder.
+
+Gold PDF is free, runs on Windows only and encrypts protected files with AES-256. It does not recover forgotten passwords, so keep yours somewhere safe.
 
 Overview: [Password protect a PDF](/password-protect-pdf/).

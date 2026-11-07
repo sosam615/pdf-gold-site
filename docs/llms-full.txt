@@ -11,7 +11,11 @@
 - AI providers (bring your own key): Google Gemini, Anthropic Claude, OpenAI, OpenRouter, Groq, Mistral, Cerebras, GitHub Models, Cohere, NVIDIA, Hugging Face, Cloudflare, Alibaba, Z.ai, SiliconFlow.
 - Limits: very complex mixed-direction text deserves a visual check.
 
-## All guides (41)
+## All guides (42)
+### How to Redact a Signature From a PDF
+https://pdf.gold/articles/how-to-redact-a-signature-from-a-pdf/
+Redact a signature from a PDF so it cannot be copied or recovered: cover it with a true redaction, save to rebuild the page, then test. Free on Windows.
+
 ### How to Anonymize a PDF Before Publishing It
 https://pdf.gold/articles/how-to-anonymize-a-pdf-before-publishing-it/
 Anonymize a PDF before you publish it: remove names, identifiers, metadata and hidden data so nobody can trace it back. Free, offline, on Windows.
