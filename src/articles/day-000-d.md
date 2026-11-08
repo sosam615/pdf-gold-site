@@ -3,6 +3,7 @@ title: Best Free A Alternative for Windows
 description: Looking for a free A alternative on Windows? What to compare — editing, redaction, OCR, price, privacy — and where Gold PDF fits.
 topic: compare
 date: 2026-10-18
+modified: 2026-11-08
 faq: What is the best free alternative to A? || It depends on your tasks. For text editing, true redaction, OCR, forms and passwords on Windows, Gold PDF is free and offline; check your own must-have features.
 faq: How much does A Pro cost? || Published list prices were about $19.99 a month on an annual plan in October 2026, but they vary by country and plan; verify on A's site.
 faq: What can Gold PDF not do? || It has no Mac version, no prepress or accessibility-tagging tools and no cloud signing service.
@@ -26,7 +27,36 @@ The best free A alternative depends on what you do, but for editing text, redact
 - Optional AI with your own key.
 
 ## Where it does not fit
-Windows 10 and 11 only, no Mac, no prepress or accessibility-tagging suite, and the installer is not code-signed yet. If you need those, keep a suite for those jobs.
+Windows 10 and 11 only, no Mac, no browser version, and no prepress or accessibility-tagging suite. There is no cloud signing service for collecting signatures from other people. If you need those, keep a suite for those jobs.
+
+## Match the tool to your everyday tasks
+Most people who look for an A alternative use a small part of a full suite. Write down the five things you actually did with PDFs last month, then check each one against the alternative you are considering. The table below shows how common tasks map to Gold PDF.
+
+| Everyday task | In Gold PDF | Worth knowing |
+|---|---|---|
+| Fix a typo or change a figure | Edit text (**E**), click the line, type | Works on real text; scans need OCR first |
+| Hide confidential details | Redact (**R**), then Ctrl+S | Pages are rebuilt on save, so the text is removed, not covered |
+| Make a scan searchable | OCR with Ctrl+Shift+O | English and Hebrew are bundled and work offline |
+| Fill in a form | Click the fields and type | Save a copy and check the values stuck |
+| Sign a document yourself | Signatures library | Save a signature once and reuse it |
+| Protect a file | AES-256 password | Keep the password somewhere safe |
+| Reorder or combine pages | Merge, reorder and extract pages | Done locally, no upload |
+| Summarise or rewrite text | Gold AI | Optional; uses your own API key |
+
+If every one of your tasks is in the left column, a free tool will probably cover you. If one of them is professional print preparation, accessibility tagging for compliance, or sending documents out for other people to sign online, you may still need a paid suite for that one job. For the redaction side in detail, see [how to redact a PDF without A](/articles/how-to-redact-a-pdf-without-a/).
+
+## Free, trial or subscription: what "free" means
+"Free" covers several different things in PDF software, and it is worth knowing which one you are getting before you move your work over.
+
+- **Free trial.** Full features for a limited number of days, then a payment is needed. Fine for a one-off job, not as a long-term alternative.
+- **Freemium.** A free tier with limits, such as a watermark on saved pages, a daily task count, a page cap, or key features like editing or OCR locked behind a paid plan.
+- **Free online tools.** Often no install, but the file is uploaded to someone else's server. For contracts, medical records or anything personal, that is a real trade-off.
+- **Free desktop software.** Installed on your own computer, with files that stay local. Gold PDF is in this group: no account, no watermark, no page limit and no trial timer.
+
+A quick test tells you which kind you have: edit a sample file, save it, and open the saved copy. Look for a watermark, check that the edit stuck, and note whether you were asked to sign in.
+
+## Switching without losing work
+Moving away from a suite does not need to be a big project. Install the alternative alongside your current tool, so you can compare the two on the same files for a week or two. Your existing PDFs are standard files and open in any editor, so there is nothing to convert or export. Keep originals of anything important before you edit or redact it, and save edited versions with a new name. If you stored files in a cloud account that comes with a subscription, download the ones you still need before the subscription ends.
 
 ## How to try it
 Install, open one real document, edit a line, redact a number, save, then check. The comparison page has more: [Gold PDF vs A](/articles/gold-pdf-vs-a-comparison/) and the landing page [A alternative](/a-alternative/).

@@ -11,7 +11,11 @@
 - AI providers (bring your own key): Google Gemini, Anthropic Claude, OpenAI, OpenRouter, Groq, Mistral, Cerebras, GitHub Models, Cohere, NVIDIA, Hugging Face, Cloudflare, Alibaba, Z.ai, SiliconFlow.
 - Limits: very complex mixed-direction text deserves a visual check.
 
-## All guides (42)
+## All guides (43)
+### Why Redacted PDFs Leak Information and How to Prevent It
+https://pdf.gold/articles/why-redacted-pdfs-leak-information-and-how-to-prevent-it/
+Redacted PDFs leak through covering shapes, text layers, metadata, old versions and attachments. Learn why it happens and how to stop it before sharing.
+
 ### How to Redact a Signature From a PDF
 https://pdf.gold/articles/how-to-redact-a-signature-from-a-pdf/
 Redact a signature from a PDF so it cannot be copied or recovered: cover it with a true redaction, save to rebuild the page, then test. Free on Windows.
