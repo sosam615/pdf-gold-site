@@ -27,6 +27,7 @@
 - [Unlock PDF](https://pdf.gold/tools/unlock-pdf/): Remove the open-password from your own PDF so it opens without asking. Free, private, runs in your browser.
 
 ## Guides
+- [How to Correct a Typo in a PDF](https://pdf.gold/articles/how-to-correct-a-typo-in-a-pdf/): Fix a spelling mistake, wrong digit or misspelled name in a PDF without the original Word file. Free and offline on Windows with Gold PDF.
 - [How to Redact Text in a PDF on a Laptop Offline](https://pdf.gold/articles/how-to-redact-text-in-a-pdf-on-a-laptop-offline/): Redact text in a PDF on a Windows laptop with no internet. Mark the words, save, and the content is removed for good. Free, offline, no account.
 - [Why Redacted PDFs Leak Information and How to Prevent It](https://pdf.gold/articles/why-redacted-pdfs-leak-information-and-how-to-prevent-it/): Redacted PDFs leak through covering shapes, text layers, metadata, old versions and attachments. Learn why it happens and how to stop it before sharing.
 - [How to Redact a Signature From a PDF](https://pdf.gold/articles/how-to-redact-a-signature-from-a-pdf/): Redact a signature from a PDF so it cannot be copied or recovered: cover it with a true redaction, save to rebuild the page, then test. Free on Windows.
@@ -66,7 +67,6 @@
 - [How to Permanently Remove Text From a PDF](https://pdf.gold/articles/how-to-permanently-remove-text-from-a-pdf/): Deleting or covering text in a PDF often leaves it in the file. Learn how to remove text permanently so it cannot be recovered, free on Windows.
 - [How to Redact a PDF for Free on Windows](https://pdf.gold/articles/how-to-redact-a-pdf-for-free-on-windows/): Redact a PDF for free on Windows with a tool that truly removes the text. Offline, no account, no watermark — step by step with Gold PDF.
 - [How to Redact a PDF So It Cannot Be Undone](https://pdf.gold/articles/how-to-redact-a-pdf-so-it-cannot-be-undone/): A black box is not redaction. Learn how to redact a PDF so the hidden text is truly removed from the file, step by step, free on Windows.
-- [How to Remove Metadata From a PDF Before Sharing](https://pdf.gold/articles/how-to-remove-metadata-from-a-pdf-before-sharing/): PDFs carry hidden author, title and software details. Learn how to remove PDF metadata before you share a file, free on Windows with Gold PDF.
 
 ## Localized home pages
 - [English](https://pdf.gold/)

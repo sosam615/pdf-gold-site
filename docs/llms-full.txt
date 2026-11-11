@@ -11,7 +11,11 @@
 - AI providers (bring your own key): Google Gemini, Anthropic Claude, OpenAI, OpenRouter, Groq, Mistral, Cerebras, GitHub Models, Cohere, NVIDIA, Hugging Face, Cloudflare, Alibaba, Z.ai, SiliconFlow.
 - Limits: very complex mixed-direction text deserves a visual check.
 
-## All guides (44)
+## All guides (45)
+### How to Correct a Typo in a PDF
+https://pdf.gold/articles/how-to-correct-a-typo-in-a-pdf/
+Fix a spelling mistake, wrong digit or misspelled name in a PDF without the original Word file. Free and offline on Windows with Gold PDF.
+
 ### How to Redact Text in a PDF on a Laptop Offline
 https://pdf.gold/articles/how-to-redact-text-in-a-pdf-on-a-laptop-offline/
 Redact text in a PDF on a Windows laptop with no internet. Mark the words, save, and the content is removed for good. Free, offline, no account.
