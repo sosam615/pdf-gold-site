@@ -11,7 +11,11 @@
 - AI providers (bring your own key): Google Gemini, Anthropic Claude, OpenAI, OpenRouter, Groq, Mistral, Cerebras, GitHub Models, Cohere, NVIDIA, Hugging Face, Cloudflare, Alibaba, Z.ai, SiliconFlow.
 - Limits: very complex mixed-direction text deserves a visual check.
 
-## All guides (45)
+## All guides (46)
+### How to Change a Date in a PDF
+https://pdf.gold/articles/how-to-change-a-date-in-a-pdf/
+Change a wrong date in a PDF, such as an invoice, contract or certificate, without the source file. Free and offline on Windows with Gold PDF.
+
 ### How to Correct a Typo in a PDF
 https://pdf.gold/articles/how-to-correct-a-typo-in-a-pdf/
 Fix a spelling mistake, wrong digit or misspelled name in a PDF without the original Word file. Free and offline on Windows with Gold PDF.

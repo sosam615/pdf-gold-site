@@ -129,6 +129,7 @@ title: Best Free PDF Editor Without Watermark
 description: Many free PDF editors stamp a watermark on your file. How to find one that does not, and what Gold PDF includes for free on Windows.
 topic: compare
 date: 2026-10-18
+modified: 2026-11-12
 faq: Why do free PDF editors add watermarks? || Watermarks push users to a paid plan; they appear on exported or saved files.
 faq: Does Gold PDF add a watermark? || No. Gold PDF is free with no watermark, page limit or trial period.
 faq: How can I test for a watermark? || Edit a sample file, save it and open the result before using the tool on something important.
@@ -148,12 +149,50 @@ The best free PDF editor without a watermark is one that does not limit the save
 3. Check every page, plus the file size and properties.
 4. Try the feature you actually need (redaction, OCR).
 
+## Where watermarks hide
+A watermark is not always a big diagonal word across the page. Free tools use several quieter forms, so check for all of them:
+
+| Where it appears | How to spot it |
+|---|---|
+| Diagonal or centred text on each page | Obvious at normal zoom, but zoom out to see faint ones |
+| Small logo or "created with" line in a footer | Look at the bottom margin of every page, not just the first |
+| Stamp on only some pages | Scroll through the whole file; free limits sometimes start after page 3 or 5 |
+| Added only when you print or export | Test Print to PDF and the export menu as well as Save |
+| Hidden in the file properties | Open Document properties and read the Producer and Title fields |
+| Low-resolution images on export | Zoom to 300% on a photo or logo and compare it with the original |
+
+The last row matters more than people expect. Some free tiers do not stamp anything but quietly shrink images or flatten the page to save space, and the damage only shows when you print.
+
+## Free, trial and freemium are different things
+"Free" is used for three different offers, and only one of them means what most people expect.
+
+- **Free.** Every feature works, with no time limit and no stamp. You can use it for a one-off job or for years.
+- **Free trial.** Everything works for a number of days, then the tool locks or starts watermarking. This is a paid product with a demo period.
+- **Freemium.** Basic viewing and commenting are free, but the features you came for, such as editing text, redaction or OCR, sit behind a paywall or add a mark.
+
+Read the pricing page before you install anything, and look for the words "after the trial" or "export with a watermark" in the small print. If the tool asks for a payment card to start, it is almost certainly a trial.
+
+## A five-minute test you can repeat
+Use a sample file, never your real document, and do this in order:
+
+1. Create or pick a three-page PDF with one photo and some text.
+2. Make one edit on page 3 (the last page), not page 1, because limits often begin later.
+3. Save it under a new name and open the result in a different viewer.
+4. Check all three pages for stamps, then check the photo for blur and the file size for a sudden jump or drop.
+5. Try the exact feature you need, for example redact one word, then search the saved file for that word.
+
+If anything fails, you have lost five minutes instead of a deadline. Redaction deserves the extra test: a tool that only draws a box leaves the words underneath, as explained in [does drawing a black box redact a PDF](/articles/does-drawing-a-black-box-redact-a-pdf/).
+
 ## What Gold PDF gives you free
 Edit text, redaction, OCR, forms, signatures, AES-256 passwords, page tools, tabs, search and Gold AI with your own key. See [best free A alternative for Windows](/articles/best-free-a-alternative-for-windows/) and the page [Free PDF editor for Windows](/free-pdf-editor-windows/).
+
+Gold PDF is a Windows-only desktop program that works offline, so your files are not uploaded anywhere, and there is no account to create. Gold AI is optional and uses your own key, so any AI usage is billed by your provider, not by Gold PDF. It does not run on Mac or Linux, and it does not edit text in rotated pages until you rotate them back. Plain Whiteout only covers content; use Redact when the words must be gone.
 
 > **Common mistakes**
 > - Trusting a "free" label without testing a save.
 > - Overlooking account or upload requirements.
+> - Testing only page 1, when limits start later in the file.
+> - Checking the screen but not the printed or exported copy.
 =====
 title: Best Offline PDF Editor for Windows 11
 description: An offline PDF editor keeps documents on your PC. What to look for on Windows 11 and how Gold PDF edits, redacts and OCRs without internet.
