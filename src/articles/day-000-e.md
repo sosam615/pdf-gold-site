@@ -70,6 +70,7 @@ title: Best Free PDF Redaction Tool for Windows
 description: What makes a good free PDF redaction tool: real content removal, metadata cleaning, OCR and offline use — and how Gold PDF measures up.
 topic: compare
 date: 2026-10-18
+modified: 2026-11-13
 faq: What makes a redaction tool trustworthy? || It must remove the underlying text and image data, clear metadata and let you verify the saved file.
 faq: Is Gold PDF's redaction real? || Redacted pages are rebuilt on save so the original content is not in the file; verify by searching the saved PDF.
 faq: Can it redact scans? || Yes, run OCR first so words can be found and redacted.
@@ -88,12 +89,45 @@ The best free PDF redaction tool for Windows is one that truly removes the cover
 ## Gold PDF's method
 Draw Redact boxes (R), save, and each affected page is rebuilt as a high-resolution image with an invisible text layer for the rest; orphaned objects and metadata are removed. Test it with [how to check if a PDF redaction is secure](/articles/how-to-check-if-a-pdf-redaction-is-secure/).
 
+## How to test a redaction tool before you trust it
+A product page saying "secure redaction" tells you little. A ten-minute test on a dummy file tells you a lot, and you can run it on any free tool you are considering.
+
+1. **Make a test PDF.** Type a short page in a word processor with a made-up name, a fake account number and a sentence you will keep, then export it as a PDF.
+2. **Redact two items.** Cover the name and the account number with the tool's redaction feature and save under a new filename.
+3. **Search the saved file.** Open it and press Ctrl+F for the name. A real redaction finds nothing.
+4. **Copy and paste.** Select the area around the black bar, copy, and paste into Notepad. Nothing from under the bar should appear.
+5. **Check the kept text.** Search for a word from the sentence you kept. If the tool is good, it is still found, so the page stays usable.
+6. **Look at the properties.** Open the document properties and check that the title, author and subject do not repeat what you removed.
+
+If a tool fails step 3 or 4, it is drawing boxes, not redacting.
+
+## Redaction vs other "hide" features
+Many free editors offer something that looks like redaction. Only one of these approaches actually removes content.
+
+| Feature | What it does | Content still in file? |
+|---|---|---|
+| Black rectangle or highlight | Draws a shape on top | Yes |
+| Whiteout | Covers with a white box | Yes |
+| Printing to PDF | Flattens some layers, keeps text in many cases | Often yes |
+| Redact and rebuild on save | Rewrites the page without the covered content | No |
+
+In Gold PDF, plain Whiteout only covers, which is useful for tidying a layout but not for hiding secrets. Redact (R) is the tool to use when content must leave the file. The difference is explained further in [what is the difference between redacting and whiteout](/articles/what-is-the-difference-between-redacting-and-whiteout/).
+
+## Redacting a scanned document
+Scans are where many free tools fall short. A scan is an image, so a word search finds nothing until the page has been recognised, and you cannot redact what you cannot find. In Gold PDF, run **Recognize text** (Ctrl+Shift+O) first; English and Hebrew are bundled and recognition runs on your PC. Then search for each name or number, draw Redact boxes over every hit, and save. The page is rebuilt with the bars burned into the image, so the pixels under them are gone, not just covered. Step-by-step instructions are in [how to redact a scanned PDF document](/articles/how-to-redact-a-scanned-pdf-document/).
+
+## Who a free offline tool suits
+A free desktop tool fits people who redact occasionally and care about privacy: a tenant sending bank statements, a small business sharing a contract, an HR team removing a salary before forwarding a letter. Because nothing is uploaded, it also suits files that should never touch a third-party server. Teams that redact thousands of pages a week, need audit logs, or must follow a specific court or agency workflow may need dedicated case software instead.
+
 ## Limits
-Rebuilt pages are images with a text layer, so file sizes can grow. It does not provide court-specific templates, redaction logs or batch automation.
+Rebuilt pages are images with a text layer, so file sizes can grow. It does not provide court-specific templates, redaction logs or batch automation, and it runs on Windows 10 and 11 only.
 
 > **Common mistakes**
 > - Picking a tool because it has a "redact" button without testing.
 > - Not redacting the metadata.
+> - Using Whiteout or a black shape where real redaction is needed.
+> - Forgetting to run OCR on a scan, so some occurrences are never found.
+> - Sending the file before searching the saved copy for the removed words.
 =====
 title: How to Edit a PDF Using AI
 description: Edit a PDF with AI by describing the change. Gold PDF proposes line-by-line edits with your own API key and applies only what you approve.

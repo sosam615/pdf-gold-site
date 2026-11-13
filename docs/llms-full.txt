@@ -11,7 +11,11 @@
 - AI providers (bring your own key): Google Gemini, Anthropic Claude, OpenAI, OpenRouter, Groq, Mistral, Cerebras, GitHub Models, Cohere, NVIDIA, Hugging Face, Cloudflare, Alibaba, Z.ai, SiliconFlow.
 - Limits: very complex mixed-direction text deserves a visual check.
 
-## All guides (46)
+## All guides (47)
+### How to Edit a PDF Offline on Windows
+https://pdf.gold/articles/how-to-edit-a-pdf-offline-on-windows/
+Edit a PDF on Windows with no internet and no upload: change text, fill forms, sign, OCR and redact locally with the free Gold PDF editor.
+
 ### How to Change a Date in a PDF
 https://pdf.gold/articles/how-to-change-a-date-in-a-pdf/
 Change a wrong date in a PDF, such as an invoice, contract or certificate, without the source file. Free and offline on Windows with Gold PDF.
