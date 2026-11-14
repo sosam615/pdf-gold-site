@@ -133,6 +133,7 @@ title: How to Edit a PDF Using AI
 description: Edit a PDF with AI by describing the change. Gold PDF proposes line-by-line edits with your own API key and applies only what you approve.
 topic: ai
 date: 2026-10-18
+modified: 2026-11-14
 faq: Can AI edit a PDF? || Yes. Gold AI reads the document's text lines, proposes changes from your instruction and lets you approve each one before applying.
 faq: Which AI providers work? || Google Gemini, Claude, OpenAI, OpenRouter, Groq, Mistral and others, using your own API key.
 faq: Is my document uploaded? || Only the text lines and your instruction go to the provider you choose, and only when you press Run.
@@ -155,11 +156,45 @@ To edit a PDF using AI, connect your own API key in Gold PDF's **Gold AI** panel
 ## How it works
 Gold PDF sends the text lines of the open document and your instruction to the provider, asks for a small list of line edits, and applies approved edits like manual Edit text changes, so formatting stays consistent. Scanned pages need OCR first.
 
+## When AI editing helps and when manual editing is better
+AI is most useful when the same kind of change repeats across many lines, or when the change needs judgement about wording. For a single typo it is usually quicker to press **E**, click the line and fix it yourself.
+
+| Job | Better with Gold AI | Better by hand (E) |
+|---|---|---|
+| Change one wrong word | | Yes, faster |
+| Update every date or name across a long document | Yes | Possible, but slow |
+| Fix spelling throughout | Yes, then review each line | For one or two mistakes |
+| Make the tone more formal or simpler | Yes | Hard to do line by line |
+| Change exact figures such as prices or totals | Only if you check every number | Yes, safer |
+| Edit a scanned page | After OCR (Ctrl+Shift+O) | After OCR |
+
+The rule of thumb: let AI propose, but stay the editor. Numbers, names and legal wording are where a wrong suggestion costs the most, so read those lines twice.
+
+## Writing instructions that get good results
+Gold AI works on lines of text, so instructions that describe a clear, repeatable change work best. A few tips:
+
+- **Say what to leave alone.** "Fix grammar, but do not change names, numbers or headings" stops the model from touching things you did not mean.
+- **Be specific about the target.** "Replace 2025 with 2026 in dates only" is safer than "update the year", which might change a reference number that happens to contain 2025.
+- **One goal per run.** Run a spelling pass, review and apply it, then run a tone pass. Mixed instructions make the list of changes harder to review.
+- **Keep line length in mind.** Each approved change is applied to its own line, the same way a manual Edit text change is, and paragraphs do not reflow. Ask for "similar length" wording if a line must still fit its space.
+
+## A worked example: updating a price list for the new season
+A small shop has a four-page PDF price list with "Spring 2026" in the header of each page and the same phrase in the introduction. They want it to say "Autumn 2026", and they want the introduction to sound a little friendlier, without any price changing.
+
+1. They use Save as to create "price-list-autumn.pdf" and press Ctrl+J.
+2. With a provider already connected, they choose **Edit** and type: "Replace Spring 2026 with Autumn 2026. Do not change any prices or product names."
+3. Gold AI lists five proposed lines. Four are the headers and one is the introduction. They approve all five and press **Apply**.
+4. They run a second instruction: "Make the introduction paragraph friendlier. Keep each line about the same length." Three lines come back; they untick one that changed a delivery promise and apply the other two.
+5. They search with Ctrl+F for "Spring" to confirm nothing was missed, check the edited lines at 150% zoom and save.
+
+Only the text lines and the two instructions went to the provider; the prices were never altered because every proposed change was visible before it was applied.
+
 ## Privacy
-Nothing is sent until you press Run, and only to the provider you configured. If a document is highly confidential, redact first or skip AI.
+Nothing is sent until you press Run, and only to the provider you configured. The rest of Gold PDF, including editing, OCR, redaction and passwords, works offline. If a document is highly confidential, redact first or skip AI, and check your provider's own terms on how it handles requests.
 
 > **Common mistakes**
 > - Accepting every change without reading it.
+> - Asking for several different changes in one instruction.
 > - Using AI on scanned pages without OCR.
 > - Sending sensitive text to an unfamiliar provider.
 

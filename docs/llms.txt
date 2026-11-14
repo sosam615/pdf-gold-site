@@ -27,6 +27,7 @@
 - [Unlock PDF](https://pdf.gold/tools/unlock-pdf/): Remove the open-password from your own PDF so it opens without asking. Free, private, runs in your browser.
 
 ## Guides
+- [How to Add Text to a PDF Document](https://pdf.gold/articles/how-to-add-text-to-a-pdf-document/): Add text to a PDF for free on Windows: place new words anywhere on the page, match the size and colour, fill flat forms and save offline.
 - [How to Edit a PDF Offline on Windows](https://pdf.gold/articles/how-to-edit-a-pdf-offline-on-windows/): Edit a PDF on Windows with no internet and no upload: change text, fill forms, sign, OCR and redact locally with the free Gold PDF editor.
 - [How to Change a Date in a PDF](https://pdf.gold/articles/how-to-change-a-date-in-a-pdf/): Change a wrong date in a PDF, such as an invoice, contract or certificate, without the source file. Free and offline on Windows with Gold PDF.
 - [How to Correct a Typo in a PDF](https://pdf.gold/articles/how-to-correct-a-typo-in-a-pdf/): Fix a spelling mistake, wrong digit or misspelled name in a PDF without the original Word file. Free and offline on Windows with Gold PDF.
@@ -66,7 +67,6 @@
 - [How to OCR a PDF Offline Without Uploading](https://pdf.gold/articles/how-to-ocr-a-pdf-offline-without-uploading/): Run OCR on a PDF without uploading it to a website. Gold PDF recognises text on your own Windows PC, offline, free.
 - [How to OCR a Scanned PDF for Free](https://pdf.gold/articles/how-to-ocr-a-scanned-pdf-for-free/): Make a scanned PDF readable: run OCR for free on Windows, offline. English and Hebrew built in, more languages on demand. Step by step.
 - [How to Password Protect a PDF for Free](https://pdf.gold/articles/how-to-password-protect-a-pdf-for-free/): Add a password to a PDF for free with AES-256 encryption on Windows. Offline, no upload, no account. Step by step with Gold PDF.
-- [How to Permanently Remove Text From a PDF](https://pdf.gold/articles/how-to-permanently-remove-text-from-a-pdf/): Deleting or covering text in a PDF often leaves it in the file. Learn how to remove text permanently so it cannot be recovered, free on Windows.
 
 ## Localized home pages
 - [English](https://pdf.gold/)

@@ -11,7 +11,11 @@
 - AI providers (bring your own key): Google Gemini, Anthropic Claude, OpenAI, OpenRouter, Groq, Mistral, Cerebras, GitHub Models, Cohere, NVIDIA, Hugging Face, Cloudflare, Alibaba, Z.ai, SiliconFlow.
 - Limits: very complex mixed-direction text deserves a visual check.
 
-## All guides (47)
+## All guides (48)
+### How to Add Text to a PDF Document
+https://pdf.gold/articles/how-to-add-text-to-a-pdf-document/
+Add text to a PDF for free on Windows: place new words anywhere on the page, match the size and colour, fill flat forms and save offline.
+
 ### How to Edit a PDF Offline on Windows
 https://pdf.gold/articles/how-to-edit-a-pdf-offline-on-windows/
 Edit a PDF on Windows with no internet and no upload: change text, fill forms, sign, OCR and redact locally with the free Gold PDF editor.
