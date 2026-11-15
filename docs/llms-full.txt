@@ -11,7 +11,11 @@
 - AI providers (bring your own key): Google Gemini, Anthropic Claude, OpenAI, OpenRouter, Groq, Mistral, Cerebras, GitHub Models, Cohere, NVIDIA, Hugging Face, Cloudflare, Alibaba, Z.ai, SiliconFlow.
 - Limits: very complex mixed-direction text deserves a visual check.
 
-## All guides (48)
+## All guides (49)
+### How to Change the Font Size in a PDF
+https://pdf.gold/articles/how-to-change-the-font-size-in-a-pdf/
+Change the font size in a PDF for free on Windows: resize one line, fit new text to the page and keep the layout tidy, all offline in Gold PDF.
+
 ### How to Add Text to a PDF Document
 https://pdf.gold/articles/how-to-add-text-to-a-pdf-document/
 Add text to a PDF for free on Windows: place new words anywhere on the page, match the size and colour, fill flat forms and save offline.

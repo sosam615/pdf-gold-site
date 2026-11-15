@@ -204,6 +204,7 @@ title: How to Use Your Own API Key With a PDF Editor
 description: Bring your own AI key to a PDF editor: where to get it, how to connect it in Gold PDF, how to test it, and how your key is stored.
 topic: ai
 date: 2026-10-18
+modified: 2026-11-15
 faq: Where is my API key stored? || In a small JSON config file on your PC that you can open and edit from the Gold AI panel.
 faq: Which providers are supported? || Google Gemini, Anthropic Claude, OpenAI, OpenRouter, Groq, Mistral, Cerebras, GitHub Models, Cohere, NVIDIA, Hugging Face, Cloudflare, Alibaba, Z.ai and SiliconFlow.
 faq: Who pays for AI usage? || You do, directly with your provider; Gold PDF itself is free.
@@ -225,6 +226,41 @@ You pay the provider by usage, or use their free tier if available. Rate limits 
 
 ## What gets sent
 Only the document's text lines and your instruction, when you press Run. See [how to edit a PDF using AI](/articles/how-to-edit-a-pdf-using-ai/).
+
+## Why bring your own key instead of a bundled AI
+Some editors include AI features that run through the vendor's own servers and are billed inside a subscription. Bringing your own key reverses that arrangement. You choose the provider, you see the usage on your own account, and the editor itself stays free. It also means you can switch provider later without changing editor, which matters because models, prices and free tiers change often.
+
+The trade-off is a few minutes of setup and the responsibility of looking after a key. If you only edit a PDF with AI once a year, the setup may not be worth it. If you do it weekly, it quickly becomes routine.
+
+## Choosing a provider and a model
+There is no single right choice, so decide by what you value.
+
+| If you care most about | Look for | Notes |
+|---|---|---|
+| Paying nothing | A provider with a free tier | Free tiers usually have daily or per-minute limits, so large documents may need patience |
+| Quality of the rewriting | A larger, more capable model | Costs more per request and can be slower |
+| Speed on small fixes | A smaller, cheaper model | Fine for typos, dates and short wording changes |
+| One account for many models | An aggregator such as OpenRouter | Lets you try several models with one key |
+
+Free tiers, prices and model names change, so check the provider's own pricing page on the day you set up rather than trusting any list, including this one. A sensible habit is to begin with a cheap model, and move to a larger one only if the results are not good enough.
+
+## Testing your key and fixing common errors
+**Test connection** is the quickest check, and it is worth pressing every time you change the key, provider or model. When it fails, the message usually points at one of a few causes.
+
+- **Invalid or unauthorised key.** The key was copied with a missing character, an extra space, or belongs to a different provider than the one selected. Paste it again from the provider's console.
+- **Model not found.** The model name is mistyped or your account does not have access to it. Pick another model from the list.
+- **Rate limit or quota exceeded.** You have used the free allowance for now. Wait a while, or switch to another model or provider.
+- **Account ID error (Cloudflare).** That provider needs an account ID as well as a key; both must be filled in.
+- **Network error.** The request could not reach the provider. Check your connection, or whether a company firewall blocks the address.
+
+## Looking after your key
+An API key works like a password that also spends money, so a few simple habits protect it.
+
+1. Never paste it into a chat, email or shared document, and crop screenshots of the AI panel so the key is not visible.
+2. Create a separate key for this purpose rather than reusing one from another project, so you can delete it without breaking anything else.
+3. If a provider lets you set a monthly spending limit, set a low one.
+4. If you think the key has leaked, delete it in the provider's console and create a new one. Then paste the new key into Gold AI.
+5. On a shared computer, remember the config file is on that PC, so remove the key from the panel when you finish.
 
 > **Common mistakes**
 > - Pasting the key into the wrong provider.
