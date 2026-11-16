@@ -27,6 +27,7 @@
 - [Unlock PDF](https://pdf.gold/tools/unlock-pdf/): Remove the open-password from your own PDF so it opens without asking. Free, private, runs in your browser.
 
 ## Guides
+- [How to Delete Text From a PDF](https://pdf.gold/articles/how-to-delete-text-from-a-pdf/): Delete a word, line or paragraph from a PDF for free on Windows, close the gap, and know when to remove text for good instead. Offline in Gold PDF.
 - [How to Change the Font Size in a PDF](https://pdf.gold/articles/how-to-change-the-font-size-in-a-pdf/): Change the font size in a PDF for free on Windows: resize one line, fit new text to the page and keep the layout tidy, all offline in Gold PDF.
 - [How to Add Text to a PDF Document](https://pdf.gold/articles/how-to-add-text-to-a-pdf-document/): Add text to a PDF for free on Windows: place new words anywhere on the page, match the size and colour, fill flat forms and save offline.
 - [How to Edit a PDF Offline on Windows](https://pdf.gold/articles/how-to-edit-a-pdf-offline-on-windows/): Edit a PDF on Windows with no internet and no upload: change text, fill forms, sign, OCR and redact locally with the free Gold PDF editor.
@@ -66,7 +67,6 @@
 - [How to Fill Out a PDF Form for Free](https://pdf.gold/articles/how-to-fill-out-a-pdf-form-for-free/): Fill out a PDF form for free on Windows: text boxes, check boxes and drop-downs, then sign and save. Offline, no account, no printing.
 - [How to Make a Scanned PDF Searchable](https://pdf.gold/articles/how-to-make-a-scanned-pdf-searchable/): Turn a scanned PDF into a searchable document with OCR. Free on Windows, offline, with a clear step-by-step and quality tips.
 - [How to OCR a PDF Offline Without Uploading](https://pdf.gold/articles/how-to-ocr-a-pdf-offline-without-uploading/): Run OCR on a PDF without uploading it to a website. Gold PDF recognises text on your own Windows PC, offline, free.
-- [How to OCR a Scanned PDF for Free](https://pdf.gold/articles/how-to-ocr-a-scanned-pdf-for-free/): Make a scanned PDF readable: run OCR for free on Windows, offline. English and Hebrew built in, more languages on demand. Step by step.
 
 ## Localized home pages
 - [English](https://pdf.gold/)

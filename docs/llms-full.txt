@@ -11,7 +11,11 @@
 - AI providers (bring your own key): Google Gemini, Anthropic Claude, OpenAI, OpenRouter, Groq, Mistral, Cerebras, GitHub Models, Cohere, NVIDIA, Hugging Face, Cloudflare, Alibaba, Z.ai, SiliconFlow.
 - Limits: very complex mixed-direction text deserves a visual check.
 
-## All guides (49)
+## All guides (50)
+### How to Delete Text From a PDF
+https://pdf.gold/articles/how-to-delete-text-from-a-pdf/
+Delete a word, line or paragraph from a PDF for free on Windows, close the gap, and know when to remove text for good instead. Offline in Gold PDF.
+
 ### How to Change the Font Size in a PDF
 https://pdf.gold/articles/how-to-change-the-font-size-in-a-pdf/
 Change the font size in a PDF for free on Windows: resize one line, fit new text to the page and keep the layout tidy, all offline in Gold PDF.

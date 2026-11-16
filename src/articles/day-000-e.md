@@ -3,7 +3,7 @@ title: Is Online PDF Editor Safe for Confidential Documents
 description: Is it safe to edit confidential PDFs on a website? What gets uploaded, what can go wrong, and safer offline options for private files.
 topic: compare
 date: 2026-10-18
-modified: 2026-11-09
+modified: 2026-11-16
 faq: Is an online PDF editor safe for contracts? || It depends on the provider's retention, encryption and policies; uploading always adds a third party. For highly confidential files an offline editor avoids the risk.
 faq: What should I check on an online tool? || Retention period, encryption, where files are stored, whether files are used for training, and who can access them.
 faq: What is the safest alternative? || Edit locally with an offline tool such as Gold PDF so the file never leaves your computer.
@@ -52,6 +52,26 @@ Ask what would happen if a stranger read the document. If the answer is "nothing
 
 ## What to do if you already uploaded something sensitive
 Do not panic, but act in order. Delete the file from the service if it offers that option and note when you did. Change any passwords that were visible in the document. If it held an account number, tell your bank that the number may have been exposed and watch for unusual activity. If it held someone else's data, such as a client's, follow your organisation's rules about reporting it. Then switch to an offline workflow for the next file so it does not happen again.
+
+## A worked example: an HR letter that has to be shared
+Imagine you need to send a signed employment letter to a mortgage broker. It contains your salary, your ID number, your home address and your employer's bank details, and the broker only needs the salary and the job title. A free web editor looks like the quick way to black out the rest.
+
+Here is what that really involves, and what the offline route looks like instead.
+
+| Step | Online editor | Offline editor on your PC |
+|---|---|---|
+| Open the file | The whole letter is uploaded first | The file is opened from your own disk |
+| Mark the ID and bank details | Done on a remote server, or in your browser after the upload | Done on your computer |
+| Save the result | You download a new file; the upload may remain on the service for a period you did not choose | You save a new file next to the original |
+| Where copies exist | Your computer, the service, possibly its backups and logs | Your computer only |
+| What you must trust | The provider's retention, security and staff | Your own machine |
+
+The first column is not automatically unsafe. Many providers are careful and delete files quickly. The point is that you cannot see how they do it, and the letter held everything an identity thief wants before you even got to the redaction step.
+
+With an offline editor the sequence is short. Open the letter in Gold PDF, press **R** and mark the ID number, address and bank details, then **Ctrl+S** to save a copy with a new name. Close and reopen that copy, search for a digit from the ID number with Ctrl+F, and try copying across a bar into Notepad. If nothing comes out, send the clean copy and keep the original in your own records.
+
+### A quick rule of thumb for deciding
+Ask what would happen if the file turned up somewhere you did not intend. A flyer or a menu: nothing. A signed contract, a payslip or a medical letter: possible fraud, embarrassment or a breach of someone else's trust. The higher the cost, the more reason to use a tool that never receives the file in the first place. Convenience matters for ordinary documents, but it is a poor reason to upload anything with an ID number in it.
 
 ## Safer habits
 - Use offline tools for confidential files.
