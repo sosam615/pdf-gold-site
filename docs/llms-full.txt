@@ -11,7 +11,11 @@
 - AI providers (bring your own key): Google Gemini, Anthropic Claude, OpenAI, OpenRouter, Groq, Mistral, Cerebras, GitHub Models, Cohere, NVIDIA, Hugging Face, Cloudflare, Alibaba, Z.ai, SiliconFlow.
 - Limits: very complex mixed-direction text deserves a visual check.
 
-## All guides (50)
+## All guides (51)
+### How to Edit a PDF Invoice Without Changing Layout
+https://pdf.gold/articles/how-to-edit-a-pdf-invoice-without-changing-layout/
+Edit a PDF invoice for free on Windows and keep columns, totals and spacing exactly in place. Change one line at a time, offline, in Gold PDF.
+
 ### How to Delete Text From a PDF
 https://pdf.gold/articles/how-to-delete-text-from-a-pdf/
 Delete a word, line or paragraph from a PDF for free on Windows, close the gap, and know when to remove text for good instead. Offline in Gold PDF.

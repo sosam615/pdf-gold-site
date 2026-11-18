@@ -66,7 +66,7 @@ title: How to Fill Out a PDF Form for Free
 description: Fill out a PDF form for free on Windows: text boxes, check boxes and drop-downs, then sign and save. Offline, no account, no printing.
 topic: forms
 date: 2026-10-18
-modified: 2026-11-03
+modified: 2026-11-18
 faq: How do I know a PDF is fillable? || Gold PDF highlights the fields softly in blue when you open the file.
 faq: What if the form is not fillable? || Use the Text tool (T) to type anywhere on the page.
 faq: Are my entries saved in the file? || Yes. Values are saved as real form data when you save.
@@ -104,6 +104,33 @@ Before you save, scroll through every page once. Look for required fields you sk
 Open the form and look for the soft blue highlight. If clicking a field puts a cursor in it, the form is fillable and your entries are saved as real form data. If nothing is highlighted, the PDF is a flat page. In that case use the Text tool, zoom in so you can place the cursor accurately, and keep a consistent font size. A flat form that came from a scan may also benefit from [recognising the text](/articles/how-to-ocr-a-scanned-pdf-for-free/) so it is searchable afterwards.
 
 If you handle many forms, remember that your answers are personal data. Save them in a folder only you can open, avoid editing on shared computers, and delete temporary copies when you are finished. Gold PDF works offline, so nothing you type is uploaded while you fill the form.
+
+## How each kind of field behaves
+Fillable forms are built from a small set of field types. Knowing what each one expects saves time and avoids entries that look right on screen but are wrong in the saved file.
+
+| Field | How to fill it | Watch out for |
+|---|---|---|
+| Text box | Click and type; Tab moves to the next field | Long answers that run past the visible box |
+| Multi-line text box | Click and type; the box holds several lines | Text that is cut off at the bottom when printed |
+| Check box | Click once to tick, again to clear | Ticking a box by accident while scrolling |
+| Radio buttons | Click one option in the group | Only one choice per group can be selected |
+| Drop-down list | Click and pick a value | A default value that you never changed |
+| Signature line | Place a saved signature from the Signatures button | Forms with several signature lines on different pages |
+
+Tab order is set by whoever made the form, so it does not always follow the page from top to bottom. If Tab jumps somewhere unexpected, click the next field directly instead. On long forms, it helps to fill one page at a time and scroll back to the top of it before moving on.
+
+## When your answer does not fit the box
+Some forms leave very little room, especially for addresses, job titles and explanations. If your text runs past the edge of a field, try a shorter wording first: abbreviations such as "St." or "Apt." are normally accepted. If the answer really needs more space, check whether the form has a continuation section or an "additional information" page, and write "see attached" in the short field.
+
+For flat forms, you have more control. With the Text tool (**T**) you choose where the text starts and how large it is, so you can reduce the size slightly for one long line. Keep the size the same across all your answers where you can; a page with three different sizes looks careless and is harder to read.
+
+## A second example: a school permission form
+A school sends a one-page trip permission form that was scanned from paper, so nothing is highlighted when you open it. Press **T**, click just after "Student name" and type the name. Set a size that matches the printed labels and keep using it for every answer. For the "Yes / No" choice about medication, type an "X" next to the right option, or draw a small tick with the Pen. Add the emergency phone number, then the date in the same format the form uses.
+
+Before you sign, zoom to 150% and check that each answer sits on its line rather than across it. Then place your saved signature on the parent signature line and use Save as with a clear name, such as "trip-form-signed.pdf". If the school asks for the form by email, the file is ready to attach; if it holds medical details, consider a password and send it to the teacher separately.
+
+## Saving, reopening and sending
+After you save, close the form and open the saved copy once. Check that every answer is still there, that ticked boxes are still ticked, and that your signature appears in the right place. This takes a few seconds and catches the most common problem: closing without saving, or sending the blank original instead of the filled copy. When you attach the file to an email, attach the copy with the new name, not the one you downloaded.
 
 ## Keep your data safe
 Forms contain personal data. Fill them offline, save to a safe place and password protect the file before emailing: [how to password protect a PDF for free](/articles/how-to-password-protect-a-pdf-for-free/).
