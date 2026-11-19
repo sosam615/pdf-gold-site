@@ -11,7 +11,11 @@
 - AI providers (bring your own key): Google Gemini, Anthropic Claude, OpenAI, OpenRouter, Groq, Mistral, Cerebras, GitHub Models, Cohere, NVIDIA, Hugging Face, Cloudflare, Alibaba, Z.ai, SiliconFlow.
 - Limits: very complex mixed-direction text deserves a visual check.
 
-## All guides (51)
+## All guides (52)
+### How to Edit a PDF Resume Quickly
+https://pdf.gold/articles/how-to-edit-a-pdf-resume-quickly/
+Fix a typo, update a job title or add a new role in a PDF resume for free on Windows, offline, without the original Word file. Step by step in Gold PDF.
+
 ### How to Edit a PDF Invoice Without Changing Layout
 https://pdf.gold/articles/how-to-edit-a-pdf-invoice-without-changing-layout/
 Edit a PDF invoice for free on Windows and keep columns, totals and spacing exactly in place. Change one line at a time, offline, in Gold PDF.

@@ -203,7 +203,7 @@ title: How to Save a Signature for Reuse in PDFs
 description: Save your signature once and reuse it in any PDF. Draw or import it, keep it in a library, and place it in seconds with Gold PDF.
 topic: forms
 date: 2026-10-18
-modified: 2026-11-06
+modified: 2026-11-19
 faq: Where is my saved signature stored? || In Gold PDF's local storage on your computer; it is not uploaded.
 faq: Can I keep several signatures? || Yes. The library holds as many as you like, and each can be deleted.
 faq: Can I import a signature from a photo? || Yes, import a PNG or JPG; a transparent PNG looks best.
@@ -253,6 +253,34 @@ An image of your signature placed on a page is a visual mark. It shows who agree
 
 ## Where to place it and when to lock the file
 Put the signature on the line provided and keep it inside the margins so that it is not cropped when the page is printed. When the document is final, save a copy, and consider [password protecting the PDF](/articles/how-to-password-protect-a-pdf-for-free/) before you send it. If the form also has fields to complete, fill them in first: see [how to fill out a PDF form for free](/articles/how-to-fill-out-a-pdf-form-for-free/).
+
+## Cleaning up a signature image before you save it
+Most disappointing results come from the image, not from the app. Spend two minutes on these checks before you press **Save signature**:
+
+- **Contrast.** The ink should be clearly darker than the paper. A pale pen on grey paper leaves a faint, broken line once the background is removed.
+- **Size.** A signature image around 600 to 1,000 pixels wide is plenty. Much smaller and the edges look soft when you enlarge it on the page; much larger gives you nothing extra.
+- **Straightness.** If the photo was taken at an angle, the signature leans and the baseline looks tilted. Retake it from directly above.
+- **Margins.** Crop close to the ink. A big empty border makes the signature look small when you place it, because the border counts as part of the image.
+- **Background.** If you see a pale box around the signature when you test it on a page, the background is not transparent. Remove it in an image editor, or re-photograph it on bright white paper and increase the contrast.
+
+## Using several signatures: formal, short and initials
+Many people end up with three entries, and each one has a job:
+
+| Entry | Typical use | Tip |
+|---|---|---|
+| Full signature | Contracts, tenancy agreements, forms for authorities | Keep it as large and clear as your real one |
+| Short signature | Everyday forms, delivery notes | A faster, simpler version, if that is what you really use |
+| Initials | Bottom of each page of a multi-page agreement | Save separately so you never enlarge a full signature by mistake |
+
+Give the entries names you will recognise at a glance. When you are in a hurry, picking the wrong card means a re-do, and a signature placed on the wrong line has to be removed and replaced, which is easy to forget on a long document.
+
+## Resizing and positioning a saved signature
+After you click the page, the signature appears as an object you can move and resize. Drag a corner to make it larger or smaller, and keep the proportions so it does not look stretched. As a guide, a signature should be about as tall as two or three lines of body text, and it should sit on or just above the signature line, not across the printed name beneath it.
+
+Zoom in to 150% for the final check. Make sure no stroke is cut off by the edge of the image, that it does not touch other text and that it still looks natural at 100%. Then save with a new name, so the unsigned file remains available.
+
+## Keeping your signature safe
+A saved signature is convenient, and for exactly that reason you should treat it carefully. Anyone who can open the app on your account can place it on a page. Do not leave the library on a shared or work computer, delete entries you no longer use, and never send the image of your signature on its own by email. If you ever suspect it has been copied, there is nothing to revoke: delete it from your library, and consider changing the way you sign important documents.
 
 > **Common mistakes**
 > - Saving a signature with a white box around it.
