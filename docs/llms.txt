@@ -27,6 +27,7 @@
 - [Unlock PDF](https://pdf.gold/tools/unlock-pdf/): Remove the open-password from your own PDF so it opens without asking. Free, private, runs in your browser.
 
 ## Guides
+- [How to Edit Text in a Scanned PDF](https://pdf.gold/articles/how-to-edit-text-in-a-scanned-pdf/): Edit text in a scanned PDF for free on Windows: run OCR first, then change the recognised words. Offline steps, limits and checks in Gold PDF.
 - [How to Edit a PDF Resume Quickly](https://pdf.gold/articles/how-to-edit-a-pdf-resume-quickly/): Fix a typo, update a job title or add a new role in a PDF resume for free on Windows, offline, without the original Word file. Step by step in Gold PDF.
 - [How to Edit a PDF Invoice Without Changing Layout](https://pdf.gold/articles/how-to-edit-a-pdf-invoice-without-changing-layout/): Edit a PDF invoice for free on Windows and keep columns, totals and spacing exactly in place. Change one line at a time, offline, in Gold PDF.
 - [How to Delete Text From a PDF](https://pdf.gold/articles/how-to-delete-text-from-a-pdf/): Delete a word, line or paragraph from a PDF for free on Windows, close the gap, and know when to remove text for good instead. Offline in Gold PDF.
@@ -66,7 +67,6 @@
 - [How to Edit a PDF Using AI](https://pdf.gold/articles/how-to-edit-a-pdf-using-ai/): Edit a PDF with AI by describing the change. Gold PDF proposes line-by-line edits with your own API key and applies only what you approve.
 - [How to Edit a PDF Without A](https://pdf.gold/articles/how-to-edit-a-pdf-without-a/): Edit a PDF without A: change text, add notes, redact, OCR and sign — free on Windows, offline, with Gold PDF as an alternative.
 - [How to Edit Text in a PDF for Free](https://pdf.gold/articles/how-to-edit-text-in-a-pdf-for-free/): Edit the words already inside a PDF for free on Windows: click a line, retype it, save. Offline, no account and no watermark with Gold PDF.
-- [How to Fill Out a PDF Form for Free](https://pdf.gold/articles/how-to-fill-out-a-pdf-form-for-free/): Fill out a PDF form for free on Windows: text boxes, check boxes and drop-downs, then sign and save. Offline, no account, no printing.
 
 ## Localized home pages
 - [English](https://pdf.gold/)

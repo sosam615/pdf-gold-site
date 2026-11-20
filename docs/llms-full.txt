@@ -11,7 +11,11 @@
 - AI providers (bring your own key): Google Gemini, Anthropic Claude, OpenAI, OpenRouter, Groq, Mistral, Cerebras, GitHub Models, Cohere, NVIDIA, Hugging Face, Cloudflare, Alibaba, Z.ai, SiliconFlow.
 - Limits: very complex mixed-direction text deserves a visual check.
 
-## All guides (52)
+## All guides (53)
+### How to Edit Text in a Scanned PDF
+https://pdf.gold/articles/how-to-edit-text-in-a-scanned-pdf/
+Edit text in a scanned PDF for free on Windows: run OCR first, then change the recognised words. Offline steps, limits and checks in Gold PDF.
+
 ### How to Edit a PDF Resume Quickly
 https://pdf.gold/articles/how-to-edit-a-pdf-resume-quickly/
 Fix a typo, update a job title or add a new role in a PDF resume for free on Windows, offline, without the original Word file. Step by step in Gold PDF.

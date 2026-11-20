@@ -265,6 +265,7 @@ title: Gold PDF vs A Comparison
 description: Gold PDF vs A: price, editing, redaction, OCR, privacy and limits compared honestly, with dated list prices.
 topic: compare
 date: 2026-10-18
+modified: 2026-11-20
 faq: Is Gold PDF a full replacement for A Pro? || For everyday editing, redaction, OCR, forms, signatures and passwords, often yes; for prepress, accessibility tagging and cloud signing, no.
 faq: How much is A Pro? || About $19.99 a month on an annual plan was commonly listed in October 2026; prices vary, so check A.
 faq: Which one is more private? || Gold PDF is offline by design; A has optional cloud features.
@@ -290,5 +291,32 @@ Gold PDF is free and covers the everyday jobs people use A Pro for; A Pro adds a
 
 ## How to test
 Run one real task in each: edit a line, redact a number, OCR a scan. Then verify the saved files. More in [best free A alternative for Windows](/articles/best-free-a-alternative-for-windows/).
+
+## A fair five-task test you can run in an hour
+Feature tables only tell you what a product claims. A short test with your own files tells you what it does. Pick five tasks that match how you really use PDFs, run each in both programs and write down the result.
+
+| Task | What to do | What to check afterwards |
+|---|---|---|
+| Edit | Change a word and a number on a page with a mixed font | Does the line keep its position, size and colour? Reopen the saved file and search for the old words |
+| Redact | Remove a name and a number from a page | Search the saved file with Ctrl+F and try copying the area. Nothing should be found or pasted |
+| OCR | Recognise a scanned page, then search for a word | Compare the recognised text with the picture, especially numbers |
+| Fill and sign | Complete a form and add a signature | Is the signature easy to reuse, and does the form still open in another viewer? |
+| Protect | Add a password and open the result | Does it ask for the password on a second computer? |
+
+Use a copy of a real document with no secrets in it, and keep notes. The test is most useful when you time each task, because a tool that is a little slower on every job is more costly than any difference in features.
+
+## Where the differences really show up
+**Cost over time.** A subscription is a recurring cost, so compare it with how often you need the paid features. Someone who edits two or three PDFs a month may never need what a professional plan adds. A team that signs, tags and prepares files for print every day probably does. Prices are list prices at the time of writing and change by country, plan and promotion, so check the vendor's own page before you decide.
+
+**Privacy.** Gold PDF does its work on your computer, and nothing is uploaded unless you choose to use the optional Gold AI with your own key. If your files contain medical, legal or financial details, an offline tool removes a whole category of questions about where a document went. Cloud features in other products can be useful, but they do mean your file travels. Read what each product sends before you use it on confidential material. Our guide to [whether an online PDF editor is safe for confidential documents](/articles/is-online-pdf-editor-safe-for-confidential-documents/) explains what to look for.
+
+**Platforms.** Gold PDF runs on Windows 10 and 11 only. If you work across Mac, phone and browser, or your colleagues do, a cross-platform product removes friction that no feature list shows. This is the clearest reason for many people to choose a paid tool, and it is a fair one.
+
+**Specialist work.** Accessibility tagging, prepress checks and cloud signing workflows are professional features that Gold PDF does not offer. If a client or a regulation requires them, use a tool that has them.
+
+**Redaction.** For sensitive documents the question is not whether a tool has a redaction button but whether the information is really removed. Gold PDF rebuilds each redacted page when you save. Whatever tool you choose, run the same check on the saved file: search it, copy from it and look at it again. See [how to check if a PDF redaction is secure](/articles/how-to-check-if-a-pdf-redaction-is-secure/).
+
+## A simple way to decide
+Start with Gold PDF if you use Windows, mostly edit, redact, sign, fill and password-protect files, and value privacy and zero cost. Use a paid professional tool if you need cross-platform apps, accessibility tagging, print production or team workflows. Many people do both: a free offline tool for the daily jobs, and a paid seat for the rare job that needs it. That is a sensible way to spend money, and it does not require you to pick one product for everything.
 
 > Prices and features change; check the vendor's site. Product names are trademarks of their owners; Gold PDF is not affiliated with A.
