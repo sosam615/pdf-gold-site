@@ -146,7 +146,7 @@ title: How to Sign a PDF Without Printing
 description: Sign a PDF on screen without printing or scanning: draw or import a signature, place it and save. Free on Windows with Gold PDF.
 topic: forms
 date: 2026-10-18
-modified: 2026-11-04
+modified: 2026-11-21
 faq: Can I sign a PDF without printing it? || Yes. Draw or import a signature image and place it on the page.
 faq: Is that a legally binding signature? || Rules vary by country and document type; many agreements accept simple electronic signatures, but some need qualified signatures. Check the requirements.
 faq: Can I reuse my signature? || Yes. Gold PDF saves signatures in a library for reuse.
@@ -188,6 +188,33 @@ To lock the file after signing, see [how to password protect a PDF for free](/ar
 - **Can the other side tell it is an image?** Yes, a pasted signature is an image of your handwriting. That is normal for simple electronic signatures.
 - **Can someone copy my signature from the file?** Anyone who receives a PDF can in principle extract an image from it. Only send signed files to people you trust, and keep a separate copy without the signature for your own records.
 - **Should I use the same signature everywhere?** Keep one for formal documents and another, simpler one for everyday forms. Reusing them is easy: [how to save a signature for reuse in PDFs](/articles/how-to-save-a-signature-for-reuse-in-pdfs/).
+
+## Signing a document that several people must sign
+Contracts often need two or more signatures, and the order in which people sign matters more than most expect. A simple routine keeps everything tidy:
+
+1. The person who prepares the document fills in every typed field first: names, dates, amounts and addresses.
+2. The first signer saves a copy with "-signed-1" in the name, places their signature and any initials, and sends it on.
+3. The next signer opens that file, not the original, adds their own signature and saves another copy with "-signed-2".
+4. Everyone keeps the final copy, and the unsigned original stays in a folder for reference.
+
+If two people sign separate copies of the same file, you end up with two different documents and a tedious job of merging them. Passing one file along the chain avoids that. Because a signature placed with Gold PDF is an image on the page, it is also worth agreeing in advance who is allowed to change text after the first signature. A page that is edited after signing makes it hard for anyone to say which version was agreed. If a typo turns up late, correct it before the first signature or start the chain again with a new file.
+
+## Placing a signature so it looks professional
+Small details make a signed page look finished rather than pasted:
+
+| Detail | What to do |
+|---|---|
+| Size | Match the height of the typed name next to the line; a signature much larger than the text looks odd |
+| Position | Let the bottom of the signature rest on the line, with a little ink allowed to cross it |
+| Overlap | Keep the image off printed words; zoom to 200% to check the edges |
+| Colour | Dark blue or black reads as ink; avoid bright colours on formal papers |
+| Dates | Type the date with the Text tool (T) in the same font size as the page |
+| Consistency | Use the same signature on every page that asks for one |
+
+After placing it, zoom out to a normal reading size and look at the page as the recipient will. If anything looks crooked, drag it again; nothing is final until you save.
+
+## Checking the file before you send it
+Run through four quick checks on the saved copy, not on the version still open in the editor. Reopen it, scroll through every page, and confirm each signature line and initial box is filled. Search with Ctrl+F for "sign here" or "signature" in case a second line sits on a page you skipped. Look at the file name and size, because a signed contract named "final-final-3" invites mistakes. Finally, decide whether the file needs a password, as described above. Taking five minutes here is cheaper than asking a landlord, bank or employer to accept a corrected copy.
 
 ## About legality
 A pasted signature image is a simple electronic signature. Many contracts accept it; some situations (notarised documents, certain government forms, some financial products) require a qualified or certified signature. Confirm what the recipient needs.

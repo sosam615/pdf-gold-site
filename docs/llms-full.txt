@@ -11,7 +11,11 @@
 - AI providers (bring your own key): Google Gemini, Anthropic Claude, OpenAI, OpenRouter, Groq, Mistral, Cerebras, GitHub Models, Cohere, NVIDIA, Hugging Face, Cloudflare, Alibaba, Z.ai, SiliconFlow.
 - Limits: very complex mixed-direction text deserves a visual check.
 
-## All guides (53)
+## All guides (54)
+### How to Rotate One Page in a PDF
+https://pdf.gold/articles/how-to-rotate-one-page-in-a-pdf/
+Rotate a single sideways or upside-down page in a PDF without touching the rest. Free steps for Windows, with a browser option and what to check after saving.
+
 ### How to Edit Text in a Scanned PDF
 https://pdf.gold/articles/how-to-edit-text-in-a-scanned-pdf/
 Edit text in a scanned PDF for free on Windows: run OCR first, then change the recognised words. Offline steps, limits and checks in Gold PDF.
