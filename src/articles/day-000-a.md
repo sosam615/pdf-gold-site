@@ -3,7 +3,7 @@ title: How to Redact a PDF So It Cannot Be Undone
 description: A black box is not redaction. Learn how to redact a PDF so the hidden text is truly removed from the file, step by step, free on Windows.
 topic: redaction
 date: 2026-10-18
-modified: 2026-10-19
+modified: 2026-11-22
 faq: Is a black rectangle enough to redact a PDF? || No. A rectangle only sits on top of the text; anyone can select, copy or delete it. True redaction removes the text and image data underneath.
 faq: How can I check my redaction worked? || Open the saved file, press Ctrl+F and search for the redacted word, then try selecting the area and pasting into a text editor. Nothing should appear.
 faq: Does redaction change the rest of my PDF? || Only the pages with redactions are rebuilt. Other pages stay exactly as they were.
@@ -73,6 +73,37 @@ If you redact personal numbers often, see [how to black out a Social Security nu
 ## Check before you share
 Search the saved file for every sensitive word, try to copy the redacted area, and look at the file's properties. See [how to check if a PDF redaction is secure](/articles/how-to-check-if-a-pdf-redaction-is-secure/) for a full checklist, and [how to remove metadata from a PDF](/articles/how-to-remove-metadata-from-a-pdf-before-sharing/) for the hidden fields.
 
+## Redaction for different kinds of documents
+The same tool needs slightly different habits depending on what you are sending. These are the points that matter most for each common case:
+
+| Document | What usually needs to go | Easy-to-miss spot |
+|---|---|---|
+| Rental or loan application | Account numbers, salary, employer name | Bank statement footers and page headers |
+| Legal or court filing | Names of minors, addresses, ID numbers | A name that appears only in a signature block |
+| Medical letter | Patient name, date of birth, record number | A reference number in the page margin |
+| Business contract | Prices, bank details, internal project names | Annex tables and email addresses on the last page |
+| Photographed or scanned form | Signatures, ID photos, handwritten notes | Text inside the picture that search cannot see |
+
+## A repeatable routine for every file
+A short routine is more reliable than careful reading, because tired eyes skip repeated items. Use the same five steps every time:
+
+1. **Copy first.** Use Save as before you mark anything, and give the new file a name that ends in "redacted", so the original is never the file you send.
+2. **Search before you mark.** Press Ctrl+F for each name, number and address. Note how many matches there are and on which pages, so you know when you are finished.
+3. **Mark every match.** Press R and drag over each one. Zoom in so the bar covers the whole word and not half of it.
+4. **Save and reopen.** Saving rebuilds the pages that have redactions. Close the file, open it again, and search for the same list.
+5. **Compare the counts.** Each search should now return nothing. If one still finds a match, you missed an occurrence; go back to the copy, mark it, and save again.
+
+## Common questions about what happens on save
+**Will the file get bigger?** Pages that contain a redaction are rebuilt as images with a text layer, so those pages can be larger than the originals. Pages without redactions do not change, so a long document with only two redacted pages grows only by those two.
+
+**Will the text on redacted pages still be searchable?** Yes, for everything you did not redact. The remaining words are added back as an invisible text layer, so you can still search and select them. The redacted words are not in that layer.
+
+**Can I undo a redaction after saving?** Not in the saved file; that is the point. Before you save, Ctrl+Z removes a mark. After you save and close, the only way back is the original copy you kept, which is why Save as comes first.
+
+**What if I realise later that I missed something?** Open your redacted copy, mark the missed item, and save again. The earlier redactions are already permanent in that copy. If you are not sure the earlier pass was complete, start again from the original and run the full routine.
+
+## A final read-through
+Tools remove what you mark, and tests confirm what is gone, but neither can tell you what should have been marked. Before you send the file, read it once from the first page to the last, as the recipient would. Look at headers, footers, small print, captions under images, and the last page, where a contact name or reference number often hides. A two-minute read-through catches the mistakes that no search can find, such as a nickname, a description that identifies someone without naming them, or a number written out in words.
 For a short overview of the tool, see [Redact a PDF](/redact-pdf/).
 =====
 title: Does Drawing a Black Box Redact a PDF
