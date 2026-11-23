@@ -11,7 +11,11 @@
 - AI providers (bring your own key): Google Gemini, Anthropic Claude, OpenAI, OpenRouter, Groq, Mistral, Cerebras, GitHub Models, Cohere, NVIDIA, Hugging Face, Cloudflare, Alibaba, Z.ai, SiliconFlow.
 - Limits: very complex mixed-direction text deserves a visual check.
 
-## All guides (55)
+## All guides (56)
+### How to Reorder Pages in a PDF
+https://pdf.gold/articles/how-to-reorder-pages-in-a-pdf/
+Reorder pages in a PDF on Windows by dragging thumbnails, for free and offline. Steps, a planning table, what breaks after a move and a final check.
+
 ### How to Delete Pages From a PDF for Free
 https://pdf.gold/articles/how-to-delete-pages-from-a-pdf-for-free/
 Delete one page or a whole range from a PDF for free on Windows, offline or in your browser. Steps, a page-range table and what to check after saving.

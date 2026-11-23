@@ -253,7 +253,7 @@ title: How to Redact a PDF for Free on Windows
 description: Redact a PDF for free on Windows with a tool that truly removes the text. Offline, no account, no watermark — step by step with Gold PDF.
 topic: redaction
 date: 2026-10-18
-modified: 2026-10-24
+modified: 2026-11-23
 faq: Is there a free PDF redaction tool for Windows? || Yes. Gold PDF is free, works offline and removes redacted content from the file when you save.
 faq: Do I need an account? || No account, no upload and no watermark.
 faq: Can I redact without A? || Yes. Gold PDF covers the common redaction workflow without A.
@@ -308,12 +308,37 @@ The same routine works for bank statements; the details for account numbers are 
 ## How long does free redaction take?
 For a short document, most of the time goes into finding things, not marking them. Pressing **R** and dragging takes seconds per item. Searching for every form of a name, reading headers and footers, and testing the saved copy is what makes a redaction reliable, so budget time for that part, especially on long or scanned files. The test steps are in [how to check if a PDF redaction is secure](/articles/how-to-check-if-a-pdf-redaction-is-secure/).
 
+## Redacting several files in one sitting
+Sometimes the job is not one payslip but a folder of them: a set of invoices, a year of statements or a pile of scanned letters. A steady routine matters more than speed, because one missed page in one file is enough to leak a detail.
+
+1. **Make a working folder.** Copy the files into a new folder called something like "to-send" and work only on those copies. The originals stay where they are.
+2. **Write a list of what must go.** For example: the account number, the tax reference, the home address, a phone number. Use the same list for every file, so you do not decide again each time.
+3. **Search every file for every item.** Press **Ctrl+F** in each document and look at each hit. Names and numbers can be written in more than one way, such as "12 34 56" and "123456", so search for part of the value as well.
+4. **Mark, then save once per file.** Press **R**, drag over each item, and press **Ctrl+S** when the file is finished. Redaction rebuilds the marked pages on save, so saving after every box is not needed.
+5. **Test each saved copy.** Reopen it and search for the items again. Zero results is the goal.
+6. **Check the file name and properties.** A name such as "smith-john-statement.pdf" can reveal what the contents were meant to hide.
+
+A table helps you keep track on a long batch:
+
+| File | Items searched | Pages marked | Saved | Retested |
+|---|---|---|---|---|
+| statement-jan.pdf | account no., address | 1, 3 | yes | yes |
+| statement-feb.pdf | account no., address | 1, 2, 4 | yes | no |
+
+Anything with a "no" in the last column is not ready to send. Scanned files need one extra step first: run OCR with **Ctrl+Shift+O** so the text can be found by search. The OCR in Gold PDF bundles English and Hebrew; for other scripts, check the result by eye on every page instead of trusting the search.
+
+## What to do when the numbers do not match
+Sometimes the search finds fewer hits than you can see on the page. This usually means the text is part of an image, such as a logo, a stamp or a photographed signature, and not real text. The search cannot find it, but the reader can, so mark it by eye. It can also mean the characters are separated, for example by spaces or line breaks. Searching for just a short piece of the value will usually find them.
+
+If a search finds a hit and you cannot see it, the text may be tiny, white or outside the visible page. Mark the page area anyway. After saving, the rebuilt page should no longer contain it, and the follow-up search will confirm that.
+
 > **Common mistakes**
 > - Redacting on the first page only.
 > - Leaving the author name in the metadata.
 > - Saving over the original.
 > - Using a highlight or shape and assuming the text is gone.
 > - Uploading a confidential file to a website just to redact it.
+> - Testing the first file of a batch and assuming the rest are the same.
 
 See also [how to redact a PDF so it cannot be undone](/articles/how-to-redact-a-pdf-so-it-cannot-be-undone/) and the overview page [Redact a PDF](/redact-pdf/).
 =====

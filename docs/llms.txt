@@ -27,6 +27,7 @@
 - [Unlock PDF](https://pdf.gold/tools/unlock-pdf/): Remove the open-password from your own PDF so it opens without asking. Free, private, runs in your browser.
 
 ## Guides
+- [How to Reorder Pages in a PDF](https://pdf.gold/articles/how-to-reorder-pages-in-a-pdf/): Reorder pages in a PDF on Windows by dragging thumbnails, for free and offline. Steps, a planning table, what breaks after a move and a final check.
 - [How to Delete Pages From a PDF for Free](https://pdf.gold/articles/how-to-delete-pages-from-a-pdf-for-free/): Delete one page or a whole range from a PDF for free on Windows, offline or in your browser. Steps, a page-range table and what to check after saving.
 - [How to Rotate One Page in a PDF](https://pdf.gold/articles/how-to-rotate-one-page-in-a-pdf/): Rotate a single sideways or upside-down page in a PDF without touching the rest. Free steps for Windows, with a browser option and what to check after saving.
 - [How to Edit Text in a Scanned PDF](https://pdf.gold/articles/how-to-edit-text-in-a-scanned-pdf/): Edit text in a scanned PDF for free on Windows: run OCR first, then change the recognised words. Offline steps, limits and checks in Gold PDF.
@@ -66,7 +67,6 @@
 - [Gold PDF vs A Comparison](https://pdf.gold/articles/gold-pdf-vs-a-comparison/): Gold PDF vs A: price, editing, redaction, OCR, privacy and limits compared honestly, with dated list prices.
 - [How to Change a Price in a PDF](https://pdf.gold/articles/how-to-change-a-price-in-a-pdf/): Change a price, number or total in a PDF without breaking the layout. Step-by-step for free on Windows, plus a note on honest use.
 - [How to Check if a PDF Redaction Is Secure](https://pdf.gold/articles/how-to-check-if-a-pdf-redaction-is-secure/): Test whether a redacted PDF really hides the text: search, copy, inspect metadata and more. A simple checklist before you share a file.
-- [How to Edit a PDF Using AI](https://pdf.gold/articles/how-to-edit-a-pdf-using-ai/): Edit a PDF with AI by describing the change. Gold PDF proposes line-by-line edits with your own API key and applies only what you approve.
 
 ## Localized home pages
 - [English](https://pdf.gold/)
