@@ -110,7 +110,7 @@ title: Does Drawing a Black Box Redact a PDF
 description: No — drawing a black box only covers text. Here is why boxes, highlights and whiteout fail, and what real PDF redaction does differently.
 topic: redaction
 date: 2026-10-18
-modified: 2026-10-22
+modified: 2026-11-24
 faq: Can you copy text from under a black box in a PDF? || Yes, if the box is just a drawing. The text beneath is still in the file, so it can be selected, copied or exposed by deleting the shape.
 faq: Is highlighting text in black the same as redacting? || No. A black highlight is still a visual layer on top of the text.
 faq: What does a real redaction tool do? || It deletes the covered text and image data from the file and clears related metadata, then saves.
@@ -164,6 +164,34 @@ If someone sends you a file and says it has been redacted, or you are about to s
 | Properties test | Check the title, author and subject fields | No names or case details |
 
 If any test fails, do not send the file. Go back to the original, redact with a real redaction tool, and test again. A longer version of this checklist is in [how to check if a PDF redaction is secure](/articles/how-to-check-if-a-pdf-redaction-is-secure/).
+
+## Box, Whiteout or Redact: the same page three ways
+A worked example makes the difference concrete. Imagine a one-page letter from a clinic that you need to forward to an employer. It shows the patient's name, date of birth, a diagnosis line and the clinic's address. The employer should see only the name and the dates of absence.
+
+- **With a drawn black box.** The page looks right. But press Ctrl+A, copy and paste into Notepad, and the diagnosis line appears in full. The file still contains every word, and the box can be clicked and deleted in a few seconds.
+- **With Whiteout.** The diagnosis disappears behind a white patch, and the page looks clean. Exactly the same tests reveal it, because Whiteout only covers. It is meant for tidy corrections, not for secrets.
+- **With Redact (R).** You drag over the diagnosis line and the date of birth, then save. Gold PDF rebuilds the page on save, so the words under the bars are no longer in the file. Copy, search and delete tests find nothing, and the rest of the letter stays searchable.
+
+The three versions can look almost identical when printed. The difference only shows when someone works with the file, which is what most people who receive a PDF eventually do.
+
+## Other tools that look like redaction but are not
+The black rectangle is the best-known trap, but several other features give the same false sense of safety:
+
+| Feature | Why it seems safe | What is still in the file |
+|---|---|---|
+| Black or dark highlight | It turns the words solid black | The text, untouched under the highlight |
+| Sticky note placed over a word | It covers the word on screen | The word, plus the note itself |
+| Cropping a page | The cut-off area disappears from view | Often the whole page, hidden outside the crop box |
+| Hiding a layer | The layer vanishes in your viewer | The layer, which another viewer can switch back on |
+| Printing to PDF with the box on top | It feels like a fresh file | Usually still text under a shape, unless the page is turned into an image |
+| Lowering the opacity of text to zero | Nothing visible | The full text, which copy and search still find |
+
+Each of these changes how the page looks, not what the file holds. A real redaction tool changes what the file holds, then you test it.
+
+## Why this mistake keeps happening
+Most people learn to hide information on paper, where a marker really does destroy what is underneath. A PDF behaves more like a stack of transparent sheets: text on one, drawings on another, comments on a third. Covering one sheet with another hides nothing from someone who lifts the top sheet. Offices that switch from paper to PDF often keep the old habit, which is why the safest rule is to treat every black bar as suspicious until the saved file has passed the tests above.
+
+The same habit causes a second, quieter leak. Even when the visible text is removed properly, a name can stay in the document title, the author field, a bookmark or an old comment. Gold PDF clears the document metadata when it saves a redaction, but bookmarks and comments you wrote yourself are worth a quick look. The checklist in [how to remove metadata from a PDF before sharing](/articles/how-to-remove-metadata-from-a-pdf-before-sharing/) covers these places.
 
 ## When a black box is still fine
 A drawn box is not useless. It is a reasonable choice when nothing under it is secret: hiding a distracting background on a slide you are about to present, masking a layout guide, or covering a printing mark on a page you will print and shred. The rule is simple. If it matters whether someone can read what is underneath, the box is not enough.
