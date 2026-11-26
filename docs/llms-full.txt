@@ -11,7 +11,11 @@
 - AI providers (bring your own key): Google Gemini, Anthropic Claude, OpenAI, OpenRouter, Groq, Mistral, Cerebras, GitHub Models, Cohere, NVIDIA, Hugging Face, Cloudflare, Alibaba, Z.ai, SiliconFlow.
 - Limits: very complex mixed-direction text deserves a visual check.
 
-## All guides (57)
+## All guides (58)
+### How to Extract One Page From a PDF
+https://pdf.gold/articles/how-to-extract-one-page-from-a-pdf/
+Extract one page from a PDF into its own file, free and offline on Windows or in your browser without uploading. Steps, a choice table and checks.
+
 ### How to Merge Two PDF Files Into One
 https://pdf.gold/articles/how-to-merge-two-pdf-files-into-one/
 Merge two PDF files into one on Windows, free and offline, or in your browser without uploading. Steps, a choice table, what to check after joining.

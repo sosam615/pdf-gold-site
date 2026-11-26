@@ -205,7 +205,7 @@ title: How to Permanently Remove Text From a PDF
 description: Deleting or covering text in a PDF often leaves it in the file. Learn how to remove text permanently so it cannot be recovered, free on Windows.
 topic: redaction
 date: 2026-10-18
-modified: 2026-10-23
+modified: 2026-11-26
 faq: Does deleting text in a PDF remove it for good? || Not always. Some editors only hide it, and an older copy of the text can remain in the file structure. Use a redaction or secure-save workflow and verify.
 faq: How do I remove text from a scanned PDF? || Recognize the text first, then redact the lines you want removed; the page is rebuilt on save.
 faq: Will other text on the page stay searchable? || Yes. Gold PDF restores the remaining words as an invisible text layer.
@@ -267,6 +267,33 @@ Removing text from the visible page is only part of the job. The same words can 
 - **The file name.** A name like "Smith-salary-2026.pdf" says it all.
 
 Check each of these before you share. The steps for properties and other hidden information are in [how to remove metadata from a PDF before sharing](/articles/how-to-remove-metadata-from-a-pdf-before-sharing/), and a full test routine is in [how to check if a PDF redaction is secure](/articles/how-to-check-if-a-pdf-redaction-is-secure/).
+
+## Removing the same text in many places
+A name or account number rarely appears only once. In a long report, a contract or an exported email thread, the same detail can show up in a heading, in the body, in a table and in a footer on every page. Missing one copy undoes the work on all the others.
+
+Work through the file in a fixed order, so nothing depends on memory:
+
+1. Write down every form of the text you want removed. For a person, that can be the full name, the surname alone, initials, an email address and a phone number. For an account, the full number and the last four digits.
+2. Press **Ctrl+F** and search for each form in turn. Note the page of every hit before you start marking.
+3. Go page by page, press **R** and mark each hit. Mark generously: a box slightly larger than the words also covers the tops and tails of letters.
+4. Look at the pages with your own eyes as well. Search only finds real text, so a name inside a logo, a stamp or a photo of a document will not show up.
+5. Press **Ctrl+S**, reopen the file and run every search again.
+
+If the same detail appears on so many pages that marking each one is impractical, consider whether those pages are needed at all. Removing whole pages before redacting the rest is often faster and leaves less to check. The method is in [how to delete pages from a PDF for free](/articles/how-to-delete-pages-from-a-pdf-for-free/).
+
+## Removing text from scanned and mixed pages
+A scanned page is a picture of paper. The words on it are pixels, so there is no text to delete, and a search finds nothing until the page has been recognized. Many PDFs are mixed: typed pages from a word processor with a few scanned pages, such as a signed form, added at the end.
+
+| Page type | How to tell | How to remove text for good |
+|---|---|---|
+| Typed (real text) | You can select single words with the mouse | Redact with **R**, or replace with **E**, then save |
+| Scanned (image only) | Dragging selects nothing, or the whole page | Run OCR with **Ctrl+Shift+O**, then redact with **R** and save |
+| Scanned with an OCR layer | You can select words, but the page looks like a photo | Redact with **R**; the image and the hidden text are both rebuilt on save |
+| Handwriting or stamps | Search finds nothing even after OCR | Mark the area by eye with **R** and save |
+
+OCR is what makes the scanned text findable, not what removes it. The removal itself happens when the redacted page is rebuilt on save. On a scanned page, that rebuild burns the bar into the image, so the covered words are no longer in the picture or in the text layer. For more on recognizing scans, see [how to OCR a scanned PDF for free](/articles/how-to-ocr-a-scanned-pdf-for-free/).
+
+One honest limit: OCR can misread blurred or unusual text, so a search after OCR may still miss a copy of the word. On scanned pages, always look as well as search.
 
 > **Common mistakes**
 > - Using Whiteout for confidential data.
