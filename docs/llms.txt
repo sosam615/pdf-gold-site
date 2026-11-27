@@ -27,6 +27,7 @@
 - [Unlock PDF](https://pdf.gold/tools/unlock-pdf/): Remove the open-password from your own PDF so it opens without asking. Free, private, runs in your browser.
 
 ## Guides
+- [How to Insert a Blank Page in a PDF](https://pdf.gold/articles/how-to-insert-a-blank-page-in-a-pdf/): Insert a blank page anywhere in a PDF, free and offline on Windows. Steps for the start, middle and end, page size tips and checks before you share.
 - [How to Extract One Page From a PDF](https://pdf.gold/articles/how-to-extract-one-page-from-a-pdf/): Extract one page from a PDF into its own file, free and offline on Windows or in your browser without uploading. Steps, a choice table and checks.
 - [How to Merge Two PDF Files Into One](https://pdf.gold/articles/how-to-merge-two-pdf-files-into-one/): Merge two PDF files into one on Windows, free and offline, or in your browser without uploading. Steps, a choice table, what to check after joining.
 - [How to Reorder Pages in a PDF](https://pdf.gold/articles/how-to-reorder-pages-in-a-pdf/): Reorder pages in a PDF on Windows by dragging thumbnails, for free and offline. Steps, a planning table, what breaks after a move and a final check.
@@ -66,7 +67,6 @@
 - [Best Free PDF Redaction Tool for Windows](https://pdf.gold/articles/best-free-pdf-redaction-tool-for-windows/): What makes a good free PDF redaction tool: real content removal, metadata cleaning, OCR and offline use — and how Gold PDF measures up.
 - [Best Offline PDF Editor for Windows 11](https://pdf.gold/articles/best-offline-pdf-editor-for-windows-11/): An offline PDF editor keeps documents on your PC. What to look for on Windows 11 and how Gold PDF edits, redacts and OCRs without internet.
 - [Does Drawing a Black Box Redact a PDF](https://pdf.gold/articles/does-drawing-a-black-box-redact-a-pdf/): No — drawing a black box only covers text. Here is why boxes, highlights and whiteout fail, and what real PDF redaction does differently.
-- [Gold PDF vs A Comparison](https://pdf.gold/articles/gold-pdf-vs-a-comparison/): Gold PDF vs A: price, editing, redaction, OCR, privacy and limits compared honestly, with dated list prices.
 
 ## Localized home pages
 - [English](https://pdf.gold/)

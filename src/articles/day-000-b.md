@@ -3,7 +3,7 @@ title: How to Remove Metadata From a PDF Before Sharing
 description: PDFs carry hidden author, title and software details. Learn how to remove PDF metadata before you share a file, free on Windows with Gold PDF.
 topic: redaction
 date: 2026-10-18
-modified: 2026-10-26
+modified: 2026-11-27
 faq: What metadata does a PDF contain? || Common fields are title, author, subject, keywords, creator application, producer and creation or modification dates, plus optional XMP data.
 faq: Does removing metadata change how the PDF looks? || No. It only clears the hidden information fields.
 faq: Is metadata removed when I redact? || In Gold PDF, saving a document with redactions also clears metadata automatically.
@@ -64,6 +64,37 @@ Clearing metadata and redacting are two separate jobs, and a safe share often ne
 - **Edit text** (**E**) changes visible wording, such as replacing a name, but it does not clear metadata by itself.
 
 If your file has visible secrets as well as hidden ones, redact first and read [how to check if a PDF redaction is secure](/articles/how-to-check-if-a-pdf-redaction-is-secure/) before you send it.
+
+## What to look for in common documents
+Different kinds of files tend to leak different details. The table below lists what is worth a second look before each type of document leaves your hands.
+
+| Document | Hidden detail that often slips through | What to do |
+|---|---|---|
+| Contract or offer | A title such as "draft - do not send" and the drafter's name | Remove metadata, delete internal comments |
+| CV or job application | An old file name or the name of a previous employer's template | Remove metadata, rename the file |
+| Quote or price list | An internal title that hints at margins or a floor price | Remove metadata, check the bookmarks |
+| Report for a client | Reviewer names in comments and a working project code name | Remove metadata, delete comments, check bookmarks |
+| Scanned letter | The scanner or app name in the producer field | Usually harmless, but clear it if you prefer |
+| Filled form | Earlier answers saved in fields you did not fill this time | Click through every field before you save |
+
+Not every field is sensitive. The program that produced a file rarely matters to anyone. Names, internal titles and dates are the fields that cause trouble, because they can show who worked on a document, what it was really called and how long it sat in a drawer before it was sent.
+
+## Make it part of a sharing routine
+Metadata is easy to forget because nothing on the page reminds you of it. A short routine that you follow every time is more reliable than remembering to check when a file feels important.
+
+1. **Finish the content first.** Edit, redact and sign before you clear metadata. Some programs add details again when they save, so clearing at the end catches everything.
+2. **Save a sharing copy.** Use Ctrl+Shift+S and give the copy a neutral name, such as a reference number. Keep your working file for yourself.
+3. **Clear the hidden fields.** Open the **Protect** tab, click **Remove metadata** and save.
+4. **Look behind the page.** Check comments, bookmarks and form fields, as listed in the table above. The wider checklist is in [how to remove hidden data from a PDF](/articles/how-to-remove-hidden-data-from-a-pdf/).
+5. **Reopen and read the properties.** Close the copy, open it again and look at the document properties. Empty title and author fields mean the step worked.
+6. **Send only the checked copy.** Attach the file you just reopened, not a different version from your downloads folder.
+
+The routine takes a minute or two. It matters most for files that go outside your organisation, such as offers to clients, documents for a court or a public office, and anything you post online.
+
+## When metadata is useful to keep
+Clearing metadata is not always the right choice. Inside a team, an accurate title and author help people find files in search and tell versions apart. Some archives and publishing systems read the title field to label a document, so an empty title can make a file harder to find later. Organisations that file documents for records may also have their own rules about what has to stay.
+
+A practical middle way is to keep your internal files as they are and clear metadata only on the copies you send out. If you want a helpful title on a shared file, set a neutral one in your word processor before you export, such as "Quote 2026-114", so the title describes the document rather than its history.
 
 ## Good sharing habits
 - Remove metadata, then send the saved copy — never the original.
